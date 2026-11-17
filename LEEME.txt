@@ -1,0 +1,25 @@
+TEST DE GRÁFICOS POR COMPUTADOR — versión local
+================================================
+
+Cómo abrirlo
+------------
+1. Descomprime la carpeta donde quieras.
+2. Haz doble clic en "index.html". Se abre en tu navegador (Chrome, Edge, Firefox o Safari).
+   No necesitas instalar nada ni tener servidor: las 1000 preguntas van dentro de index.html.
+
+Dónde se guardan tus fallos
+---------------------------
+- Se guardan en el almacenamiento local del navegador (localStorage).
+- Se conservan entre sesiones siempre que uses el MISMO navegador y abras el MISMO archivo
+  (si mueves la carpeta a otra ruta, el navegador puede tratarlo como otra página y empezar de cero).
+- Si borras los datos de navegación del navegador, se pierden los fallos.
+- El progreso de esta versión local es independiente del de la versión publicada en Claude.
+
+Sin conexión a Internet
+-----------------------
+Funciona igual. Lo único que cambia es la tipografía: sin conexión usa la fuente del sistema.
+
+Carpeta "preguntas"
+-------------------
+Los 5 bancos de preguntas en JSON (200 por tema), por si quieres consultarlos o reutilizarlos.
+index.html no los lee de aquí: ya los lleva incluidos.
