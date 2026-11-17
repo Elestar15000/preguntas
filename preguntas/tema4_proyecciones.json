@@ -1,0 +1,2208 @@
+{
+  "asignatura": "Gráficos por Computador",
+  "tema": 4,
+  "titulo": "Proyecciones",
+  "total_preguntas": 200,
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "La proyección es:",
+      "opciones": {
+        "A": "El proceso de recortar primitivas fuera de la ventana",
+        "B": "El proceso de obtener una representación 2D de una escena 3D",
+        "C": "El proceso de aplicar texturas",
+        "D": "El proceso de rasterizar triángulos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 2,
+      "pregunta": "La proyección también se define como:",
+      "opciones": {
+        "A": "El mapeo o transformación del objeto en el plano de proyección o de visión",
+        "B": "La división del espacio en vóxeles",
+        "C": "La combinación de primitivas mediante operaciones booleanas",
+        "D": "La interpolación de colores entre vértices"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 3,
+      "pregunta": "El plano de proyección (o plano de visión) es:",
+      "opciones": {
+        "A": "El plano sobre el que se proyectan los puntos de la escena",
+        "B": "El plano en el que se sitúa la cámara",
+        "C": "El plano XY del sistema del mundo",
+        "D": "El plano lejano del frustum"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Cuáles son los elementos básicos de la proyección?",
+      "opciones": {
+        "A": "Near, far y fov",
+        "B": "Centro de proyecciones, plano de proyecciones y líneas proyectivas",
+        "C": "Matriz modelo, vista y proyección",
+        "D": "Vértices, aristas y caras"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 5,
+      "pregunta": "El centro de proyecciones (CP) es:",
+      "opciones": {
+        "A": "El centro de la pantalla",
+        "B": "El centro geométrico del objeto proyectado",
+        "C": "El punto de fuga de una proyección paralela",
+        "D": "El punto desde el que parten o convergen las líneas de proyección en una proyección perspectiva"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 6,
+      "pregunta": "En una proyección paralela, el centro de proyecciones se considera situado:",
+      "opciones": {
+        "A": "En el origen",
+        "B": "Sobre el plano de proyección",
+        "C": "En el infinito",
+        "D": "Detrás del plano lejano a distancia finita"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 7,
+      "pregunta": "Las líneas proyectivas (LP) son:",
+      "opciones": {
+        "A": "Las líneas de silueta del objeto",
+        "B": "Las aristas del frustum",
+        "C": "Las líneas que unen los puntos de fuga",
+        "D": "Rectas que relacionan los puntos de la escena con sus correspondientes puntos proyectados"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 8,
+      "pregunta": "La división más importante del árbol de proyecciones es entre:",
+      "opciones": {
+        "A": "Isométricas y dimétricas",
+        "B": "Planta y alzado",
+        "C": "Proyecciones perspectivas y paralelas",
+        "D": "Caballera y cabinet"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 9,
+      "pregunta": "Si el centro de proyecciones se encuentra a distancia finita, la proyección es:",
+      "opciones": {
+        "A": "Ortográfica",
+        "B": "Perspectiva",
+        "C": "Paralela",
+        "D": "Oblicua"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 10,
+      "pregunta": "Si el centro de proyecciones se considera en el infinito, la proyección es:",
+      "opciones": {
+        "A": "Paralela",
+        "B": "Perspectiva",
+        "C": "Cónica",
+        "D": "Aérea"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 11,
+      "pregunta": "Las proyecciones perspectivas se clasifican según:",
+      "opciones": {
+        "A": "El número de puntos de fuga (1, 2 o 3)",
+        "B": "El valor de L",
+        "C": "El factor de reducción",
+        "D": "El ángulo β"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 12,
+      "pregunta": "Las proyecciones paralelas se dividen en:",
+      "opciones": {
+        "A": "Frontal, angular y aérea",
+        "B": "De 1, 2 y 3 puntos de fuga",
+        "C": "Oblicuas y ortográficas",
+        "D": "Isométricas y caballera"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 13,
+      "pregunta": "El número de puntos de fuga principales depende de:",
+      "opciones": {
+        "A": "El campo de visión",
+        "B": "Cuántos de los tres ejes principales del objeto no son paralelos al plano de proyección",
+        "C": "El número de vértices del objeto",
+        "D": "La distancia al plano lejano"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 14,
+      "pregunta": "La perspectiva con 1 punto de fuga se denomina:",
+      "opciones": {
+        "A": "Perspectiva caballera",
+        "B": "Perspectiva angular",
+        "C": "Perspectiva frontal",
+        "D": "Perspectiva aérea"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 15,
+      "pregunta": "La perspectiva con 2 puntos de fuga se denomina:",
+      "opciones": {
+        "A": "Perspectiva isométrica",
+        "B": "Perspectiva angular",
+        "C": "Perspectiva frontal",
+        "D": "Perspectiva aérea"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 16,
+      "pregunta": "La perspectiva con 3 puntos de fuga se denomina:",
+      "opciones": {
+        "A": "Perspectiva angular",
+        "B": "Perspectiva frontal",
+        "C": "Perspectiva aérea",
+        "D": "Perspectiva cabinet"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 17,
+      "pregunta": "En la perspectiva de un punto de fuga:",
+      "opciones": {
+        "A": "Dos direcciones convergen y una es paralela",
+        "B": "Ninguna dirección converge",
+        "C": "Dos direcciones principales permanecen paralelas al plano de proyección y la tercera converge a un punto de fuga",
+        "D": "Las tres direcciones convergen"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 18,
+      "pregunta": "En la perspectiva angular:",
+      "opciones": {
+        "A": "Ninguna dirección converge",
+        "B": "Las tres direcciones convergen a puntos distintos",
+        "C": "Solo una dirección converge",
+        "D": "Dos direcciones principales convergen hacia dos puntos de fuga y la tercera es paralela al plano de proyección"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 19,
+      "pregunta": "En la perspectiva aérea:",
+      "opciones": {
+        "A": "Todas las líneas son paralelas",
+        "B": "Dos direcciones son paralelas al plano de proyección",
+        "C": "Solo una dirección converge",
+        "D": "Las tres direcciones principales convergen hacia puntos de fuga distintos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 20,
+      "pregunta": "En una proyección paralela, si la dirección de proyección es perpendicular al plano de proyección, la proyección es:",
+      "opciones": {
+        "A": "Oblicua",
+        "B": "Perspectiva",
+        "C": "Caballera",
+        "D": "Ortográfica"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 21,
+      "pregunta": "En una proyección paralela, si la dirección de proyección NO es perpendicular al plano de proyección, la proyección es:",
+      "opciones": {
+        "A": "Axonométrica",
+        "B": "Ortográfica",
+        "C": "Oblicua",
+        "D": "Isométrica"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 22,
+      "pregunta": "En las proyecciones paralelas, β es:",
+      "opciones": {
+        "A": "El campo de visión vertical",
+        "B": "El ángulo que forman las líneas de proyección con el plano de proyección",
+        "C": "El ángulo entre los ejes proyectados",
+        "D": "El ángulo de rotación de la cámara"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 23,
+      "pregunta": "En una proyección ortográfica, el ángulo β vale:",
+      "opciones": {
+        "A": "45º",
+        "B": "63.4º",
+        "C": "90º",
+        "D": "30º"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 24,
+      "pregunta": "En las proyecciones oblicuas, las caras paralelas al plano de proyección:",
+      "opciones": {
+        "A": "Se representan en su forma y tamaño reales",
+        "B": "Se representan reducidas a la mitad",
+        "C": "No aparecen en la proyección",
+        "D": "Se deforman siempre"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 25,
+      "pregunta": "En las proyecciones oblicuas, la dimensión de profundidad:",
+      "opciones": {
+        "A": "Se proyecta oblicuamente, dando percepción de tridimensionalidad",
+        "B": "Se proyecta siempre a tamaño real",
+        "C": "Se elimina",
+        "D": "Converge a un punto de fuga"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 26,
+      "pregunta": "En las proyecciones oblicuas, α es:",
+      "opciones": {
+        "A": "El campo de visión",
+        "B": "El factor de reducción",
+        "C": "El ángulo entre la dirección de proyección y el plano",
+        "D": "El ángulo que forma el eje de profundidad proyectado con la horizontal"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 27,
+      "pregunta": "En las proyecciones oblicuas, el factor de escala de profundidad L se calcula como:",
+      "opciones": {
+        "A": "L = tan(β)",
+        "B": "L = cos(α)",
+        "C": "L = sen(β)",
+        "D": "L = cot(β)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 28,
+      "pregunta": "¿Qué valor de β corresponde a la proyección caballera?",
+      "opciones": {
+        "A": "63.4º",
+        "B": "30º",
+        "C": "45º",
+        "D": "90º"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 29,
+      "pregunta": "¿Qué factor de escala de profundidad tiene la proyección caballera?",
+      "opciones": {
+        "A": "L = 1",
+        "B": "L = 1/2",
+        "C": "L = 2",
+        "D": "L = 0"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 30,
+      "pregunta": "¿Qué valor de β corresponde a la proyección cabinet?",
+      "opciones": {
+        "A": "arctan(2) ≈ 63.4º",
+        "B": "45º",
+        "C": "90º",
+        "D": "arctan(1/2) ≈ 26.6º"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 31,
+      "pregunta": "¿Qué factor de escala de profundidad tiene la proyección cabinet?",
+      "opciones": {
+        "A": "L = 1/3",
+        "B": "L = 1",
+        "C": "L = 1/2",
+        "D": "L = 2"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 32,
+      "pregunta": "En las proyecciones caballera y cabinet, el ángulo α suele ser:",
+      "opciones": {
+        "A": "0º",
+        "B": "120º",
+        "C": "30º o 45º",
+        "D": "90º"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 33,
+      "pregunta": "En la proyección oblicua general ('otras'):",
+      "opciones": {
+        "A": "β = 90º y L = 0",
+        "B": "β toma otro valor y L depende de β",
+        "C": "β = 63.4º y L = 1/2",
+        "D": "β = 45º y L = 1"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 34,
+      "pregunta": "En una proyección caballera, una arista de profundidad de 10 unidades se dibuja con longitud:",
+      "opciones": {
+        "A": "5 unidades",
+        "B": "20 unidades",
+        "C": "10 unidades",
+        "D": "0 unidades"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 35,
+      "pregunta": "En una proyección cabinet, una arista de profundidad de 10 unidades se dibuja con longitud aproximada:",
+      "opciones": {
+        "A": "20 unidades",
+        "B": "5 unidades",
+        "C": "10 unidades",
+        "D": "2.5 unidades"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 36,
+      "pregunta": "¿Qué proyección oblicua da una apariencia más realista de la profundidad al reducirla a la mitad?",
+      "opciones": {
+        "A": "Isométrica",
+        "B": "Caballera",
+        "C": "Planta",
+        "D": "Cabinet"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 37,
+      "pregunta": "En las proyecciones ortográficas:",
+      "opciones": {
+        "A": "El centro de proyección está a distancia finita",
+        "B": "La dirección de proyección es perpendicular al plano de proyección",
+        "C": "La dirección de proyección es oblicua",
+        "D": "Hay siempre tres puntos de fuga"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 38,
+      "pregunta": "¿Cuáles son los tipos de proyecciones ortográficas?",
+      "opciones": {
+        "A": "Perspectiva y paralela",
+        "B": "Axonométricas, planta, alzado y perfil",
+        "C": "Caballera, cabinet y otras",
+        "D": "Frontal, angular y aérea"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 39,
+      "pregunta": "La vista de planta se proyecta en la dirección del eje:",
+      "opciones": {
+        "A": "X",
+        "B": "Z",
+        "C": "Y",
+        "D": "W"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 40,
+      "pregunta": "La vista de alzado se proyecta en la dirección del eje:",
+      "opciones": {
+        "A": "X",
+        "B": "Y",
+        "C": "Z",
+        "D": "W"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 41,
+      "pregunta": "La vista de perfil se proyecta en la dirección del eje:",
+      "opciones": {
+        "A": "Z",
+        "B": "X",
+        "C": "Y",
+        "D": "W"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 42,
+      "pregunta": "En una proyección axonométrica:",
+      "opciones": {
+        "A": "Ninguno de los tres ejes principales es perpendicular al plano de proyección, mostrando varias caras a la vez",
+        "B": "Un eje es perpendicular al plano de proyección",
+        "C": "La dirección de proyección es oblicua",
+        "D": "Solo se ve una cara del objeto"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 43,
+      "pregunta": "En las proyecciones axonométricas, el objeto:",
+      "opciones": {
+        "A": "Está rotado sobre uno o más ejes para mostrar varios lados",
+        "B": "Se proyecta oblicuamente",
+        "C": "Se ve únicamente de frente",
+        "D": "Se proyecta con un centro a distancia finita"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 44,
+      "pregunta": "Si α es el ángulo entre el eje X y el plano de proyección, el coeficiente de reducción Cx es:",
+      "opciones": {
+        "A": "cos α",
+        "B": "tan α",
+        "C": "cot α",
+        "D": "sen α"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 45,
+      "pregunta": "En una proyección isométrica:",
+      "opciones": {
+        "A": "Los tres ejes tienen factores distintos",
+        "B": "Un eje no se reduce",
+        "C": "Los tres ejes tienen el mismo factor de reducción y forman ángulos de 120º entre sí",
+        "D": "Dos ejes tienen el mismo factor de reducción"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 46,
+      "pregunta": "En una proyección dimétrica:",
+      "opciones": {
+        "A": "Dos ejes tienen el mismo factor de reducción y el tercero uno diferente",
+        "B": "Los tres ejes tienen el mismo factor",
+        "C": "Los tres ejes tienen factores distintos",
+        "D": "Solo se proyecta un eje"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 47,
+      "pregunta": "En una proyección trimétrica:",
+      "opciones": {
+        "A": "Dos ejes tienen el mismo factor",
+        "B": "No hay reducción",
+        "C": "Los tres ejes tienen factores de reducción diferentes",
+        "D": "Los tres ejes tienen el mismo factor"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 48,
+      "pregunta": "En una proyección isométrica, los ángulos entre los ejes proyectados son:",
+      "opciones": {
+        "A": "120º",
+        "B": "90º",
+        "C": "45º",
+        "D": "60º"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 49,
+      "pregunta": "En una proyección dimétrica, de los ángulos entre los ejes proyectados:",
+      "opciones": {
+        "A": "Los tres son iguales",
+        "B": "Todos son de 90º",
+        "C": "Dos son iguales",
+        "D": "Los tres son diferentes"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 50,
+      "pregunta": "En una proyección trimétrica, los ángulos entre los ejes proyectados:",
+      "opciones": {
+        "A": "Son todos de 120º",
+        "B": "Son los tres diferentes",
+        "C": "Dos son iguales",
+        "D": "Son los tres iguales"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 51,
+      "pregunta": "¿Cuál de las siguientes es una proyección axonométrica?",
+      "opciones": {
+        "A": "Cabinet",
+        "B": "Perspectiva frontal",
+        "C": "Caballera",
+        "D": "Dimétrica"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 52,
+      "pregunta": "¿Cuál de las siguientes es una proyección oblicua?",
+      "opciones": {
+        "A": "Planta",
+        "B": "Isométrica",
+        "C": "Cabinet",
+        "D": "Perspectiva angular"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 53,
+      "pregunta": "La proyección isométrica pertenece a la rama del árbol:",
+      "opciones": {
+        "A": "Paralelas → Oblicuas",
+        "B": "Perspectivas → 1 punto de fuga",
+        "C": "Paralelas → Ortográficas → Axonométricas",
+        "D": "Perspectivas → 3 puntos de fuga"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 54,
+      "pregunta": "La proyección caballera pertenece a la rama del árbol:",
+      "opciones": {
+        "A": "Paralelas → Oblicuas",
+        "B": "Ortográficas → Axonométricas",
+        "C": "Paralelas → Ortográficas",
+        "D": "Perspectivas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 55,
+      "pregunta": "En la proyección perspectiva:",
+      "opciones": {
+        "A": "Los objetos lejanos parecen más pequeños que los cercanos",
+        "B": "No hay puntos de fuga",
+        "C": "Las líneas paralelas siempre siguen paralelas",
+        "D": "Los objetos mantienen el mismo tamaño independientemente de la distancia"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 56,
+      "pregunta": "Para simular la perspectiva, los vértices se escalan según:",
+      "opciones": {
+        "A": "Su componente x",
+        "B": "Su distancia al espectador (componente z)",
+        "C": "Su normal",
+        "D": "Su color"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 57,
+      "pregunta": "Si la cámara está en el origen y se proyecta un punto p en el plano z = −d, la coordenada qx es:",
+      "opciones": {
+        "A": "qx = −pz / (d · px)",
+        "B": "qx = px / d",
+        "C": "qx = −d · px / pz",
+        "D": "qx = d · px · pz"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 58,
+      "pregunta": "En la proyección simple sobre el plano z = −d, la coordenada qz del punto proyectado es:",
+      "opciones": {
+        "A": "d",
+        "B": "0",
+        "C": "−d",
+        "D": "pz"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 59,
+      "pregunta": "En la matriz de proyección simple Pp sobre z = −d, la cuarta fila es:",
+      "opciones": {
+        "A": "(0, 0, 0, 1)",
+        "B": "(0, 0, −1/d, 0)",
+        "C": "(0, 0, d, 1)",
+        "D": "(0, 0, 1, 0)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 60,
+      "pregunta": "Al aplicar la matriz simple Pp a un punto p, la componente w resultante es:",
+      "opciones": {
+        "A": "−pz / d",
+        "B": "pz",
+        "C": "d",
+        "D": "1"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 61,
+      "pregunta": "Tras aplicar la matriz de proyección perspectiva, para obtener el punto proyectado hay que:",
+      "opciones": {
+        "A": "Ignorar w",
+        "B": "Restar w",
+        "C": "Dividir por la componente w (división de perspectiva)",
+        "D": "Multiplicar por w"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 62,
+      "pregunta": "¿Cuáles de los siguientes elementos se tienen en cuenta para definir el volumen de visión perspectivo?",
+      "opciones": {
+        "A": "Solo el plano lejano",
+        "B": "El número de puntos de fuga",
+        "C": "Relación de aspecto, campo de visión, plano cercano y plano lejano",
+        "D": "Solo la posición de la cámara"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 63,
+      "pregunta": "En la proyección perspectiva, todo lo visible a través de la ventana de proyección está dentro de:",
+      "opciones": {
+        "A": "Una esfera",
+        "B": "Un cubo",
+        "C": "Un frustum (pirámide con la punta cortada)",
+        "D": "Un cilindro"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 64,
+      "pregunta": "Las partes de los objetos situadas por delante del plano cercano:",
+      "opciones": {
+        "A": "Se eliminan durante el clipping",
+        "B": "Se convierten en ortográficas",
+        "C": "Se dibujan más grandes",
+        "D": "Se proyectan sobre el plano lejano"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 65,
+      "pregunta": "Las partes de los objetos situadas más allá del plano lejano:",
+      "opciones": {
+        "A": "Se escalan",
+        "B": "Se proyectan en el plano cercano",
+        "C": "Se eliminan durante el clipping",
+        "D": "Se dibujan en el fondo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 66,
+      "pregunta": "Dos cajas idénticas, una más alejada que otra, en proyección perspectiva:",
+      "opciones": {
+        "A": "La más lejana no se verá nunca",
+        "B": "La más cercana parecerá más grande",
+        "C": "Parecerán del mismo tamaño",
+        "D": "La más lejana parecerá más grande"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 67,
+      "pregunta": "El campo de visión (FOV) es:",
+      "opciones": {
+        "A": "El número de puntos de fuga",
+        "B": "La parte de la escena que podemos ver a través de la pantalla",
+        "C": "La relación entre ancho y alto",
+        "D": "La distancia al plano lejano"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 68,
+      "pregunta": "El FOV vertical (fovy) es:",
+      "opciones": {
+        "A": "El ángulo β de la proyección oblicua",
+        "B": "El ángulo entre las líneas que van desde el origen a la parte superior e inferior de los planos cercano y lejano",
+        "C": "El ángulo entre los ejes proyectados",
+        "D": "El ángulo entre el eje X y el plano de proyección"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 69,
+      "pregunta": "Un campo de visión amplio:",
+      "opciones": {
+        "A": "Elimina la perspectiva",
+        "B": "No afecta a la imagen",
+        "C": "Captura más elementos de la escena haciendo todo más pequeño (zoom out)",
+        "D": "Muestra menos escena haciendo todo más grande"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 70,
+      "pregunta": "Un campo de visión estrecho:",
+      "opciones": {
+        "A": "Aumenta el número de puntos de fuga",
+        "B": "Convierte la proyección en ortográfica",
+        "C": "Captura más elementos haciendo todo más pequeño",
+        "D": "Muestra menos escena haciendo todo más grande (zoom in)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 71,
+      "pregunta": "Al transformar de 3D a 2D, se escalan los puntos con un valor que tiene en cuenta el FOV para que:",
+      "opciones": {
+        "A": "La coordenada w sea 1",
+        "B": "La coordenada y quede normalizada en el rango [−1, 1]",
+        "C": "La coordenada z sea 0",
+        "D": "La coordenada y quede en [0, 1]"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 72,
+      "pregunta": "Siendo d la distancia al plano de proyección, la semialtura H de la ventana es:",
+      "opciones": {
+        "A": "H = tan(fovy) / d",
+        "B": "H = d · tan(fovy/2)",
+        "C": "H = d / tan(fovy)",
+        "D": "H = d · sen(fovy)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 73,
+      "pregunta": "La relación de aspecto es:",
+      "opciones": {
+        "A": "El ángulo del campo de visión",
+        "B": "La distancia entre los planos cercano y lejano",
+        "C": "La proporción entre el ancho y el alto de la pantalla (W/H)",
+        "D": "La proporción entre el alto y el ancho (H/W)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 74,
+      "pregunta": "¿Por qué es importante tener en cuenta la relación de aspecto?",
+      "opciones": {
+        "A": "Para calcular el punto de fuga",
+        "B": "Para preservar las proporciones, evitar la distorsión y mantener la consistencia entre dispositivos",
+        "C": "Para calcular la normal",
+        "D": "Para recortar contra el plano lejano"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 75,
+      "pregunta": "La semianchura W de la ventana de proyección se calcula como:",
+      "opciones": {
+        "A": "W = d · aspect",
+        "B": "W = H · aspect = d · tan(fovy/2) · aspect",
+        "C": "W = tan(aspect)",
+        "D": "W = H / aspect"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 76,
+      "pregunta": "La normalización de profundidad en la proyección perspectiva mapea la profundidad del frustum al rango:",
+      "opciones": {
+        "A": "[0, 1] antes de la división",
+        "B": "[−1, 1] tras la división de perspectiva",
+        "C": "[n, f]",
+        "D": "[0, 255]"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 77,
+      "pregunta": "En OpenGL, ¿a qué valor de zNDC se mapea el plano cercano (z = −n)?",
+      "opciones": {
+        "A": "0",
+        "B": "n",
+        "C": "−1",
+        "D": "1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 78,
+      "pregunta": "En OpenGL, ¿a qué valor de zNDC se mapea el plano lejano (z = −f)?",
+      "opciones": {
+        "A": "0",
+        "B": "−1",
+        "C": "1",
+        "D": "f"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 79,
+      "pregunta": "En la proyección perspectiva, la componente wclip es:",
+      "opciones": {
+        "A": "z",
+        "B": "1",
+        "C": "f − n",
+        "D": "−z (de la coordenada de vista)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 80,
+      "pregunta": "En la normalización de profundidad, zclip = A·z + B, siendo A:",
+      "opciones": {
+        "A": "(f + n) / (f − n)",
+        "B": "−2fn / (f − n)",
+        "C": "−(f + n) / (f − n)",
+        "D": "2 / (f − n)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 81,
+      "pregunta": "En la normalización de profundidad, zclip = A·z + B, siendo B:",
+      "opciones": {
+        "A": "−(f − n) / 2",
+        "B": "−(f + n) / (f − n)",
+        "C": "2fn / (f + n)",
+        "D": "−2fn / (f − n)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 82,
+      "pregunta": "La matriz de proyección perspectiva Pp convierte puntos:",
+      "opciones": {
+        "A": "Del espacio de recorte al espacio NDC",
+        "B": "Del espacio del modelo al espacio del mundo",
+        "C": "Del espacio de cámara al espacio de recorte (clip space)",
+        "D": "Del espacio NDC al espacio de pantalla"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 83,
+      "pregunta": "Tras realizar el clipping y la división de perspectiva se obtienen:",
+      "opciones": {
+        "A": "Coordenadas de vista",
+        "B": "Coordenadas del mundo",
+        "C": "Coordenadas de modelo",
+        "D": "Coordenadas normalizadas de dispositivo (NDC) en el cubo canónico"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 84,
+      "pregunta": "El parámetro 'right' del frustum es:",
+      "opciones": {
+        "A": "La coordenada x máxima del plano cercano",
+        "B": "La distancia al plano lejano",
+        "C": "La coordenada x mínima del plano lejano",
+        "D": "La coordenada y máxima del plano cercano"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 85,
+      "pregunta": "El parámetro 'top' del frustum es:",
+      "opciones": {
+        "A": "La coordenada y mínima del plano lejano",
+        "B": "La distancia al plano cercano",
+        "C": "La coordenada x máxima del plano cercano",
+        "D": "La coordenada y máxima del plano cercano"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 86,
+      "pregunta": "El parámetro 'left' del frustum es:",
+      "opciones": {
+        "A": "La distancia al plano lejano",
+        "B": "La coordenada x mínima del plano cercano",
+        "C": "La coordenada y mínima del plano cercano",
+        "D": "La coordenada x máxima del plano cercano"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 87,
+      "pregunta": "El parámetro 'bottom' del frustum es:",
+      "opciones": {
+        "A": "La coordenada y máxima del plano cercano",
+        "B": "La distancia al plano cercano",
+        "C": "La coordenada x mínima del plano cercano",
+        "D": "La coordenada y mínima del plano cercano"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 88,
+      "pregunta": "Los parámetros 'near' y 'far' del frustum son:",
+      "opciones": {
+        "A": "Coordenadas z positivas de los planos en el espacio de cámara",
+        "B": "Las distancias positivas n y f a los planos cercano y lejano",
+        "C": "Las coordenadas x mínima y máxima",
+        "D": "Los ángulos del campo de visión"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 89,
+      "pregunta": "En la matriz de proyección perspectiva (frustum), el elemento (1,1) es:",
+      "opciones": {
+        "A": "(r + l) / (r − l)",
+        "B": "2 / (r − l)",
+        "C": "2n / (r − l)",
+        "D": "n / r"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 90,
+      "pregunta": "En la matriz de proyección perspectiva (frustum), el elemento (1,3) es:",
+      "opciones": {
+        "A": "(r + l) / (r − l)",
+        "B": "2n / (r − l)",
+        "C": "0",
+        "D": "−(r + l) / (r − l)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 91,
+      "pregunta": "En la matriz de proyección perspectiva (frustum), el elemento (2,2) es:",
+      "opciones": {
+        "A": "2n / (t − b)",
+        "B": "(t + b) / (t − b)",
+        "C": "n / t",
+        "D": "2 / (t − b)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 92,
+      "pregunta": "En la matriz de proyección perspectiva, la cuarta fila es:",
+      "opciones": {
+        "A": "(0, 0, 0, 1)",
+        "B": "(0, 0, 1, 0)",
+        "C": "(0, 0, −1, 0)",
+        "D": "(0, 0, −1, 1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 93,
+      "pregunta": "En la matriz de perspectiva expresada con fovy y aspect, el elemento (2,2) es:",
+      "opciones": {
+        "A": "1 / tan(fovy/2)",
+        "B": "aspect / tan(fovy/2)",
+        "C": "tan(fovy/2)",
+        "D": "2n / (t − b)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 94,
+      "pregunta": "En la matriz de perspectiva expresada con fovy y aspect, el elemento (1,1) es:",
+      "opciones": {
+        "A": "aspect · tan(fovy/2)",
+        "B": "1 / (aspect · tan(fovy/2))",
+        "C": "1 / tan(fovy/2)",
+        "D": "2n / aspect"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 95,
+      "pregunta": "¿Qué función de GLM define la proyección perspectiva a partir de left, right, bottom, top, near y far?",
+      "opciones": {
+        "A": "glm::perspective(l, r, b, t, n, f)",
+        "B": "glm::lookAt(l, r, b, t, n, f)",
+        "C": "glm::frustum(l, r, b, t, n, f)",
+        "D": "glm::ortho(fovy, aspect, n, f)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 96,
+      "pregunta": "¿Qué función de GLM define la proyección perspectiva a partir del campo de visión y la relación de aspecto?",
+      "opciones": {
+        "A": "glm::ortho(fovy, aspect, n, f)",
+        "B": "glm::perspective(fovy, aspect, n, f)",
+        "C": "glm::frustum(fovy, aspect, n, f)",
+        "D": "glm::translate(fovy, aspect, n, f)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 97,
+      "pregunta": "¿Qué condición es necesaria para que la matriz de perspectiva Pp esté definida?",
+      "opciones": {
+        "A": "l ≠ r, b ≠ t, n ≠ f, n ≠ 0 y f > n > 0",
+        "B": "l = r",
+        "C": "f < n",
+        "D": "n = 0"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 98,
+      "pregunta": "¿Por qué n no puede valer 0 en la proyección perspectiva?",
+      "opciones": {
+        "A": "Porque fovy sería 0",
+        "B": "Porque la matriz quedaría mal definida (elementos 2n/(r−l) nulos y profundidad degenerada)",
+        "C": "Porque la proyección se volvería oblicua",
+        "D": "Porque el plano lejano estaría en el infinito"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 99,
+      "pregunta": "En la proyección paralela ortográfica:",
+      "opciones": {
+        "A": "Los objetos lejanos se ven más pequeños",
+        "B": "Las líneas paralelas convergen",
+        "C": "Las líneas paralelas siguen siendo paralelas tras la proyección",
+        "D": "Hay un punto de fuga"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 100,
+      "pregunta": "En la proyección ortográfica, los objetos:",
+      "opciones": {
+        "A": "Mantienen el mismo tamaño independientemente de su distancia a la cámara",
+        "B": "Se deforman según su distancia",
+        "C": "Parecen más pequeños cuanto más lejos están",
+        "D": "Parecen más grandes cuanto más lejos están"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 101,
+      "pregunta": "El volumen de visión ortográfico es:",
+      "opciones": {
+        "A": "Una esfera",
+        "B": "Una caja rectangular alineada con los ejes (AABB)",
+        "C": "Un frustum",
+        "D": "Un cono"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 102,
+      "pregunta": "El objetivo de la matriz ortográfica Po es:",
+      "opciones": {
+        "A": "Proyectar en perspectiva",
+        "B": "Transformar el AABB de visión en el volumen canónico de visualización",
+        "C": "Convertir NDC en coordenadas de pantalla",
+        "D": "Calcular la normal"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 103,
+      "pregunta": "La transformación ortográfica se compone de:",
+      "opciones": {
+        "A": "Una rotación seguida de una traslación",
+        "B": "Una traslación seguida de un escalado",
+        "C": "Un escalado seguido de una rotación",
+        "D": "Una proyección perspectiva y una división"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 104,
+      "pregunta": "En la proyección ortográfica, el vector de traslación t es:",
+      "opciones": {
+        "A": "(−(r+l)/2, −(t+b)/2, −(f+n)/2)",
+        "B": "(2/(r−l), 2/(t−b), 2/(f−n))",
+        "C": "(r−l, t−b, f−n)",
+        "D": "((r+l)/2, (t+b)/2, (f+n)/2)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 105,
+      "pregunta": "En la proyección ortográfica, el vector de escalado s es:",
+      "opciones": {
+        "A": "(r+l, t+b, f+n)",
+        "B": "(2/(r−l), 2/(t−b), 2/(f−n))",
+        "C": "(1/(r−l), 1/(t−b), 1/(f−n))",
+        "D": "((r−l)/2, (t−b)/2, (f−n)/2)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 106,
+      "pregunta": "¿Por qué la matriz ortográfica de OpenGL incluye M(z) = diag(1, 1, −1, 1)?",
+      "opciones": {
+        "A": "Para escalar el eje x",
+        "B": "Para aplicar la división de perspectiva",
+        "C": "Para reflejar la escena horizontalmente",
+        "D": "Porque en espacio de cámara se mira hacia −Z y en NDC se quiere near = −1 y far = +1, invirtiendo la profundidad"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 107,
+      "pregunta": "En la matriz ortográfica de OpenGL, el elemento (3,3) es:",
+      "opciones": {
+        "A": "−(f + n) / (f − n)",
+        "B": "2 / (f − n)",
+        "C": "2n / (f − n)",
+        "D": "−2 / (f − n)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 108,
+      "pregunta": "En la matriz ortográfica de OpenGL, el elemento (3,4) es:",
+      "opciones": {
+        "A": "−2 / (f − n)",
+        "B": "−2fn / (f − n)",
+        "C": "(f + n) / (f − n)",
+        "D": "−(f + n) / (f − n)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 109,
+      "pregunta": "En la matriz ortográfica de OpenGL, el elemento (1,4) es:",
+      "opciones": {
+        "A": "−2n / (r − l)",
+        "B": "(r + l) / (r − l)",
+        "C": "2 / (r − l)",
+        "D": "−(r + l) / (r − l)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 110,
+      "pregunta": "En la matriz ortográfica de OpenGL, la cuarta fila es:",
+      "opciones": {
+        "A": "(0, 0, 0, 1)",
+        "B": "(1, 1, 1, 1)",
+        "C": "(0, 0, 1, 0)",
+        "D": "(0, 0, −1, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 111,
+      "pregunta": "¿Qué función de GLM define la proyección ortográfica?",
+      "opciones": {
+        "A": "glm::frustum(l, r, b, t, n, f)",
+        "B": "glm::scale(l, r, b, t, n, f)",
+        "C": "glm::perspective(fovy, aspect, n, f)",
+        "D": "glm::ortho(l, r, b, t, n, f)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 112,
+      "pregunta": "¿Qué condición es necesaria para que la matriz ortográfica Po esté definida según el tema?",
+      "opciones": {
+        "A": "n = f",
+        "B": "l ≠ r, b ≠ t, n ≠ f, f > n > 0",
+        "C": "l = r",
+        "D": "b = t"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 113,
+      "pregunta": "En una proyección ortográfica, tras aplicar Po la componente w de un punto:",
+      "opciones": {
+        "A": "Sigue siendo 1",
+        "B": "Pasa a ser −z",
+        "C": "Pasa a ser 0",
+        "D": "Pasa a ser f − n"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 114,
+      "pregunta": "¿Cuál es el primer paso para proyectar los vértices en OpenGL?",
+      "opciones": {
+        "A": "Recortar",
+        "B": "Definir la matriz de proyección (glm::frustum/perspective u ortho)",
+        "C": "Aplicar la transformación de viewport",
+        "D": "Dividir por w"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 115,
+      "pregunta": "La composición de matrices para pasar del modelo al espacio de recorte es:",
+      "opciones": {
+        "A": "p_clip = M_Model · M_View · M_Projection · p_model",
+        "B": "p_clip = M_View · M_Projection · M_Model · p_model",
+        "C": "p_clip = M_Projection + M_View + M_Model",
+        "D": "p_clip = M_Projection · M_View · M_Model · p_model"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 116,
+      "pregunta": "Las coordenadas NDC se obtienen a partir de las de recorte como:",
+      "opciones": {
+        "A": "p_ndc = p_clip.w / p_clip.xyz",
+        "B": "p_ndc = p_clip.xyz · p_clip.w",
+        "C": "p_ndc = p_clip.xyz / p_clip.w",
+        "D": "p_ndc = p_clip.xyz − p_clip.w"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 117,
+      "pregunta": "Después de obtener las NDC, se aplica:",
+      "opciones": {
+        "A": "La transformación de modelo",
+        "B": "La proyección perspectiva",
+        "C": "La transformación de viewport para obtener coordenadas de ventana",
+        "D": "La transformación de vista"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 118,
+      "pregunta": "¿Qué matriz se denomina a menudo MVP?",
+      "opciones": {
+        "A": "La matriz normal",
+        "B": "La matriz de viewport",
+        "C": "La matriz de cizallamiento",
+        "D": "El producto de las matrices de proyección, vista y modelo"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 119,
+      "pregunta": "¿En qué espacio se mira hacia −Z con near en −n y far en −f?",
+      "opciones": {
+        "A": "En el espacio de pantalla",
+        "B": "En el espacio NDC",
+        "C": "En el espacio del modelo",
+        "D": "En el espacio de la cámara"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 120,
+      "pregunta": "Si nos alejamos de la cámara en el espacio de cámara, la coordenada z:",
+      "opciones": {
+        "A": "Se hace 0",
+        "B": "Disminuye (se hace más negativa)",
+        "C": "No cambia",
+        "D": "Aumenta"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 121,
+      "pregunta": "Las coordenadas NDC de OpenGL están comprendidas en:",
+      "opciones": {
+        "A": "La pantalla en píxeles",
+        "B": "El cubo canónico [−1, 1]³",
+        "C": "El intervalo [n, f]",
+        "D": "El cubo [0, 1]³"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 122,
+      "pregunta": "La proyección perspectiva es no lineal en las coordenadas cartesianas finales porque:",
+      "opciones": {
+        "A": "Se divide por w, que depende de z",
+        "B": "Usa una matriz 4x4",
+        "C": "Usa la relación de aspecto",
+        "D": "Usa traslaciones"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 123,
+      "pregunta": "¿Qué proyección se suele utilizar en aplicaciones CAD donde las medidas deben conservarse?",
+      "opciones": {
+        "A": "Perspectiva de 3 puntos de fuga",
+        "B": "Perspectiva frontal",
+        "C": "Ortográfica (paralela)",
+        "D": "Perspectiva aérea"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 124,
+      "pregunta": "¿Qué proyección produce mayor sensación de realismo?",
+      "opciones": {
+        "A": "La de perfil",
+        "B": "La caballera",
+        "C": "La perspectiva",
+        "D": "La ortográfica de planta"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 125,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (-10, 6, -8) sobre el plano z = −1. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(1.25, -0.75, -1)",
+        "B": "(-10, 6, -1)",
+        "C": "(-1.25, 0.75, -1)",
+        "D": "(-1.25, 0.75, -8)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 126,
+      "pregunta": "Para una proyección perspectiva con n = 0.1 y f = 1000, ¿cuánto vale el coeficiente A = −(f+n)/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-1.0002",
+        "B": "1.0002",
+        "C": "-0.2",
+        "D": "-0.9998"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 127,
+      "pregunta": "Para glm::ortho(l=-8, r=7, b=-7, t=1, n=2, f=100), ¿cuánto vale el elemento (2,4) = −(t+b)/(t−b)?",
+      "opciones": {
+        "A": "0.75",
+        "B": "0.25",
+        "C": "-0.75",
+        "D": "3"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 128,
+      "pregunta": "Un vértice tiene p_clip = (2, -2, -1, 2). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(1, -1, -0.5)",
+        "B": "(4, -4, -2)",
+        "C": "(1, -1, -1)",
+        "D": "(2, -2, -1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 129,
+      "pregunta": "En una proyección oblicua con β = 75º, ¿cuál es el factor de escala de profundidad L = cot(β)?",
+      "opciones": {
+        "A": "3.73",
+        "B": "0.27",
+        "C": "0.26",
+        "D": "0.97"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 130,
+      "pregunta": "En una proyección caballera, ¿qué longitud tendrá en el dibujo una arista de profundidad de 8 unidades?",
+      "opciones": {
+        "A": "4",
+        "B": "2.667",
+        "C": "8",
+        "D": "16"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 131,
+      "pregunta": "En la matriz de glm::perspective, ¿cuánto vale el elemento 1/tan(fovy/2) para fovy = 45º?",
+      "opciones": {
+        "A": "2.613",
+        "B": "2.414",
+        "C": "0.414",
+        "D": "1"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 132,
+      "pregunta": "¿Cuál es la relación de aspecto de una ventana de 1600x1200 píxeles?",
+      "opciones": {
+        "A": "0.333",
+        "B": "0.75",
+        "C": "1920000",
+        "D": "1.333"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 133,
+      "pregunta": "Un punto en espacio de cámara tiene z = -7. Tras aplicar la matriz de proyección perspectiva de OpenGL, ¿cuánto vale wclip?",
+      "opciones": {
+        "A": "7",
+        "B": "1",
+        "C": "0",
+        "D": "-7"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 134,
+      "pregunta": "Si en una perspectiva dos de los ejes principales del objeto son paralelos al plano de proyección y el tercero no, ¿qué tipo de proyección se obtiene?",
+      "opciones": {
+        "A": "Perspectiva aérea (3 puntos de fuga)",
+        "B": "Proyección paralela (sin puntos de fuga)",
+        "C": "Perspectiva angular (2 puntos de fuga)",
+        "D": "Perspectiva frontal (1 punto de fuga)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 135,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (8, -4, -10) sobre el plano z = −4. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(-3.2, 1.6, -4)",
+        "B": "(3.2, -1.6, -4)",
+        "C": "(0.2, -0.1, -4)",
+        "D": "(8, -4, -4)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 136,
+      "pregunta": "Para una proyección perspectiva con n = 0.1 y f = 10, ¿cuánto vale el coeficiente A = −(f+n)/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "1.0202",
+        "B": "-1.0202",
+        "C": "-0.202",
+        "D": "-0.9802"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 137,
+      "pregunta": "Para glm::ortho(l=-4, r=8, b=-2, t=3, n=2, f=50), ¿cuánto vale el elemento (1,1) = 2/(r−l)?",
+      "opciones": {
+        "A": "6",
+        "B": "-0.3333",
+        "C": "0.3333",
+        "D": "0.1667"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 138,
+      "pregunta": "Un vértice tiene p_clip = (0, -4, 4, 4). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(0, -1, 1)",
+        "B": "(0, -1, 4)",
+        "C": "(0, -16, 16)",
+        "D": "(0, -4, 4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 139,
+      "pregunta": "Con n = 2 y f = 20, ¿qué valor de zNDC obtiene un punto con z_eye = -11 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "-0.818",
+        "B": "0.818",
+        "C": "0",
+        "D": "0.5"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 140,
+      "pregunta": "En una proyección oblicua con β = 26.57º, ¿cuál es el factor de escala de profundidad L = cot(β)?",
+      "opciones": {
+        "A": "0.45",
+        "B": "0.89",
+        "C": "2",
+        "D": "0.5"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 141,
+      "pregunta": "En una proyección caballera, ¿qué longitud tendrá en el dibujo una arista de profundidad de 12 unidades?",
+      "opciones": {
+        "A": "4",
+        "B": "12",
+        "C": "6",
+        "D": "24"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 142,
+      "pregunta": "En la matriz de glm::perspective, ¿cuánto vale el elemento 1/tan(fovy/2) para fovy = 90º?",
+      "opciones": {
+        "A": "1.414",
+        "B": "1",
+        "C": "2",
+        "D": "0"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 143,
+      "pregunta": "Un punto en espacio de cámara tiene z = -2. Tras aplicar la matriz de proyección perspectiva de OpenGL, ¿cuánto vale wclip?",
+      "opciones": {
+        "A": "1",
+        "B": "2",
+        "C": "0",
+        "D": "-2"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 144,
+      "pregunta": "Si el centro de proyecciones se sitúa en el infinito, ¿qué tipo de proyección se obtiene?",
+      "opciones": {
+        "A": "Perspectiva aérea (3 puntos de fuga)",
+        "B": "Perspectiva angular (2 puntos de fuga)",
+        "C": "Perspectiva frontal (1 punto de fuga)",
+        "D": "Proyección paralela (sin puntos de fuga)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 145,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (6, -1, -5) sobre el plano z = −4. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(6, -1, -4)",
+        "B": "(-4.8, 0.8, -4)",
+        "C": "(0.3, -0.05, -4)",
+        "D": "(4.8, -0.8, -4)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 146,
+      "pregunta": "Para una proyección perspectiva con n = 0.5 y f = 1000, ¿cuánto vale el coeficiente A = −(f+n)/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-1.001",
+        "B": "-0.999",
+        "C": "-1.0005",
+        "D": "1.001"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 147,
+      "pregunta": "Para glm::ortho(l=-5, r=2, b=-1, t=1, n=1, f=50), ¿cuánto vale el elemento (1,1) = 2/(r−l)?",
+      "opciones": {
+        "A": "0.2857",
+        "B": "0.1429",
+        "C": "3.5",
+        "D": "0.4286"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 148,
+      "pregunta": "Un vértice tiene p_clip = (2, 0, 2, 2). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(2, 0, 2)",
+        "B": "(1, 0, 2)",
+        "C": "(4, 0, 4)",
+        "D": "(1, 0, 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 149,
+      "pregunta": "Con n = 1 y f = 100, ¿qué valor de zNDC obtiene un punto con z_eye = -50.5 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "-0.98",
+        "B": "0.98",
+        "C": "0",
+        "D": "0.5"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 150,
+      "pregunta": "En una proyección cabinet, ¿qué longitud tendrá en el dibujo una arista de profundidad de 16 unidades?",
+      "opciones": {
+        "A": "32",
+        "B": "8",
+        "C": "16",
+        "D": "5.333"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 151,
+      "pregunta": "Un punto en espacio de cámara tiene z = -10. Tras aplicar la matriz de proyección perspectiva de OpenGL, ¿cuánto vale wclip?",
+      "opciones": {
+        "A": "0",
+        "B": "-10",
+        "C": "10",
+        "D": "1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 152,
+      "pregunta": "Si en una perspectiva solo uno de los ejes principales del objeto es paralelo al plano de proyección, ¿qué tipo de proyección se obtiene?",
+      "opciones": {
+        "A": "Perspectiva frontal (1 punto de fuga)",
+        "B": "Perspectiva aérea (3 puntos de fuga)",
+        "C": "Proyección paralela (sin puntos de fuga)",
+        "D": "Perspectiva angular (2 puntos de fuga)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 153,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (8, -8, -4) sobre el plano z = −1. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(-2, 2, -1)",
+        "B": "(2, -2, -1)",
+        "C": "(2, -2, -4)",
+        "D": "(8, -8, -1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 154,
+      "pregunta": "Para una proyección perspectiva con n = 5 y f = 1000, ¿cuánto vale el coeficiente A = −(f+n)/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-0.99",
+        "B": "1.0101",
+        "C": "-1.0101",
+        "D": "-10.0503"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 155,
+      "pregunta": "Para glm::ortho(l=-6, r=7, b=-7, t=5, n=0.1, f=50), ¿cuánto vale el elemento (1,4) = −(r+l)/(r−l)?",
+      "opciones": {
+        "A": "-0.5",
+        "B": "0.0769",
+        "C": "-0.0769",
+        "D": "0.1538"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 156,
+      "pregunta": "Un vértice tiene p_clip = (-2, 2, -1, 4). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(-8, 8, -4)",
+        "B": "(-2, 2, -1)",
+        "C": "(-0.5, 0.5, -0.25)",
+        "D": "(-0.5, 0.5, -1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 157,
+      "pregunta": "En una proyección oblicua con β = 60º, ¿cuál es el factor de escala de profundidad L = cot(β)?",
+      "opciones": {
+        "A": "1.73",
+        "B": "0.87",
+        "C": "0.58",
+        "D": "0.5"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 158,
+      "pregunta": "En una proyección caballera, ¿qué longitud tendrá en el dibujo una arista de profundidad de 4 unidades?",
+      "opciones": {
+        "A": "4",
+        "B": "8",
+        "C": "2",
+        "D": "1.333"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 159,
+      "pregunta": "En la matriz de glm::perspective, ¿cuánto vale el elemento 1/tan(fovy/2) para fovy = 60º?",
+      "opciones": {
+        "A": "3.464",
+        "B": "1.732",
+        "C": "2",
+        "D": "0.577"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 160,
+      "pregunta": "¿Cuál es la relación de aspecto de una ventana de 800x600 píxeles?",
+      "opciones": {
+        "A": "1.333",
+        "B": "0.333",
+        "C": "480000",
+        "D": "0.75"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 161,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (8, 3, -10) sobre el plano z = −2. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(8, 3, -2)",
+        "B": "(1.6, 0.6, -2)",
+        "C": "(0.4, 0.15, -2)",
+        "D": "(-1.6, -0.6, -2)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 162,
+      "pregunta": "Para una proyección perspectiva con n = 0.1 y f = 100, ¿cuánto vale el coeficiente B = −2fn/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-0.1998",
+        "B": "0.2002",
+        "C": "-0.2002",
+        "D": "-1.002"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 163,
+      "pregunta": "Para glm::ortho(l=-1, r=8, b=-1, t=8, n=2, f=50), ¿cuánto vale el elemento (1,4) = −(r+l)/(r−l)?",
+      "opciones": {
+        "A": "-3.5",
+        "B": "0.7778",
+        "C": "-0.7778",
+        "D": "0.2222"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 164,
+      "pregunta": "Un vértice tiene p_clip = (3, -2, 1, 10). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(0.3, -0.2, 1)",
+        "B": "(0.3, -0.2, 0.1)",
+        "C": "(30, -20, 10)",
+        "D": "(3, -2, 1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 165,
+      "pregunta": "Con n = 1 y f = 20, ¿qué valor de zNDC obtiene un punto con z_eye = -10.5 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "-0.905",
+        "B": "0.905",
+        "C": "0.5",
+        "D": "0"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 166,
+      "pregunta": "En una proyección oblicua con β = 30º, ¿cuál es el factor de escala de profundidad L = cot(β)?",
+      "opciones": {
+        "A": "0.58",
+        "B": "0.5",
+        "C": "0.87",
+        "D": "1.73"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 167,
+      "pregunta": "¿Cuál es la relación de aspecto de una ventana de 2560x1080 píxeles?",
+      "opciones": {
+        "A": "2.37",
+        "B": "0.422",
+        "C": "1.37",
+        "D": "2764800"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 168,
+      "pregunta": "Un punto en espacio de cámara tiene z = -25. Tras aplicar la matriz de proyección perspectiva de OpenGL, ¿cuánto vale wclip?",
+      "opciones": {
+        "A": "0",
+        "B": "1",
+        "C": "-25",
+        "D": "25"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 169,
+      "pregunta": "En una proyección perspectiva, dos de los ejes principales del objeto son paralelos al plano de proyección y el tercero no, ¿qué tipo de proyección se obtiene?",
+      "opciones": {
+        "A": "Perspectiva angular (2 puntos de fuga)",
+        "B": "Proyección paralela (sin puntos de fuga)",
+        "C": "Perspectiva aérea (3 puntos de fuga)",
+        "D": "Perspectiva frontal (1 punto de fuga)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 170,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (-10, -4, -8) sobre el plano z = −1. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(-1.25, -0.5, -8)",
+        "B": "(-1.25, -0.5, -1)",
+        "C": "(1.25, 0.5, -1)",
+        "D": "(-10, -4, -1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 171,
+      "pregunta": "Para una proyección perspectiva con n = 1 y f = 1000, ¿cuánto vale el coeficiente B = −2fn/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-1.998",
+        "B": "-2.002",
+        "C": "2.002",
+        "D": "-1.002"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 172,
+      "pregunta": "Un vértice tiene p_clip = (-1, 0, -2, 2). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(-0.5, 0, -1)",
+        "B": "(-1, 0, -2)",
+        "C": "(-0.5, 0, -2)",
+        "D": "(-2, 0, -4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 173,
+      "pregunta": "Con n = 1 y f = 100, ¿qué valor de zNDC obtiene un punto con z_eye = -2 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "0.01",
+        "B": "0",
+        "C": "-0.98",
+        "D": "-0.01"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 174,
+      "pregunta": "En una proyección cabinet, ¿qué longitud tendrá en el dibujo una arista de profundidad de 6 unidades?",
+      "opciones": {
+        "A": "2",
+        "B": "12",
+        "C": "3",
+        "D": "6"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 175,
+      "pregunta": "¿Cuál es la relación de aspecto de una ventana de 1920x1080 píxeles?",
+      "opciones": {
+        "A": "0.562",
+        "B": "2073600",
+        "C": "0.778",
+        "D": "1.778"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 176,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (-4, -3, -8) sobre el plano z = −1. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(0.5, 0.375, -1)",
+        "B": "(-4, -3, -1)",
+        "C": "(-0.5, -0.375, -1)",
+        "D": "(-0.5, -0.375, -8)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 177,
+      "pregunta": "Para una proyección perspectiva con n = 2 y f = 1000, ¿cuánto vale el coeficiente A = −(f+n)/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-0.996",
+        "B": "1.004",
+        "C": "-4.008",
+        "D": "-1.004"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 178,
+      "pregunta": "Para glm::ortho(l=-10, r=5, b=-6, t=8, n=2, f=100), ¿cuánto vale el elemento (2,2) = 2/(t−b)?",
+      "opciones": {
+        "A": "0.1429",
+        "B": "0.2857",
+        "C": "-0.1429",
+        "D": "7"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 179,
+      "pregunta": "Un vértice tiene p_clip = (1, 2, 2, 2). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(1, 2, 2)",
+        "B": "(2, 4, 4)",
+        "C": "(0.5, 1, 1)",
+        "D": "(0.5, 1, 2)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 180,
+      "pregunta": "Con n = 2 y f = 20, ¿qué valor de zNDC obtiene un punto con z_eye = -4 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "0.111",
+        "B": "-0.778",
+        "C": "0",
+        "D": "-0.111"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 181,
+      "pregunta": "En la matriz de glm::perspective, ¿cuánto vale el elemento 1/tan(fovy/2) para fovy = 120º?",
+      "opciones": {
+        "A": "0.577",
+        "B": "1.155",
+        "C": "1.732",
+        "D": "-0.577"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 182,
+      "pregunta": "¿Cuál es la relación de aspecto de una ventana de 1000x500 píxeles?",
+      "opciones": {
+        "A": "0.5",
+        "B": "500000",
+        "C": "2",
+        "D": "1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 183,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (-5, 9, -8) sobre el plano z = −2. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(1.25, -2.25, -2)",
+        "B": "(-1.25, 2.25, -2)",
+        "C": "(-0.312, 0.562, -2)",
+        "D": "(-5, 9, -2)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 184,
+      "pregunta": "Para una proyección perspectiva con n = 1 y f = 100, ¿cuánto vale el coeficiente B = −2fn/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "2.0202",
+        "B": "-2.0202",
+        "C": "-1.0202",
+        "D": "-1.9802"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 185,
+      "pregunta": "Para glm::ortho(l=-8, r=7, b=-1, t=3, n=1, f=10), ¿cuánto vale el elemento (3,3) = −2/(f−n)?",
+      "opciones": {
+        "A": "-1.2222",
+        "B": "-2.2222",
+        "C": "-0.2222",
+        "D": "0.2222"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 186,
+      "pregunta": "Un vértice tiene p_clip = (-4, 2, 4, 5). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(-0.8, 0.4, 0.8)",
+        "B": "(-0.8, 0.4, 4)",
+        "C": "(-20, 10, 20)",
+        "D": "(-4, 2, 4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 187,
+      "pregunta": "Con n = 1 y f = 10, ¿qué valor de zNDC obtiene un punto con z_eye = -2 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "-0.778",
+        "B": "-0.111",
+        "C": "0.111",
+        "D": "0"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 188,
+      "pregunta": "En una proyección cabinet, ¿qué longitud tendrá en el dibujo una arista de profundidad de 30 unidades?",
+      "opciones": {
+        "A": "10",
+        "B": "30",
+        "C": "60",
+        "D": "15"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 189,
+      "pregunta": "Un punto en espacio de cámara tiene z = -5. Tras aplicar la matriz de proyección perspectiva de OpenGL, ¿cuánto vale wclip?",
+      "opciones": {
+        "A": "-5",
+        "B": "0",
+        "C": "5",
+        "D": "1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 190,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (-10, -3, -4) sobre el plano z = −2. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(5, 1.5, -2)",
+        "B": "(-5, -1.5, -2)",
+        "C": "(-1.25, -0.375, -2)",
+        "D": "(-10, -3, -2)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 191,
+      "pregunta": "Para una proyección perspectiva con n = 5 y f = 100, ¿cuánto vale el coeficiente A = −(f+n)/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-1.1053",
+        "B": "-0.9048",
+        "C": "-10.5263",
+        "D": "1.1053"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 192,
+      "pregunta": "Para glm::ortho(l=-6, r=4, b=-6, t=2, n=2, f=100), ¿cuánto vale el elemento (3,3) = −2/(f−n)?",
+      "opciones": {
+        "A": "0.0204",
+        "B": "-1.0408",
+        "C": "-0.0204",
+        "D": "-4.0816"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 193,
+      "pregunta": "Un vértice tiene p_clip = (2, 0, -4, 4). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(8, 0, -16)",
+        "B": "(2, 0, -4)",
+        "C": "(0.5, 0, -4)",
+        "D": "(0.5, 0, -1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 194,
+      "pregunta": "Con n = 2 y f = 10, ¿qué valor de zNDC obtiene un punto con z_eye = -5 tras la proyección perspectiva y la división de perspectiva?",
+      "opciones": {
+        "A": "0.375",
+        "B": "-0.5",
+        "C": "0.5",
+        "D": "-0.25"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 195,
+      "pregunta": "En una proyección caballera, ¿qué longitud tendrá en el dibujo una arista de profundidad de 16 unidades?",
+      "opciones": {
+        "A": "5.333",
+        "B": "8",
+        "C": "32",
+        "D": "16"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 196,
+      "pregunta": "Con la cámara en el origen, se proyecta en perspectiva el punto p = (8, -1, -5) sobre el plano z = −2. ¿Cuál es el punto proyectado q?",
+      "opciones": {
+        "A": "(-3.2, 0.4, -2)",
+        "B": "(0.8, -0.1, -2)",
+        "C": "(8, -1, -2)",
+        "D": "(3.2, -0.4, -2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 197,
+      "pregunta": "Para una proyección perspectiva con n = 2 y f = 100, ¿cuánto vale el coeficiente B = −2fn/(f−n) de zclip = A·z + B?",
+      "opciones": {
+        "A": "-3.9216",
+        "B": "4.0816",
+        "C": "-1.0408",
+        "D": "-4.0816"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 198,
+      "pregunta": "Para glm::ortho(l=-9, r=3, b=-4, t=6, n=1, f=10), ¿cuánto vale el elemento (1,1) = 2/(r−l)?",
+      "opciones": {
+        "A": "0.5",
+        "B": "0.1667",
+        "C": "0.0833",
+        "D": "6"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 199,
+      "pregunta": "Un vértice tiene p_clip = (-5, 10, 2, 10). ¿Cuáles son sus coordenadas NDC?",
+      "opciones": {
+        "A": "(-0.5, 1, 0.2)",
+        "B": "(-5, 10, 2)",
+        "C": "(-0.5, 1, 2)",
+        "D": "(-50, 100, 20)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 200,
+      "pregunta": "En la matriz de glm::perspective, ¿cuánto vale el elemento 1/tan(fovy/2) para fovy = 30º?",
+      "opciones": {
+        "A": "3.864",
+        "B": "0.268",
+        "C": "3.732",
+        "D": "1.732"
+      },
+      "respuesta_correcta": "C"
+    }
+  ]
+}

@@ -1,0 +1,2208 @@
+{
+  "asignatura": "Gráficos por Computador",
+  "tema": 5,
+  "titulo": "Recorte de primitivas",
+  "total_preguntas": 200,
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "El recorte de puntos se utiliza para:",
+      "opciones": {
+        "A": "Calcular la normal de una arista",
+        "B": "Determinar si un punto está dentro de una ventana o no",
+        "C": "Calcular la intersección de dos líneas",
+        "D": "Triangular un polígono"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 2,
+      "pregunta": "Un punto (x, y) es visible en una ventana de recorte rectangular si:",
+      "opciones": {
+        "A": "x ≤ xmin o x ≥ xmax",
+        "B": "x + y ≤ xmax + ymax",
+        "C": "xmin ≤ x ≤ xmax y ymin ≤ y ≤ ymax",
+        "D": "x · y ≥ 0"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 3,
+      "pregunta": "Al recortar líneas, una primitiva puede:",
+      "opciones": {
+        "A": "Cambiar de dimensión",
+        "B": "Estar siempre parcialmente dentro",
+        "C": "Estar completamente dentro, completamente fuera o intersecar la ventana de recorte",
+        "D": "Estar únicamente dentro o fuera"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 4,
+      "pregunta": "El proceso que descarta las partes invisibles de una primitiva se denomina:",
+      "opciones": {
+        "A": "Clipping o recorte",
+        "B": "Mezclado",
+        "C": "Rasterización",
+        "D": "Sombreado"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 5,
+      "pregunta": "El algoritmo de Cohen-Sutherland funciona con:",
+      "opciones": {
+        "A": "Cualquier polígono convexo",
+        "B": "Cualquier polígono cóncavo",
+        "C": "Volúmenes esféricos",
+        "D": "Áreas de recorte rectangulares"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 6,
+      "pregunta": "El algoritmo de Cohen-Sutherland se fundamenta en:",
+      "opciones": {
+        "A": "Listas enlazadas de intersecciones",
+        "B": "La división de la ventana de recorte en regiones con códigos binarios",
+        "C": "La ecuación paramétrica de la recta y normales",
+        "D": "Árboles BSP"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Cuántos bits tienen los códigos de región de Cohen-Sutherland en 2D?",
+      "opciones": {
+        "A": "8",
+        "B": "6",
+        "C": "4",
+        "D": "2"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 8,
+      "pregunta": "En Cohen-Sutherland, ¿cuántas regiones se definen en 2D alrededor de la ventana (incluida esta)?",
+      "opciones": {
+        "A": "8",
+        "B": "6",
+        "C": "4",
+        "D": "9"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 9,
+      "pregunta": "En Cohen-Sutherland, la aceptación trivial se produce cuando:",
+      "opciones": {
+        "A": "C(P0) OR C(P1) != 0000",
+        "B": "C(P0) AND C(P1) != 0000",
+        "C": "C(P0) OR C(P1) == 0000",
+        "D": "C(P0) AND C(P1) == 0000"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 10,
+      "pregunta": "En Cohen-Sutherland, el rechazo trivial se produce cuando:",
+      "opciones": {
+        "A": "C(P0) XOR C(P1) == 0000",
+        "B": "C(P0) AND C(P1) != 0000",
+        "C": "C(P0) AND C(P1) == 0000",
+        "D": "C(P0) OR C(P1) == 0000"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 11,
+      "pregunta": "En Cohen-Sutherland, la aceptación trivial significa que:",
+      "opciones": {
+        "A": "Un extremo está dentro y otro fuera",
+        "B": "Ambos extremos comparten una región exterior",
+        "C": "Los dos extremos de la línea están dentro de la ventana",
+        "D": "La línea es paralela a un borde"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 12,
+      "pregunta": "En Cohen-Sutherland, el rechazo trivial significa que:",
+      "opciones": {
+        "A": "Ambos extremos están dentro",
+        "B": "La línea cruza la ventana",
+        "C": "Ambos extremos comparten al menos una región exterior, por lo que la línea es invisible",
+        "D": "Un extremo está sobre el borde"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 13,
+      "pregunta": "En Cohen-Sutherland, si no hay ni aceptación ni rechazo trivial:",
+      "opciones": {
+        "A": "La línea se descarta",
+        "B": "La línea se dibuja tal cual",
+        "C": "Se cambia de algoritmo",
+        "D": "Es un caso de recorte: hay que calcular intersecciones"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 14,
+      "pregunta": "Según el tema, el bit 3 del código de región de Cohen-Sutherland indica:",
+      "opciones": {
+        "A": "xmin > x",
+        "B": "y > ymax",
+        "C": "x > xmax",
+        "D": "ymin > y"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 15,
+      "pregunta": "Según el tema, el bit 2 del código de región de Cohen-Sutherland indica:",
+      "opciones": {
+        "A": "y > ymax",
+        "B": "ymin > y",
+        "C": "x > xmax",
+        "D": "xmin > x"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 16,
+      "pregunta": "Según el tema, el bit 1 del código de región de Cohen-Sutherland indica:",
+      "opciones": {
+        "A": "xmin > x",
+        "B": "x > xmax",
+        "C": "y > ymax",
+        "D": "ymin > y"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 17,
+      "pregunta": "Según el tema, el bit 0 del código de región de Cohen-Sutherland indica:",
+      "opciones": {
+        "A": "xmin > x",
+        "B": "y > ymax",
+        "C": "ymin > y",
+        "D": "x > xmax"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 18,
+      "pregunta": "En Cohen-Sutherland, la función bit(a) vale:",
+      "opciones": {
+        "A": "El valor de a",
+        "B": "0 si a es verdad y 1 si es falso",
+        "C": "Siempre 1",
+        "D": "1 si a es verdad y 0 si es falso"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 19,
+      "pregunta": "Un punto dentro de la ventana de recorte tiene código de región:",
+      "opciones": {
+        "A": "0000",
+        "B": "0001",
+        "C": "1111",
+        "D": "1000"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 20,
+      "pregunta": "En Cohen-Sutherland, una línea visible se:",
+      "opciones": {
+        "A": "Descarta",
+        "B": "Recorta contra los cuatro bordes",
+        "C": "Dibuja normalmente según los algoritmos de rasterización de líneas",
+        "D": "Divide en dos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 21,
+      "pregunta": "En Cohen-Sutherland, antes de calcular la intersección, si es necesario se intercambian P1 y P2 para que:",
+      "opciones": {
+        "A": "P1 sea interior: C(P1) = 0000",
+        "B": "P1 tenga menor y",
+        "C": "P1 sea exterior: C(P1) != 0000",
+        "D": "P1 tenga menor x"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 22,
+      "pregunta": "En Cohen-Sutherland, la pendiente m de la recta se calcula como:",
+      "opciones": {
+        "A": "m = (y2 + y1) / (x2 + x1)",
+        "B": "m = y2 · y1 / (x2 · x1)",
+        "C": "m = (y2 − y1) / (x2 − x1)",
+        "D": "m = (x2 − x1) / (y2 − y1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 23,
+      "pregunta": "En Cohen-Sutherland, si el bit 0 de C(P1) es 1, la línea interseca con:",
+      "opciones": {
+        "A": "El límite superior (y3 = ymax)",
+        "B": "El límite inferior (y3 = ymin)",
+        "C": "El límite derecho (x3 = xmax)",
+        "D": "El límite izquierdo (x3 = xmin)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 24,
+      "pregunta": "En Cohen-Sutherland, si el bit 1 de C(P1) es 1, la línea interseca con:",
+      "opciones": {
+        "A": "El límite inferior",
+        "B": "El límite superior",
+        "C": "El límite derecho (x3 = xmax)",
+        "D": "El límite izquierdo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 25,
+      "pregunta": "En Cohen-Sutherland, si el bit 2 de C(P1) es 1, la línea interseca con:",
+      "opciones": {
+        "A": "El límite derecho",
+        "B": "El límite izquierdo",
+        "C": "El límite superior",
+        "D": "El límite inferior (y3 = ymin)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 26,
+      "pregunta": "En Cohen-Sutherland, si el bit 3 de C(P1) es 1, la línea interseca con:",
+      "opciones": {
+        "A": "El límite derecho",
+        "B": "El límite superior (y3 = ymax)",
+        "C": "El límite izquierdo",
+        "D": "El límite inferior"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 27,
+      "pregunta": "Al intersecar con un límite vertical (x3 = xmin o xmax) en Cohen-Sutherland, y3 se calcula como:",
+      "opciones": {
+        "A": "y3 = y1 + (x3 − x1)/m",
+        "B": "y3 = x1 + m(y1 − x3)",
+        "C": "y3 = y1 + m(x3 − x1)",
+        "D": "y3 = m · x3"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 28,
+      "pregunta": "Al intersecar con un límite horizontal (y3 = ymin o ymax) en Cohen-Sutherland, x3 se calcula como:",
+      "opciones": {
+        "A": "x3 = x1 · m",
+        "B": "x3 = x1 + (y3 − y1)/m",
+        "C": "x3 = y3 / m",
+        "D": "x3 = x1 + m(y3 − y1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 29,
+      "pregunta": "Tras calcular la intersección P3 en Cohen-Sutherland:",
+      "opciones": {
+        "A": "Se descarta el tramo P1–P3 y se aplica de nuevo el algoritmo sobre P3–P2",
+        "B": "Se descarta toda la línea",
+        "C": "Se dibuja directamente P1–P3",
+        "D": "Se acepta el tramo P1–P3"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 30,
+      "pregunta": "En Cohen-Sutherland, el proceso de sustituir un extremo exterior por su intersección se repite:",
+      "opciones": {
+        "A": "Hasta que la pendiente sea 0",
+        "B": "Hasta aceptar o rechazar el segmento",
+        "C": "Exactamente cuatro veces",
+        "D": "Exactamente una vez"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 31,
+      "pregunta": "Para volúmenes de visión 3D, los códigos de Cohen-Sutherland se amplían a:",
+      "opciones": {
+        "A": "8 bits",
+        "B": "4 bits",
+        "C": "6 bits",
+        "D": "3 bits"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 32,
+      "pregunta": "En Cohen-Sutherland 3D, el bit 4 indica:",
+      "opciones": {
+        "A": "zmin > z",
+        "B": "y > ymax",
+        "C": "x > xmax",
+        "D": "z > zmax"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 33,
+      "pregunta": "En Cohen-Sutherland 3D, el bit 5 indica:",
+      "opciones": {
+        "A": "zmin > z",
+        "B": "ymin > y",
+        "C": "z > zmax",
+        "D": "xmin > x"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 34,
+      "pregunta": "El algoritmo de Cyrus-Beck permite ventanas de recorte:",
+      "opciones": {
+        "A": "Convexas",
+        "B": "Con agujeros",
+        "C": "Cóncavas",
+        "D": "Solo rectangulares"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 35,
+      "pregunta": "Cyrus-Beck busca:",
+      "opciones": {
+        "A": "Las intersecciones entre dos polígonos cóncavos",
+        "B": "Los puntos de corte del segmento con las rectas soporte de las aristas del polígono de recorte",
+        "C": "La lista de vértices del polígono sujeto",
+        "D": "Los códigos de región de los extremos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 36,
+      "pregunta": "Cyrus-Beck utiliza la ecuación paramétrica de la recta:",
+      "opciones": {
+        "A": "Ax + By + C = 0",
+        "B": "P(t) = P0 + (P1 − P0)·t, con 0 ≤ t ≤ 1",
+        "C": "y = mx + b",
+        "D": "P(t) = P0 · t + P1"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 37,
+      "pregunta": "En Cyrus-Beck, la intersección con la recta soporte de una arista se produce cuando:",
+      "opciones": {
+        "A": "Ni · D = 1",
+        "B": "Ni × [P(t) − PFi] = 0",
+        "C": "P(t) = PFi",
+        "D": "Ni · [P(t) − PFi] = 0"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 38,
+      "pregunta": "En Cyrus-Beck, el valor de t de intersección es:",
+      "opciones": {
+        "A": "t = (Ni · D) / (Ni · P0)",
+        "B": "t = −Ni · [P0 − PFi] / (Ni · D)",
+        "C": "t = −Ni · D / (Ni · P0)",
+        "D": "t = Ni · [P0 − PFi] / (Ni · D)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 39,
+      "pregunta": "En Cyrus-Beck, el vector D es:",
+      "opciones": {
+        "A": "D = P0 − P1",
+        "B": "La normal de la arista",
+        "C": "D = P0 + P1",
+        "D": "D = P1 − P0"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 40,
+      "pregunta": "En Cyrus-Beck, Ni es:",
+      "opciones": {
+        "A": "La dirección de la arista",
+        "B": "El vector D normalizado",
+        "C": "La normal interior de la arista i",
+        "D": "La normal exterior de la arista i"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 41,
+      "pregunta": "En Cyrus-Beck, PFi es:",
+      "opciones": {
+        "A": "El punto de intersección",
+        "B": "Un punto de la frontera Fi (por ejemplo, un vértice de la arista)",
+        "C": "El primer extremo del segmento",
+        "D": "El punto medio del segmento"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 42,
+      "pregunta": "En Cyrus-Beck, si Ni · [P(t) − PFi] < 0, el punto P(t) está:",
+      "opciones": {
+        "A": "En el lado exterior de la frontera",
+        "B": "En el infinito",
+        "C": "Sobre la frontera",
+        "D": "En el lado interior de la frontera"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 43,
+      "pregunta": "En Cyrus-Beck, si Ni · [P(t) − PFi] > 0, el punto P(t) está:",
+      "opciones": {
+        "A": "Sobre la frontera",
+        "B": "En el lado exterior de la frontera",
+        "C": "En el lado interior de la frontera",
+        "D": "Dentro del polígono siempre"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 44,
+      "pregunta": "En Cyrus-Beck, si Ni · D = 0, la recta es:",
+      "opciones": {
+        "A": "Perpendicular a la frontera Fi",
+        "B": "Degenerada siempre",
+        "C": "Paralela a la frontera Fi",
+        "D": "Coincidente con la normal"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 45,
+      "pregunta": "En Cyrus-Beck, si D = 0:",
+      "opciones": {
+        "A": "El segmento es degenerado (un punto)",
+        "B": "La recta es perpendicular a la frontera",
+        "C": "La normal está mal definida",
+        "D": "La recta es paralela a la frontera"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 46,
+      "pregunta": "En Cyrus-Beck, si Ni · D = 0 y Ni · (P0 − PFi) > 0:",
+      "opciones": {
+        "A": "Se calcula t normalmente",
+        "B": "Se rechaza el segmento (es exterior y paralelo a la frontera)",
+        "C": "Se etiqueta como PE",
+        "D": "Se acepta el segmento completo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 47,
+      "pregunta": "En Cyrus-Beck, si Ni · D = 0 y Ni · (P0 − PFi) ≤ 0:",
+      "opciones": {
+        "A": "Se continúa con la siguiente frontera",
+        "B": "Se rechaza el segmento",
+        "C": "Se intercambian P0 y P1",
+        "D": "Se termina el algoritmo aceptando"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 48,
+      "pregunta": "En Cyrus-Beck, el punto es potencialmente entrante (PE) cuando:",
+      "opciones": {
+        "A": "Ni · D < 0",
+        "B": "Ni · D = 0",
+        "C": "Ni · D > 0",
+        "D": "t > 1"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 49,
+      "pregunta": "En Cyrus-Beck, el punto es potencialmente saliente (PS) cuando:",
+      "opciones": {
+        "A": "Ni · D < 0",
+        "B": "Ni · D > 0",
+        "C": "t < 0",
+        "D": "Ni · D = 0"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 50,
+      "pregunta": "En Cyrus-Beck, los valores iniciales de tE y tS son:",
+      "opciones": {
+        "A": "tE = 1 y tS = 0",
+        "B": "tE = −∞ y tS = +∞",
+        "C": "tE = 0 y tS = 1",
+        "D": "tE = 0 y tS = 0"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 51,
+      "pregunta": "En Cyrus-Beck, para un punto PE se actualiza:",
+      "opciones": {
+        "A": "tS = min(t, tS)",
+        "B": "tS = max(t, tS)",
+        "C": "tE = max(t, tE)",
+        "D": "tE = min(t, tE)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 52,
+      "pregunta": "En Cyrus-Beck, para un punto PS se actualiza:",
+      "opciones": {
+        "A": "tE = min(t, tE)",
+        "B": "tS = max(t, tS)",
+        "C": "tE = max(t, tE)",
+        "D": "tS = min(t, tS)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 53,
+      "pregunta": "Al final de Cyrus-Beck, si tE > tS:",
+      "opciones": {
+        "A": "Se intercambian tE y tS",
+        "B": "Se rechaza el segmento",
+        "C": "Se devuelve el segmento [P(tE), P(tS)]",
+        "D": "Se devuelve el segmento original"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 54,
+      "pregunta": "Al final de Cyrus-Beck, si tE ≤ tS:",
+      "opciones": {
+        "A": "Se devuelve el segmento [P(tE), P(tS)]",
+        "B": "Se rechaza el segmento",
+        "C": "Se repite el algoritmo",
+        "D": "Se devuelve solo P(tE)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 55,
+      "pregunta": "En Cyrus-Beck, para una ventana rectangular, la normal del borde superior (WT) es:",
+      "opciones": {
+        "A": "(1, 0)",
+        "B": "(−1, 0)",
+        "C": "(0, −1)",
+        "D": "(0, 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 56,
+      "pregunta": "En Cyrus-Beck, para una ventana rectangular, la normal del borde inferior (WB) es:",
+      "opciones": {
+        "A": "(1, 0)",
+        "B": "(0, 1)",
+        "C": "(−1, 0)",
+        "D": "(0, −1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 57,
+      "pregunta": "En Cyrus-Beck, para una ventana rectangular, la normal del borde izquierdo (WL) es:",
+      "opciones": {
+        "A": "(0, −1)",
+        "B": "(1, 0)",
+        "C": "(0, 1)",
+        "D": "(−1, 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 58,
+      "pregunta": "En Cyrus-Beck, para una ventana rectangular, la normal del borde derecho (WR) es:",
+      "opciones": {
+        "A": "(1, 0)",
+        "B": "(0, −1)",
+        "C": "(−1, 0)",
+        "D": "(0, 1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 59,
+      "pregunta": "En Cyrus-Beck, para aristas arbitrarias procesadas en orden antihorario, la normal exterior se obtiene:",
+      "opciones": {
+        "A": "Como el propio vector dirección",
+        "B": "Rotando el vector dirección de la arista −90º: Nx = Ey, Ny = −Ex",
+        "C": "Rotando el vector dirección +90º: Nx = −Ey, Ny = Ex",
+        "D": "Como el vector dirección invertido"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 60,
+      "pregunta": "En Cyrus-Beck, ¿en qué orden deben procesarse las aristas del polígono de recorte para obtener la normal exterior rotando −90º?",
+      "opciones": {
+        "A": "En orden de longitud",
+        "B": "En cualquier orden",
+        "C": "En orden horario",
+        "D": "En orden antihorario"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 61,
+      "pregunta": "Al recortar polígonos, recortar independientemente cada arista como una línea:",
+      "opciones": {
+        "A": "Es el método recomendado",
+        "B": "No reconstruye correctamente la topología y genera inconsistencias",
+        "C": "Siempre produce un único polígono correcto",
+        "D": "Es equivalente a Weiler-Atherton"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 62,
+      "pregunta": "El resultado de recortar un polígono debe ser:",
+      "opciones": {
+        "A": "Ninguno, uno o varios polígonos",
+        "B": "Siempre un triángulo",
+        "C": "Siempre un conjunto de segmentos",
+        "D": "Siempre exactamente un polígono"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 63,
+      "pregunta": "El algoritmo de Sutherland-Hodgman funciona para polígonos de recorte:",
+      "opciones": {
+        "A": "Convexos",
+        "B": "De cualquier forma",
+        "C": "Cóncavos",
+        "D": "Con agujeros"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 64,
+      "pregunta": "En Sutherland-Hodgman, el polígono sujeto (a recortar) es preferible que sea:",
+      "opciones": {
+        "A": "Con agujeros",
+        "B": "Convexo, ya que con cóncavos pueden generarse inconsistencias",
+        "C": "Cóncavo",
+        "D": "Un triángulo obligatoriamente"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 65,
+      "pregunta": "Sutherland-Hodgman se basa en:",
+      "opciones": {
+        "A": "Alternar entre los bordes de dos polígonos",
+        "B": "El procesamiento iterativo por fronteras usando cuatro reglas",
+        "C": "La ecuación paramétrica con tE y tS",
+        "D": "Códigos de región de 4 bits"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 66,
+      "pregunta": "En Sutherland-Hodgman, caso fuera-dentro (primer vértice fuera, segundo dentro):",
+      "opciones": {
+        "A": "No se añade nada",
+        "B": "Se añaden la intersección Ij y el vértice Pi+1",
+        "C": "Se añade solo Pi+1",
+        "D": "Se añade solo la intersección Ij"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 67,
+      "pregunta": "En Sutherland-Hodgman, caso dentro-fuera (primer vértice dentro, segundo fuera):",
+      "opciones": {
+        "A": "No se añade nada",
+        "B": "Se añade solo la intersección Ij",
+        "C": "Se añaden Ij y Pi+1",
+        "D": "Se añade solo Pi+1"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 68,
+      "pregunta": "En Sutherland-Hodgman, caso fuera-fuera:",
+      "opciones": {
+        "A": "Se añade la intersección",
+        "B": "No se añade ningún vértice",
+        "C": "Se añaden ambos vértices",
+        "D": "Se añade Pi+1"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 69,
+      "pregunta": "En Sutherland-Hodgman, caso dentro-dentro:",
+      "opciones": {
+        "A": "Se añade la intersección",
+        "B": "Se añade el segundo vértice Pi+1",
+        "C": "Se añaden ambos vértices",
+        "D": "No se añade nada"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 70,
+      "pregunta": "En Sutherland-Hodgman, la lista de salida tras procesar una frontera:",
+      "opciones": {
+        "A": "Se une con la lista original",
+        "B": "Se ordena por coordenada x",
+        "C": "Se convierte en la lista de entrada de la siguiente frontera",
+        "D": "Se descarta"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 71,
+      "pregunta": "Sutherland-Hodgman utiliza para representar el polígono resultante:",
+      "opciones": {
+        "A": "Dos listas enlazadas",
+        "B": "Una única lista de vértices",
+        "C": "Un árbol binario",
+        "D": "Una matriz de adyacencia"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 72,
+      "pregunta": "¿Por qué Sutherland-Hodgman puede fallar con polígonos sujetos cóncavos?",
+      "opciones": {
+        "A": "Porque necesita 6 bits por vértice",
+        "B": "Porque no puede calcular intersecciones",
+        "C": "Porque una única lista de salida puede ser insuficiente si la intersección tiene varias componentes desconectadas",
+        "D": "Porque requiere ventanas rectangulares"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 73,
+      "pregunta": "En Sutherland-Hodgman, como solo hay una lista de salida:",
+      "opciones": {
+        "A": "El primer vértice se descarta",
+        "B": "No se cierra el polígono",
+        "C": "Se generan siempre triángulos",
+        "D": "El último vértice de la lista siempre se une con el primero"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 74,
+      "pregunta": "Con un polígono sujeto cóncavo, Sutherland-Hodgman puede producir:",
+      "opciones": {
+        "A": "Un polígono con más agujeros",
+        "B": "Un resultado vacío siempre",
+        "C": "Aristas extra (degeneradas) que unen componentes que deberían estar separadas",
+        "D": "Un error de división por cero"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 75,
+      "pregunta": "El algoritmo de Weiler-Atherton permite recortar:",
+      "opciones": {
+        "A": "Polígonos convexos o cóncavos sin inconsistencias, obteniendo múltiples componentes",
+        "B": "Solo polígonos convexos",
+        "C": "Solo con ventanas rectangulares",
+        "D": "Solo líneas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 76,
+      "pregunta": "La idea principal de Weiler-Atherton es:",
+      "opciones": {
+        "A": "Calcular tE y tS",
+        "B": "Alternar entre los bordes del polígono sujeto y el de recorte según reglas de entrada y salida",
+        "C": "Usar códigos de región de 4 bits",
+        "D": "Procesar las fronteras de una en una con cuatro reglas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 77,
+      "pregunta": "En Weiler-Atherton, ambos contornos deben almacenarse:",
+      "opciones": {
+        "A": "Ordenados por coordenada x",
+        "B": "Con orientaciones opuestas",
+        "C": "Con la misma orientación",
+        "D": "Sin orientación"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 78,
+      "pregunta": "En Weiler-Atherton, en una intersección de entrada:",
+      "opciones": {
+        "A": "Se siguen los límites del polígono sujeto según su ordenación de vértices",
+        "B": "Se descarta la intersección",
+        "C": "Se termina el recorrido",
+        "D": "Se siguen los límites del polígono de recorte"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 79,
+      "pregunta": "En Weiler-Atherton, en una intersección de salida:",
+      "opciones": {
+        "A": "Se siguen los límites del polígono sujeto",
+        "B": "Se siguen los límites del polígono de recorte según su ordenación de vértices",
+        "C": "Se descarta el polígono",
+        "D": "Se termina el algoritmo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 80,
+      "pregunta": "En Weiler-Atherton, una intersección es de entrada si:",
+      "opciones": {
+        "A": "Se pasa de dentro a fuera",
+        "B": "Coincide con un vértice",
+        "C": "Es la primera calculada",
+        "D": "Se pasa de fuera a dentro del polígono de recorte"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 81,
+      "pregunta": "En Weiler-Atherton, una intersección es de salida si:",
+      "opciones": {
+        "A": "Está sobre una arista horizontal",
+        "B": "Se pasa de fuera a dentro",
+        "C": "Es la última calculada",
+        "D": "Se pasa de dentro a fuera del polígono de recorte"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 82,
+      "pregunta": "Si la ventana de recorte es convexa, para encontrar intersecciones en Weiler-Atherton pueden ayudar:",
+      "opciones": {
+        "A": "Las ideas de Cyrus-Beck",
+        "B": "Los árboles BSP",
+        "C": "Las coordenadas homogéneas",
+        "D": "Los códigos de Cohen-Sutherland exclusivamente"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 83,
+      "pregunta": "En Weiler-Atherton se crean:",
+      "opciones": {
+        "A": "Un árbol de intersecciones",
+        "B": "Una única lista de vértices",
+        "C": "Dos listas, una por polígono, con vértices e intersecciones",
+        "D": "Cuatro listas, una por frontera"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 84,
+      "pregunta": "En Weiler-Atherton, cada intersección se inserta:",
+      "opciones": {
+        "A": "Al final de ambas listas",
+        "B": "En su posición en ambas listas, etiquetada como entrada/salida y enlazada entre sus dos apariciones",
+        "C": "Solo en la lista de recorte",
+        "D": "Solo en la lista del sujeto"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 85,
+      "pregunta": "En Weiler-Atherton, el recorrido comienza:",
+      "opciones": {
+        "A": "En el vértice de menor x",
+        "B": "En la lista del polígono sujeto, por una intersección de entrada no visitada",
+        "C": "En la lista del polígono de recorte, por cualquier vértice",
+        "D": "En una intersección de salida"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 86,
+      "pregunta": "En Weiler-Atherton, el recorrido de un polígono resultante termina cuando:",
+      "opciones": {
+        "A": "Se llega al último vértice de la lista",
+        "B": "Se alcanza la primera intersección de salida",
+        "C": "Se recorren 4 fronteras",
+        "D": "Se regresa a la intersección inicial"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 87,
+      "pregunta": "En Weiler-Atherton, el proceso global se repite:",
+      "opciones": {
+        "A": "Exactamente una vez",
+        "B": "Cuatro veces",
+        "C": "Hasta que tE > tS",
+        "D": "Mientras existan intersecciones de entrada no visitadas"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 88,
+      "pregunta": "En Weiler-Atherton, el cambio de un polígono a otro se realiza:",
+      "opciones": {
+        "A": "Mediante códigos de región",
+        "B": "Invirtiendo la orientación",
+        "C": "Mediante los enlaces entre las dos copias de cada punto de intersección",
+        "D": "Recalculando las intersecciones"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 89,
+      "pregunta": "En Weiler-Atherton, si no hay intersecciones y el polígono sujeto está dentro del de recorte:",
+      "opciones": {
+        "A": "Se devuelven ambos",
+        "B": "Se devuelve el sujeto",
+        "C": "Se devuelve el polígono de recorte",
+        "D": "El resultado es vacío"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 90,
+      "pregunta": "En Weiler-Atherton, si no hay intersecciones y el polígono de recorte está dentro del sujeto:",
+      "opciones": {
+        "A": "Se devuelve el sujeto",
+        "B": "Se devuelve el polígono de recorte",
+        "C": "Se devuelven ambos",
+        "D": "El resultado es vacío"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 91,
+      "pregunta": "En Weiler-Atherton, si no hay intersecciones y los polígonos son disjuntos:",
+      "opciones": {
+        "A": "Se devuelve el polígono de recorte",
+        "B": "El resultado es vacío",
+        "C": "Se devuelve la unión",
+        "D": "Se devuelve el sujeto"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 92,
+      "pregunta": "En OpenGL, antes del clipping, la primitiva se transforma a:",
+      "opciones": {
+        "A": "Coordenadas del modelo",
+        "B": "Coordenadas de clip",
+        "C": "Coordenadas de pantalla",
+        "D": "Coordenadas NDC"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 93,
+      "pregunta": "En OpenGL, la región válida en coordenadas de clip está delimitada por:",
+      "opciones": {
+        "A": "Cuatro rectas en 2D",
+        "B": "Una esfera de radio wc",
+        "C": "El cubo [0,1]³",
+        "D": "Seis hiperplanos: −wc ≤ xc ≤ wc, −wc ≤ yc ≤ wc, −wc ≤ zc ≤ wc"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 94,
+      "pregunta": "En OpenGL, la primitiva se recorta contra cada hiperplano en un procedimiento similar a:",
+      "opciones": {
+        "A": "Bresenham",
+        "B": "Sutherland-Hodgman",
+        "C": "Cohen-Sutherland 2D",
+        "D": "Weiler-Atherton"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 95,
+      "pregunta": "En el espacio de recorte, los límites del volumen:",
+      "opciones": {
+        "A": "Son fijos en [−1, 1]",
+        "B": "Dependen solo de la resolución",
+        "C": "Dependen de wc, que puede ser distinto para cada vértice",
+        "D": "Son fijos en [0, 1]"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 96,
+      "pregunta": "Para obtener el vértice generado cuando una arista atraviesa un plano de clipping en OpenGL se usa:",
+      "opciones": {
+        "A": "La ecuación paramétrica de la recta P(t) = Pa + t(Pb − Pa)",
+        "B": "El algoritmo de Bresenham",
+        "C": "La ecuación implícita del círculo",
+        "D": "Los códigos de región"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 97,
+      "pregunta": "En el recorte de OpenGL, el valor de t de la intersección se utiliza también para:",
+      "opciones": {
+        "A": "Calcular la matriz de proyección",
+        "B": "Interpolar los atributos asociados al vértice: AI = (1 − t)Aa + tAb",
+        "C": "Determinar el código de región",
+        "D": "Calcular la normal del plano"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 98,
+      "pregunta": "En OpenGL, el clipping se realiza:",
+      "opciones": {
+        "A": "Antes de la división de perspectiva, en coordenadas homogéneas 4D",
+        "B": "Después de la división de perspectiva",
+        "C": "En la fase de aplicación",
+        "D": "Después de la rasterización"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 99,
+      "pregunta": "Tras el clipping en OpenGL, cada vértice de la parte válida:",
+      "opciones": {
+        "A": "Se transforma de coordenadas de clip a NDC dividiendo por wc",
+        "B": "Se multiplica por wc",
+        "C": "Se transforma a coordenadas del modelo",
+        "D": "Se descarta"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 100,
+      "pregunta": "Tras la división por w, la forma proyectada del polígono recortado:",
+      "opciones": {
+        "A": "Puede cambiar, pero se mantiene su conectividad",
+        "B": "Se convierte siempre en un triángulo",
+        "C": "Pierde su conectividad",
+        "D": "No cambia nunca"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 101,
+      "pregunta": "El clipping de una primitiva triangular puede producir:",
+      "opciones": {
+        "A": "Una línea",
+        "B": "Siempre un triángulo",
+        "C": "Un polígono con más de tres vértices",
+        "D": "Siempre un cuadrado"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 102,
+      "pregunta": "Para su rasterización, el polígono resultante del clipping:",
+      "opciones": {
+        "A": "Se descarta si tiene más de 3 vértices",
+        "B": "Se convierte en vóxeles",
+        "C": "Puede descomponerse internamente en triángulos equivalentes",
+        "D": "Se rasteriza como líneas"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 103,
+      "pregunta": "Los triángulos obtenidos al descomponer el polígono recortado:",
+      "opciones": {
+        "A": "Se solapan parcialmente",
+        "B": "Cubren una región mayor",
+        "C": "Cubren exactamente la misma región, sin solapamientos ni huecos",
+        "D": "Dejan huecos entre ellos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 104,
+      "pregunta": "¿Qué algoritmo de recorte de líneas solo admite ventanas rectangulares?",
+      "opciones": {
+        "A": "Sutherland-Hodgman",
+        "B": "Weiler-Atherton",
+        "C": "Cohen-Sutherland",
+        "D": "Cyrus-Beck"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 105,
+      "pregunta": "¿Qué algoritmo de recorte de polígonos admite polígonos sujetos cóncavos sin inconsistencias?",
+      "opciones": {
+        "A": "Sutherland-Hodgman",
+        "B": "Cohen-Sutherland",
+        "C": "Weiler-Atherton",
+        "D": "Cyrus-Beck"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 106,
+      "pregunta": "¿Qué algoritmo de recorte de líneas admite ventanas convexas arbitrarias?",
+      "opciones": {
+        "A": "Sutherland-Hodgman",
+        "B": "Cyrus-Beck",
+        "C": "Cohen-Sutherland",
+        "D": "Weiler-Atherton"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 107,
+      "pregunta": "¿Qué algoritmo de recorte de polígonos usa una única lista de vértices de salida?",
+      "opciones": {
+        "A": "Cohen-Sutherland",
+        "B": "Sutherland-Hodgman",
+        "C": "Cyrus-Beck",
+        "D": "Weiler-Atherton"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 108,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6, ¿cuál es el código del punto (-2, 2)?",
+      "opciones": {
+        "A": "1010",
+        "B": "0000",
+        "C": "1111",
+        "D": "0101"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 109,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6. ¿Cómo se clasifica el segmento de P1 = (1, 2) a P2 = (2, 6)?",
+      "opciones": {
+        "A": "Caso de recorte (hay que calcular intersecciones)",
+        "B": "Rechazo trivial (se descarta)",
+        "C": "Aceptación trivial (se dibuja tal cual)",
+        "D": "Línea degenerada (no se procesa)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 110,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0110 y C(P2) = 0000, ¿cuánto vale C(P1) AND C(P2)?",
+      "opciones": {
+        "A": "1010",
+        "B": "0101",
+        "C": "0110",
+        "D": "0000"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 111,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 0, xmax = 10, ymin = 0, ymax = 10. El segmento va de P1 = (8.5, 12) (exterior) a P2 = (7.5, 7.5) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(7.5, 10)",
+        "B": "(8.056, 10)",
+        "C": "(8.056, 12)",
+        "D": "(-0.5, 10)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 112,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (564, 467) → V1 = (255, 124)?",
+      "opciones": {
+        "A": "(343, -309)",
+        "B": "(-309, -343)",
+        "C": "(-343, 309)",
+        "D": "(309, 343)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 113,
+      "pregunta": "Cyrus-Beck: Ni = (-3, 0), PFi = (-2, -9), P0 = (-4, -7), P1 = (3, 6). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "0.286",
+        "B": "-6",
+        "C": "3.5",
+        "D": "-0.286"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 114,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (350, 40), P1 = (240, 460) se obtiene tE = 0.93 y tS = 0.37. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se rechaza el segmento porque tE > tS",
+        "B": "Se intercambian tE y tS y se acepta",
+        "C": "Se devuelve el segmento original completo",
+        "D": "Se devuelve el segmento de (309.3, 195.4) a (247.7, 430.6)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 115,
+      "pregunta": "Recorte de puntos con ventana xmin = 1, xmax = 6, ymin = 1, ymax = 6: ¿qué ocurre con el punto (-1, 1)?",
+      "opciones": {
+        "A": "Dentro: se conserva",
+        "B": "Depende del orden de los vértices",
+        "C": "Fuera: se descarta",
+        "D": "Se recorta a la frontera más cercana"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 116,
+      "pregunta": "Un vértice en coordenadas de clip vale (4, 5, 0, 2). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Solo se puede saber tras la división de perspectiva",
+        "B": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)",
+        "C": "Depende de la matriz de vista",
+        "D": "Está fuera del volumen de recorte"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 117,
+      "pregunta": "Una arista entre Pa (color (0, 0.5, 0.5)) y Pb (color (0, 0.8, 1)) corta un plano de clipping en t = 0.75. Con AI = (1 − t)Aa + tAb, ¿qué color tiene el nuevo vértice?",
+      "opciones": {
+        "A": "(0, 0.65, 0.75)",
+        "B": "(0, 0.575, 0.625)",
+        "C": "(0, 0.6, 0.75)",
+        "D": "(0, 0.725, 0.875)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 118,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista P2 → P5 contra la frontera actual, P2 y P5 están dentro (I0 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "Se añade solo P5",
+        "B": "Se añaden I0 y P5",
+        "C": "Se añade solo I0",
+        "D": "No se añade ningún vértice"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 119,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (1.5, 1.5, 0)?",
+      "opciones": {
+        "A": "001010",
+        "B": "111111",
+        "C": "010100",
+        "D": "000000"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 120,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6, ¿cuál es el código del punto (1, 1)?",
+      "opciones": {
+        "A": "1111",
+        "B": "0101",
+        "C": "1010",
+        "D": "0000"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 121,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -3, xmax = 4, ymin = 2, ymax = 10. ¿Cómo se clasifica el segmento de P1 = (-5, 10) a P2 = (-2, 7)?",
+      "opciones": {
+        "A": "Caso de recorte (hay que calcular intersecciones)",
+        "B": "Rechazo trivial (se descarta)",
+        "C": "Aceptación trivial (se dibuja tal cual)",
+        "D": "Línea degenerada (no se procesa)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 122,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 1000 y C(P2) = 0000, ¿cuánto vale C(P1) OR C(P2)?",
+      "opciones": {
+        "A": "0101",
+        "B": "1000",
+        "C": "0000",
+        "D": "1010"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 123,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 2, xmax = 3, ymin = 1, ymax = 2. El segmento va de P1 = (2.15, 0.8) (exterior) a P2 = (2.25, 1.5) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(2.179, 0.8)",
+        "B": "(2.179, 1)",
+        "C": "(3.55, 1)",
+        "D": "(2.25, 1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 124,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (73, 467) → V1 = (497, 212)?",
+      "opciones": {
+        "A": "(-255, -424)",
+        "B": "(255, 424)",
+        "C": "(-424, 255)",
+        "D": "(424, -255)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 125,
+      "pregunta": "Cyrus-Beck: Ni = (-5, 0), PFi = (-9, 5), P0 = (-7, -9), P1 = (6, -2). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "0.154",
+        "B": "-0.154",
+        "C": "10",
+        "D": "-6.5"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 126,
+      "pregunta": "En Cyrus-Beck, para una frontera con normal exterior Ni = (-1, -6) y un segmento con D = P1 − P0 = (6, 8), ¿cómo se etiqueta la intersección?",
+      "opciones": {
+        "A": "Potencialmente entrante (PE): se actualiza tE = max(t, tE)",
+        "B": "Potencialmente saliente (PS): se actualiza tS = max(t, tS)",
+        "C": "Potencialmente entrante (PE): se actualiza tE = min(t, tE)",
+        "D": "Potencialmente saliente (PS): se actualiza tS = min(t, tS)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 127,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (0, 300), P1 = (320, 120) se obtiene tE = 0.13 y tS = 0.44. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se devuelve el segmento de (41.6, 276.6) a (140.8, 220.8)",
+        "B": "Se devuelve el segmento de (0, 300) a (320, 120)",
+        "C": "Se rechaza el segmento",
+        "D": "Se devuelve el segmento de (140.8, 220.8) a (320, 120)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 128,
+      "pregunta": "Recorte de puntos con ventana xmin = 1, xmax = 9, ymin = -4, ymax = 3: ¿qué ocurre con el punto (6, -3)?",
+      "opciones": {
+        "A": "Se recorta a la frontera más cercana",
+        "B": "Fuera: se descarta",
+        "C": "Dentro: se conserva",
+        "D": "Depende del orden de los vértices"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 129,
+      "pregunta": "Un vértice en coordenadas de clip vale (-2, -2, 2, 1). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Está fuera del volumen de recorte",
+        "B": "Solo se puede saber tras la división de perspectiva",
+        "C": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)",
+        "D": "Depende de la matriz de vista"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 130,
+      "pregunta": "Una arista entre Pa (color (0.2, 0.2, 0)) y Pb (color (0.4, 1, 1)) corta un plano de clipping en t = 0.6. Con AI = (1 − t)Aa + tAb, ¿qué color tiene el nuevo vértice?",
+      "opciones": {
+        "A": "(0.28, 0.52, 0.4)",
+        "B": "(0.24, 0.6, 0.6)",
+        "C": "(0.32, 0.68, 0.6)",
+        "D": "(0.3, 0.6, 0.5)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 131,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista P3 → P1 contra la frontera actual, P3 está fuera y P1 está dentro (I3 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "Se añade solo P1",
+        "B": "Se añaden I3 y P1",
+        "C": "No se añade ningún vértice",
+        "D": "Se añade solo I3"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 132,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (2, -2, -1.5)?",
+      "opciones": {
+        "A": "000000",
+        "B": "010110",
+        "C": "011001",
+        "D": "100110"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 133,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = 1, xmax = 6, ymin = -1, ymax = 4, ¿cuál es el código del punto (4, 4)?",
+      "opciones": {
+        "A": "0000",
+        "B": "1010",
+        "C": "0101",
+        "D": "1111"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 134,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -4, xmax = 4, ymin = -3, ymax = 2. ¿Cómo se clasifica el segmento de P1 = (7, -3) a P2 = (4, 1)?",
+      "opciones": {
+        "A": "Aceptación trivial (se dibuja tal cual)",
+        "B": "Línea degenerada (no se procesa)",
+        "C": "Caso de recorte (hay que calcular intersecciones)",
+        "D": "Rechazo trivial (se descarta)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 135,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0110 y C(P2) = 0010, ¿cuánto vale C(P1) AND C(P2)?",
+      "opciones": {
+        "A": "0010",
+        "B": "0000",
+        "C": "0110",
+        "D": "0100"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 136,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 2, xmax = 3, ymin = 1, ymax = 2. El segmento va de P1 = (2.05, 2.2) (exterior) a P2 = (2.25, 1.75) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(2.139, 2.2)",
+        "B": "(2.25, 2)",
+        "C": "(2.5, 2)",
+        "D": "(2.139, 2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 137,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (695, 247) → V1 = (844, 92)?",
+      "opciones": {
+        "A": "(155, 149)",
+        "B": "(149, -155)",
+        "C": "(-155, -149)",
+        "D": "(-149, 155)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 138,
+      "pregunta": "Cyrus-Beck: Ni = (2, 2), PFi = (0, 7), P0 = (4, -4), P1 = (-3, -3). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "-0.857",
+        "B": "-1.167",
+        "C": "1.167",
+        "D": "14"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 139,
+      "pregunta": "En Cyrus-Beck, para una frontera con normal exterior Ni = (5, -2) y un segmento con D = P1 − P0 = (-6, 9), ¿cómo se etiqueta la intersección?",
+      "opciones": {
+        "A": "Potencialmente saliente (PS): se actualiza tS = max(t, tS)",
+        "B": "Potencialmente saliente (PS): se actualiza tS = min(t, tS)",
+        "C": "Potencialmente entrante (PE): se actualiza tE = min(t, tE)",
+        "D": "Potencialmente entrante (PE): se actualiza tE = max(t, tE)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 140,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (160, 160), P1 = (370, 380) se obtiene tE = 0.1 y tS = 0.32. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se devuelve el segmento de (181, 182) a (227.2, 230.4)",
+        "B": "Se devuelve el segmento de (227.2, 230.4) a (370, 380)",
+        "C": "Se devuelve el segmento de (160, 160) a (370, 380)",
+        "D": "Se rechaza el segmento"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 141,
+      "pregunta": "Recorte de puntos con ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6: ¿qué ocurre con el punto (-4, -1)?",
+      "opciones": {
+        "A": "Depende del orden de los vértices",
+        "B": "Dentro: se conserva",
+        "C": "Fuera: se descarta",
+        "D": "Se recorta a la frontera más cercana"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 142,
+      "pregunta": "Un vértice en coordenadas de clip vale (1, 3, 1, 2). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Depende de la matriz de vista",
+        "B": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)",
+        "C": "Está fuera del volumen de recorte",
+        "D": "Solo se puede saber tras la división de perspectiva"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 143,
+      "pregunta": "Una arista entre Pa (color (0.2, 0.5, 0.5)) y Pb (color (0.8, 0, 0)) corta un plano de clipping en t = 0.8. Con AI = (1 − t)Aa + tAb, ¿qué color tiene el nuevo vértice?",
+      "opciones": {
+        "A": "(0.64, 0, 0)",
+        "B": "(0.68, 0.1, 0.1)",
+        "C": "(0.32, 0.4, 0.4)",
+        "D": "(0.5, 0.25, 0.25)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 144,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista V3 → P3 contra la frontera actual, V3 está dentro y P3 está fuera (I2 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "Se añade solo I2",
+        "B": "Se añade solo P3",
+        "C": "Se añaden I2 y P3",
+        "D": "No se añade ningún vértice"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 145,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (-0.5, -2, 2)?",
+      "opciones": {
+        "A": "001010",
+        "B": "100100",
+        "C": "000000",
+        "D": "010100"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 146,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6, ¿cuál es el código del punto (1, 5)?",
+      "opciones": {
+        "A": "1010",
+        "B": "0101",
+        "C": "1111",
+        "D": "0000"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 147,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -2, xmax = 3, ymin = -1, ymax = 4. ¿Cómo se clasifica el segmento de P1 = (-1, -3) a P2 = (5, -3)?",
+      "opciones": {
+        "A": "Aceptación trivial (se dibuja tal cual)",
+        "B": "Línea degenerada (no se procesa)",
+        "C": "Caso de recorte (hay que calcular intersecciones)",
+        "D": "Rechazo trivial (se descarta)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 148,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0110 y C(P2) = 0110, ¿cuánto vale C(P1) OR C(P2)?",
+      "opciones": {
+        "A": "1010",
+        "B": "0101",
+        "C": "0110",
+        "D": "0000"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 149,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 2, xmax = 3, ymin = 1, ymax = 2. El segmento va de P1 = (1.8, 1.7) (exterior) a P2 = (2.75, 1.5) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(2, 1.658)",
+        "B": "(2, 0.75)",
+        "C": "(2, 1.5)",
+        "D": "(1.8, 1.658)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 150,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (700, 309) → V1 = (887, 651)?",
+      "opciones": {
+        "A": "(342, -187)",
+        "B": "(187, 342)",
+        "C": "(-342, 187)",
+        "D": "(-187, -342)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 151,
+      "pregunta": "Cyrus-Beck: Ni = (0, -4), PFi = (0, -3), P0 = (-4, 10), P1 = (5, 9). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "52",
+        "B": "0.077",
+        "C": "-13",
+        "D": "13"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 152,
+      "pregunta": "En Cyrus-Beck, para una frontera con normal exterior Ni = (-1, 0) y un segmento con D = P1 − P0 = (9, 4), ¿cómo se etiqueta la intersección?",
+      "opciones": {
+        "A": "Potencialmente saliente (PS): se actualiza tS = max(t, tS)",
+        "B": "Potencialmente entrante (PE): se actualiza tE = max(t, tE)",
+        "C": "Potencialmente entrante (PE): se actualiza tE = min(t, tE)",
+        "D": "Potencialmente saliente (PS): se actualiza tS = min(t, tS)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 153,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (50, 160), P1 = (290, 340) se obtiene tE = 0.11 y tS = 0.62. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se devuelve el segmento de (198.8, 271.6) a (290, 340)",
+        "B": "Se devuelve el segmento de (76.4, 179.8) a (198.8, 271.6)",
+        "C": "Se rechaza el segmento",
+        "D": "Se devuelve el segmento de (50, 160) a (290, 340)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 154,
+      "pregunta": "Recorte de puntos con ventana xmin = -3, xmax = 2, ymin = -2, ymax = 3: ¿qué ocurre con el punto (1, -3)?",
+      "opciones": {
+        "A": "Dentro: se conserva",
+        "B": "Fuera: se descarta",
+        "C": "Depende del orden de los vértices",
+        "D": "Se recorta a la frontera más cercana"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 155,
+      "pregunta": "Un vértice en coordenadas de clip vale (-1, 6, 0, 4). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Está fuera del volumen de recorte",
+        "B": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)",
+        "C": "Solo se puede saber tras la división de perspectiva",
+        "D": "Depende de la matriz de vista"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 156,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista P6 → V3 contra la frontera actual, P6 y V3 están fuera (I1 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "No se añade ningún vértice",
+        "B": "Se añade solo I1",
+        "C": "Se añaden I1 y V3",
+        "D": "Se añade solo V3"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 157,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (-1.5, -2, -0.5)?",
+      "opciones": {
+        "A": "111111",
+        "B": "000000",
+        "C": "000101",
+        "D": "101000"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 158,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6, ¿cuál es el código del punto (-5, -2)?",
+      "opciones": {
+        "A": "1001",
+        "B": "0000",
+        "C": "0101",
+        "D": "1010"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 159,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6. ¿Cómo se clasifica el segmento de P1 = (5, 9) a P2 = (1, 5)?",
+      "opciones": {
+        "A": "Línea degenerada (no se procesa)",
+        "B": "Caso de recorte (hay que calcular intersecciones)",
+        "C": "Aceptación trivial (se dibuja tal cual)",
+        "D": "Rechazo trivial (se descarta)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 160,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0100 y C(P2) = 0101, ¿cuánto vale C(P1) OR C(P2)?",
+      "opciones": {
+        "A": "0000",
+        "B": "0101",
+        "C": "0001",
+        "D": "0100"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 161,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 2, xmax = 3, ymin = 1, ymax = 2. El segmento va de P1 = (2.85, 0.8) (exterior) a P2 = (2.75, 1.75) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(2.75, 1)",
+        "B": "(2.829, 0.8)",
+        "C": "(0.95, 1)",
+        "D": "(2.829, 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 162,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (449, 356) → V1 = (377, 471)?",
+      "opciones": {
+        "A": "(72, -115)",
+        "B": "(-115, -72)",
+        "C": "(-72, 115)",
+        "D": "(115, 72)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 163,
+      "pregunta": "Cyrus-Beck: Ni = (4, 2), PFi = (4, 2), P0 = (-3, -7), P1 = (-8, 6). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "0.13",
+        "B": "46",
+        "C": "7.667",
+        "D": "-7.667"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 164,
+      "pregunta": "En Cyrus-Beck, para una frontera con normal exterior Ni = (3, 1) y un segmento con D = P1 − P0 = (6, 7), ¿cómo se etiqueta la intersección?",
+      "opciones": {
+        "A": "Potencialmente entrante (PE): se actualiza tE = max(t, tE)",
+        "B": "Potencialmente saliente (PS): se actualiza tS = min(t, tS)",
+        "C": "Potencialmente entrante (PE): se actualiza tE = min(t, tE)",
+        "D": "Potencialmente saliente (PS): se actualiza tS = max(t, tS)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 165,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (210, 390), P1 = (260, 330) se obtiene tE = 0.1 y tS = 0.64. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se rechaza el segmento",
+        "B": "Se devuelve el segmento de (210, 390) a (260, 330)",
+        "C": "Se devuelve el segmento de (242, 351.6) a (260, 330)",
+        "D": "Se devuelve el segmento de (215, 384) a (242, 351.6)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 166,
+      "pregunta": "Recorte de puntos con ventana xmin = 2, xmax = 6, ymin = 0, ymax = 5: ¿qué ocurre con el punto (5, -2)?",
+      "opciones": {
+        "A": "Se recorta a la frontera más cercana",
+        "B": "Dentro: se conserva",
+        "C": "Depende del orden de los vértices",
+        "D": "Fuera: se descarta"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 167,
+      "pregunta": "Un vértice en coordenadas de clip vale (-7, -6, 7, 10). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Solo se puede saber tras la división de perspectiva",
+        "B": "Está fuera del volumen de recorte",
+        "C": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)",
+        "D": "Depende de la matriz de vista"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 168,
+      "pregunta": "Una arista entre Pa (color (0.5, 0, 0.5)) y Pb (color (1, 0.4, 0)) corta un plano de clipping en t = 0.8. Con AI = (1 − t)Aa + tAb, ¿qué color tiene el nuevo vértice?",
+      "opciones": {
+        "A": "(0.9, 0.32, 0.1)",
+        "B": "(0.8, 0.32, 0)",
+        "C": "(0.75, 0.2, 0.25)",
+        "D": "(0.6, 0.08, 0.4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 169,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista P2 → P5 contra la frontera actual, P2 y P5 están fuera (I2 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "No se añade ningún vértice",
+        "B": "Se añade solo I2",
+        "C": "Se añade solo P5",
+        "D": "Se añaden I2 y P5"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 170,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (2, 2, 0.5)?",
+      "opciones": {
+        "A": "001010",
+        "B": "000000",
+        "C": "010100",
+        "D": "111111"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 171,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = -3, xmax = 2, ymin = 1, ymax = 6, ¿cuál es el código del punto (-4, 8)?",
+      "opciones": {
+        "A": "1001",
+        "B": "1010",
+        "C": "0110",
+        "D": "0000"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 172,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -2, xmax = 6, ymin = -3, ymax = 4. ¿Cómo se clasifica el segmento de P1 = (9, 4) a P2 = (-3, 4)?",
+      "opciones": {
+        "A": "Caso de recorte (hay que calcular intersecciones)",
+        "B": "Rechazo trivial (se descarta)",
+        "C": "Aceptación trivial (se dibuja tal cual)",
+        "D": "Línea degenerada (no se procesa)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 173,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0101 y C(P2) = 0100, ¿cuánto vale C(P1) OR C(P2)?",
+      "opciones": {
+        "A": "0000",
+        "B": "0101",
+        "C": "0001",
+        "D": "0100"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 174,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 0, xmax = 10, ymin = 0, ymax = 10. El segmento va de P1 = (-5, 6) (exterior) a P2 = (5, 5) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(0, 5.5)",
+        "B": "(0, -44)",
+        "C": "(0, 5)",
+        "D": "(-5, 5.5)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 175,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (17, 42) → V1 = (890, 115)?",
+      "opciones": {
+        "A": "(873, 73)",
+        "B": "(-873, -73)",
+        "C": "(73, -873)",
+        "D": "(-73, 873)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 176,
+      "pregunta": "Cyrus-Beck: Ni = (0, 5), PFi = (9, 8), P0 = (-4, 3), P1 = (6, 6). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "25",
+        "B": "-1.667",
+        "C": "0.6",
+        "D": "1.667"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 177,
+      "pregunta": "En Cyrus-Beck, para una frontera con normal exterior Ni = (-4, 1) y un segmento con D = P1 − P0 = (1, 8), ¿cómo se etiqueta la intersección?",
+      "opciones": {
+        "A": "Potencialmente saliente (PS): se actualiza tS = min(t, tS)",
+        "B": "Potencialmente saliente (PS): se actualiza tS = max(t, tS)",
+        "C": "Potencialmente entrante (PE): se actualiza tE = max(t, tE)",
+        "D": "Potencialmente entrante (PE): se actualiza tE = min(t, tE)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 178,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (70, 150), P1 = (330, 110) se obtiene tE = 0.01 y tS = 0.63. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se rechaza el segmento",
+        "B": "Se devuelve el segmento de (233.8, 124.8) a (330, 110)",
+        "C": "Se devuelve el segmento de (70, 150) a (330, 110)",
+        "D": "Se devuelve el segmento de (72.6, 149.6) a (233.8, 124.8)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 179,
+      "pregunta": "Recorte de puntos con ventana xmin = -1, xmax = 4, ymin = -2, ymax = 4: ¿qué ocurre con el punto (5, -1)?",
+      "opciones": {
+        "A": "Se recorta a la frontera más cercana",
+        "B": "Fuera: se descarta",
+        "C": "Dentro: se conserva",
+        "D": "Depende del orden de los vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 180,
+      "pregunta": "Un vértice en coordenadas de clip vale (2, 0, 0, 2). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Solo se puede saber tras la división de perspectiva",
+        "B": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)",
+        "C": "Depende de la matriz de vista",
+        "D": "Está fuera del volumen de recorte"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 181,
+      "pregunta": "Una arista entre Pa (color (0.5, 0, 1)) y Pb (color (0, 0, 0.4)) corta un plano de clipping en t = 0.75. Con AI = (1 − t)Aa + tAb, ¿qué color tiene el nuevo vértice?",
+      "opciones": {
+        "A": "(0.125, 0, 0.55)",
+        "B": "(0.375, 0, 0.85)",
+        "C": "(0, 0, 0.3)",
+        "D": "(0.25, 0, 0.7)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 182,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista P2 → V3 contra la frontera actual, P2 está dentro y V3 está fuera (I1 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "Se añade solo V3",
+        "B": "No se añade ningún vértice",
+        "C": "Se añade solo I1",
+        "D": "Se añaden I1 y V3"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 183,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (2, -2, -2)?",
+      "opciones": {
+        "A": "011001",
+        "B": "000000",
+        "C": "100110",
+        "D": "010110"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 184,
+      "pregunta": "Con Cohen-Sutherland (bits b3b2b1b0 = [y>ymax][ymin>y][x>xmax][xmin>x]) y ventana xmin = 0, xmax = 7, ymin = 0, ymax = 8, ¿cuál es el código del punto (5, 6)?",
+      "opciones": {
+        "A": "1010",
+        "B": "0000",
+        "C": "1111",
+        "D": "0101"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 185,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -3, xmax = 2, ymin = 2, ymax = 5. ¿Cómo se clasifica el segmento de P1 = (-2, 1) a P2 = (-5, 1)?",
+      "opciones": {
+        "A": "Rechazo trivial (se descarta)",
+        "B": "Línea degenerada (no se procesa)",
+        "C": "Aceptación trivial (se dibuja tal cual)",
+        "D": "Caso de recorte (hay que calcular intersecciones)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 186,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0001 y C(P2) = 1001, ¿cuánto vale C(P1) OR C(P2)?",
+      "opciones": {
+        "A": "0001",
+        "B": "1000",
+        "C": "0000",
+        "D": "1001"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 187,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 2, xmax = 3, ymin = 1, ymax = 2. El segmento va de P1 = (2.55, 2.2) (exterior) a P2 = (2.75, 1.75) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(2.639, 2.2)",
+        "B": "(3, 2)",
+        "C": "(2.75, 2)",
+        "D": "(2.639, 2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 188,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (427, 301) → V1 = (590, 54)?",
+      "opciones": {
+        "A": "(-163, 247)",
+        "B": "(163, -247)",
+        "C": "(247, 163)",
+        "D": "(-247, -163)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 189,
+      "pregunta": "Cyrus-Beck: Ni = (0, -5), PFi = (-4, -7), P0 = (10, -5), P1 = (6, 6). ¿Cuál es el valor de t de intersección con la recta soporte de la frontera?",
+      "opciones": {
+        "A": "0.182",
+        "B": "-5.5",
+        "C": "10",
+        "D": "-0.182"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 190,
+      "pregunta": "En Cyrus-Beck, para una frontera con normal exterior Ni = (-5, 5) y un segmento con D = P1 − P0 = (-8, -9), ¿cómo se etiqueta la intersección?",
+      "opciones": {
+        "A": "Potencialmente entrante (PE): se actualiza tE = max(t, tE)",
+        "B": "Potencialmente saliente (PS): se actualiza tS = min(t, tS)",
+        "C": "Potencialmente saliente (PS): se actualiza tS = max(t, tS)",
+        "D": "Potencialmente entrante (PE): se actualiza tE = min(t, tE)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 191,
+      "pregunta": "Al terminar Cyrus-Beck para P0 = (30, 480), P1 = (450, 270) se obtiene tE = 0.31 y tS = 0.49. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "Se devuelve el segmento de (160.2, 414.9) a (235.8, 377.1)",
+        "B": "Se rechaza el segmento",
+        "C": "Se devuelve el segmento de (30, 480) a (450, 270)",
+        "D": "Se devuelve el segmento de (235.8, 377.1) a (450, 270)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 192,
+      "pregunta": "Recorte de puntos con ventana xmin = -2, xmax = 2, ymin = -5, ymax = 1: ¿qué ocurre con el punto (-4, -1)?",
+      "opciones": {
+        "A": "Dentro: se conserva",
+        "B": "Fuera: se descarta",
+        "C": "Se recorta a la frontera más cercana",
+        "D": "Depende del orden de los vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 193,
+      "pregunta": "Un vértice en coordenadas de clip vale (9, -6, -12, 10). ¿Está dentro del volumen de recorte de OpenGL?",
+      "opciones": {
+        "A": "Depende de la matriz de vista",
+        "B": "Solo se puede saber tras la división de perspectiva",
+        "C": "Está fuera del volumen de recorte",
+        "D": "Está dentro del volumen de recorte (−wc ≤ xc, yc, zc ≤ wc)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 194,
+      "pregunta": "Una arista entre Pa (color (0.5, 0.5, 0.5)) y Pb (color (0.8, 0.4, 0.8)) corta un plano de clipping en t = 0.75. Con AI = (1 − t)Aa + tAb, ¿qué color tiene el nuevo vértice?",
+      "opciones": {
+        "A": "(0.575, 0.475, 0.575)",
+        "B": "(0.6, 0.3, 0.6)",
+        "C": "(0.65, 0.45, 0.65)",
+        "D": "(0.725, 0.425, 0.725)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 195,
+      "pregunta": "En Sutherland-Hodgman, al procesar la arista P2 → V2 contra la frontera actual, P2 y V2 están dentro (I2 = intersección con la frontera). ¿Qué se añade a la lista de salida?",
+      "opciones": {
+        "A": "Se añaden I2 y V2",
+        "B": "Se añade solo I2",
+        "C": "No se añade ningún vértice",
+        "D": "Se añade solo V2"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 196,
+      "pregunta": "Cohen-Sutherland 3D con volumen [−1, 1]³ y código b5b4b3b2b1b0 = [zmin>z][z>zmax][y>ymax][ymin>y][x>xmax][xmin>x]. ¿Cuál es el código del punto (-2, 0, 0.5)?",
+      "opciones": {
+        "A": "000000",
+        "B": "111111",
+        "C": "000001",
+        "D": "100000"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 197,
+      "pregunta": "Cohen-Sutherland, ventana xmin = -3, xmax = 5, ymin = -4, ymax = 4. ¿Cómo se clasifica el segmento de P1 = (-6, 1) a P2 = (2, -4)?",
+      "opciones": {
+        "A": "Caso de recorte (hay que calcular intersecciones)",
+        "B": "Aceptación trivial (se dibuja tal cual)",
+        "C": "Línea degenerada (no se procesa)",
+        "D": "Rechazo trivial (se descarta)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 198,
+      "pregunta": "En Cohen-Sutherland, si C(P1) = 0101 y C(P2) = 1001, ¿cuánto vale C(P1) OR C(P2)?",
+      "opciones": {
+        "A": "0000",
+        "B": "0001",
+        "C": "1100",
+        "D": "1101"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 199,
+      "pregunta": "Cohen-Sutherland con ventana xmin = 0, xmax = 10, ymin = 0, ymax = 10. El segmento va de P1 = (0.5, 12) (exterior) a P2 = (2.5, 2.5) (interior). ¿Cuál es el punto de intersección P3 con la frontera?",
+      "opciones": {
+        "A": "(10, 10)",
+        "B": "(0.921, 10)",
+        "C": "(2.5, 10)",
+        "D": "(0.921, 12)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 200,
+      "pregunta": "En Cyrus-Beck, procesando las aristas en orden antihorario, ¿cuál es la normal exterior Ni (rotando −90º la dirección) de la arista V0 = (535, 213) → V1 = (519, 121)?",
+      "opciones": {
+        "A": "(16, 92)",
+        "B": "(92, -16)",
+        "C": "(-92, 16)",
+        "D": "(-16, -92)"
+      },
+      "respuesta_correcta": "C"
+    }
+  ]
+}

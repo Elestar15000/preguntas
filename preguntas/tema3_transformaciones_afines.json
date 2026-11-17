@@ -1,0 +1,2208 @@
+{
+  "asignatura": "Gráficos por Computador",
+  "tema": 3,
+  "titulo": "Transformaciones afines",
+  "total_preguntas": 200,
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "Una transformación geométrica es:",
+      "opciones": {
+        "A": "Un mecanismo para transformar la posición, orientación, tamaño o forma de un objeto",
+        "B": "Una estructura de datos para almacenar mallas",
+        "C": "Un método para rasterizar triángulos",
+        "D": "Un algoritmo de recorte de líneas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Qué cambios pueden implicar las transformaciones geométricas?",
+      "opciones": {
+        "A": "Solo posición",
+        "B": "Solo color y textura",
+        "C": "Posición, orientación, tamaño y forma",
+        "D": "Solo la resolución de la pantalla"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Cuál de las siguientes características tienen las transformaciones afines?",
+      "opciones": {
+        "A": "Conservan siempre las longitudes",
+        "B": "Conservan las líneas rectas y las líneas paralelas",
+        "C": "Transforman rectas en curvas",
+        "D": "Conservan siempre los ángulos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 4,
+      "pregunta": "Las transformaciones afines conservan:",
+      "opciones": {
+        "A": "El área de todos los polígonos",
+        "B": "Los ángulos entre todas las rectas",
+        "C": "Las distancias entre todos los puntos",
+        "D": "Las proporciones entre puntos situados sobre una misma recta"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 5,
+      "pregunta": "Toda transformación afín es una combinación de:",
+      "opciones": {
+        "A": "Unión, intersección y diferencia",
+        "B": "Rasterización y mezclado",
+        "C": "Proyección perspectiva y recorte",
+        "D": "Traslación, rotación, reflexión, escalado y cizallamiento"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 6,
+      "pregunta": "Las transformaciones de cuerpo rígido:",
+      "opciones": {
+        "A": "Solo afectan al tamaño",
+        "B": "No conservan longitudes",
+        "C": "Cambian siempre la forma del objeto",
+        "D": "Conservan longitudes y ángulos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 7,
+      "pregunta": "Las transformaciones de cuerpo no rígido:",
+      "opciones": {
+        "A": "Solo incluyen traslaciones",
+        "B": "No son transformaciones afines",
+        "C": "Conservan siempre longitudes y ángulos",
+        "D": "No conservan necesariamente longitudes y/o ángulos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Cuáles son transformaciones de cuerpo rígido?",
+      "opciones": {
+        "A": "Traslación y escalado",
+        "B": "Traslación, rotación y reflexión",
+        "C": "Rotación y cizallamiento",
+        "D": "Escalado y cizallamiento"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 9,
+      "pregunta": "¿Cuáles son transformaciones de cuerpo no rígido?",
+      "opciones": {
+        "A": "Traslación y rotación",
+        "B": "Traslación y reflexión",
+        "C": "Rotación y reflexión",
+        "D": "Escalado y cizallamiento"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 10,
+      "pregunta": "¿Por qué la reflexión se considera una transformación de cuerpo rígido impropio?",
+      "opciones": {
+        "A": "Porque no es una transformación afín",
+        "B": "Porque no conserva las rectas",
+        "C": "Porque no conserva las longitudes",
+        "D": "Porque cambia la orientación de las caras"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 11,
+      "pregunta": "¿Por qué son necesarias las coordenadas homogéneas en las transformaciones?",
+      "opciones": {
+        "A": "Porque la traslación se suma mientras que otras operaciones se multiplican, y así todas pueden componerse como productos",
+        "B": "Porque reducen la dimensión de los puntos",
+        "C": "Porque eliminan la necesidad de normalizar vectores",
+        "D": "Porque las rotaciones no pueden expresarse con matrices"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 12,
+      "pregunta": "En coordenadas homogéneas, un punto (x,y,z) se representa como:",
+      "opciones": {
+        "A": "(w·x, w·y, w·z, w)",
+        "B": "(x/w, y/w, z/w)",
+        "C": "(x, y, z, 0) siempre",
+        "D": "(x, y, z, x+y+z)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 13,
+      "pregunta": "Para recuperar las coordenadas cartesianas de un punto homogéneo (xh, yh, zh, w):",
+      "opciones": {
+        "A": "Se descarta w sin más",
+        "B": "Se multiplican xh, yh y zh por w",
+        "C": "Se suma w a cada componente",
+        "D": "Se dividen xh, yh y zh entre w"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 14,
+      "pregunta": "Por sencillez, para representar puntos en coordenadas homogéneas se elige habitualmente:",
+      "opciones": {
+        "A": "w = 0",
+        "B": "w = 2",
+        "C": "w = 1",
+        "D": "w = −1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 15,
+      "pregunta": "Los vectores o direcciones se representan en coordenadas homogéneas con:",
+      "opciones": {
+        "A": "w = 1",
+        "B": "w = 0",
+        "C": "w = −1",
+        "D": "w = ∞"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 16,
+      "pregunta": "¿Por qué las traslaciones no afectan a los vectores en coordenadas homogéneas?",
+      "opciones": {
+        "A": "Porque los vectores tienen w = 1",
+        "B": "Porque la matriz de traslación es la identidad",
+        "C": "Porque los vectores se normalizan antes",
+        "D": "Porque los vectores tienen w = 0 y la columna de traslación se multiplica por 0"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 17,
+      "pregunta": "Un vector con w = 0 se interpreta como:",
+      "opciones": {
+        "A": "El origen de coordenadas",
+        "B": "Un punto no válido",
+        "C": "Un punto en el infinito (dirección)",
+        "D": "Un punto con coordenadas nulas"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 18,
+      "pregunta": "La traslación cambia:",
+      "opciones": {
+        "A": "La posición de un objeto",
+        "B": "El tamaño de un objeto",
+        "C": "La forma de un objeto",
+        "D": "La orientación de las caras"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 19,
+      "pregunta": "La traslación viene dada por:",
+      "opciones": {
+        "A": "Un vector de traslación T = (tx, ty, tz)",
+        "B": "Un vector de escalado",
+        "C": "Un eje y un ángulo",
+        "D": "Un plano de reflexión"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 20,
+      "pregunta": "En forma vectorial, la traslación de un punto se expresa como:",
+      "opciones": {
+        "A": "P' = T + P",
+        "B": "P' = T × P",
+        "C": "P' = P − 2T",
+        "D": "P' = T · P"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 21,
+      "pregunta": "La matriz inversa de una traslación T(tx, ty, tz) es:",
+      "opciones": {
+        "A": "T(tx, ty, tz) con w = −1",
+        "B": "T(1/tx, 1/ty, 1/tz)",
+        "C": "La traspuesta de T",
+        "D": "T(−tx, −ty, −tz)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 22,
+      "pregunta": "La rotación gira un punto o vector:",
+      "opciones": {
+        "A": "Alrededor de su propio centro siempre",
+        "B": "Un ángulo θ alrededor de cualquier punto sin traslaciones",
+        "C": "Un ángulo θ alrededor de un eje que pasa por el origen",
+        "D": "Desplazándolo a lo largo de un eje"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 23,
+      "pregunta": "Una rotación viene dada por:",
+      "opciones": {
+        "A": "Un vector de traslación",
+        "B": "Tres factores de escala",
+        "C": "Un plano de reflexión",
+        "D": "Un eje de rotación y un ángulo θ"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 24,
+      "pregunta": "¿Qué puntos deja sin cambio una rotación?",
+      "opciones": {
+        "A": "Ningún punto",
+        "B": "Los puntos situados sobre el eje de rotación",
+        "C": "Solo el punto (1,1,1)",
+        "D": "Todos los puntos del plano XY"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 25,
+      "pregunta": "En una rotación alrededor del eje X, la coordenada x':",
+      "opciones": {
+        "A": "Pasa a ser x·sen θ",
+        "B": "No cambia: x' = x",
+        "C": "Pasa a ser y·cos θ",
+        "D": "Pasa a ser −x"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 26,
+      "pregunta": "En una rotación alrededor del eje X, la coordenada y' es:",
+      "opciones": {
+        "A": "y·sen θ + z·cos θ",
+        "B": "y·cos θ + z·sen θ",
+        "C": "y·cos θ − z·sen θ",
+        "D": "x·cos θ − y·sen θ"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 27,
+      "pregunta": "En una rotación alrededor del eje X, la coordenada z' es:",
+      "opciones": {
+        "A": "y·sen θ + z·cos θ",
+        "B": "z",
+        "C": "−y·sen θ + z·cos θ",
+        "D": "y·cos θ − z·sen θ"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 28,
+      "pregunta": "El sentido positivo de rotación viene determinado por:",
+      "opciones": {
+        "A": "El orden de los vértices",
+        "B": "La regla de la mano derecha",
+        "C": "El signo del determinante",
+        "D": "La regla de la mano izquierda"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 29,
+      "pregunta": "Mirando desde el extremo positivo del eje hacia el origen, una rotación positiva se observa en sentido:",
+      "opciones": {
+        "A": "No se puede observar",
+        "B": "Horario",
+        "C": "Antihorario",
+        "D": "Depende del eje"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 30,
+      "pregunta": "La matriz inversa de una matriz de rotación coincide con:",
+      "opciones": {
+        "A": "Ella misma",
+        "B": "Su traspuesta",
+        "C": "La identidad",
+        "D": "Su opuesta"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 31,
+      "pregunta": "¿Por qué la inversa de una matriz de rotación es su traspuesta?",
+      "opciones": {
+        "A": "Porque las matrices de rotación son ortogonales",
+        "B": "Porque su determinante es 0",
+        "C": "Porque son matrices diagonales",
+        "D": "Porque son simétricas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 32,
+      "pregunta": "En la matriz de rotación alrededor del eje Z, el elemento (1,2) es:",
+      "opciones": {
+        "A": "0",
+        "B": "−sen θ",
+        "C": "cos θ",
+        "D": "sen θ"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 33,
+      "pregunta": "En la matriz de rotación alrededor del eje Y, el elemento (1,3) es:",
+      "opciones": {
+        "A": "0",
+        "B": "−sen θ",
+        "C": "cos θ",
+        "D": "sen θ"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 34,
+      "pregunta": "En la matriz de rotación alrededor del eje Y, el elemento (3,1) es:",
+      "opciones": {
+        "A": "cos θ",
+        "B": "sen θ",
+        "C": "−sen θ",
+        "D": "1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 35,
+      "pregunta": "En la matriz de rotación alrededor del eje Y, la fila 2 es:",
+      "opciones": {
+        "A": "(0, 1, 0, 0)",
+        "B": "(sen θ, cos θ, 0, 0)",
+        "C": "(0, cos θ, −sen θ, 0)",
+        "D": "(0, 0, 1, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 36,
+      "pregunta": "En la matriz de rotación alrededor del eje Z, la fila 3 es:",
+      "opciones": {
+        "A": "(sen θ, cos θ, 0, 0)",
+        "B": "(0, 0, cos θ, 0)",
+        "C": "(0, cos θ, −sen θ, 0)",
+        "D": "(0, 0, 1, 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 37,
+      "pregunta": "La matriz inversa de la rotación R_x(θ) puede obtenerse también como:",
+      "opciones": {
+        "A": "R_y(θ)",
+        "B": "R_x(−θ)",
+        "C": "−R_x(θ)",
+        "D": "R_x(2θ)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 38,
+      "pregunta": "La reflexión produce:",
+      "opciones": {
+        "A": "Una distorsión de tipo cizallamiento",
+        "B": "Un desplazamiento del objeto",
+        "C": "Una imagen de espejo con respecto a un plano",
+        "D": "Un cambio de tamaño"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 39,
+      "pregunta": "La matriz de reflexión con cambio en la coordenada X tiene en la diagonal:",
+      "opciones": {
+        "A": "(−1, 1, 1, 1)",
+        "B": "(1, −1, 1, 1)",
+        "C": "(−1, −1, −1, 1)",
+        "D": "(1, 1, −1, 1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 40,
+      "pregunta": "La reflexión respecto al plano XY cambia el signo de la coordenada:",
+      "opciones": {
+        "A": "Y",
+        "B": "W",
+        "C": "Z",
+        "D": "X"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 41,
+      "pregunta": "La reflexión respecto al plano YZ cambia el signo de la coordenada:",
+      "opciones": {
+        "A": "Z",
+        "B": "X",
+        "C": "Ninguna",
+        "D": "Y"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 42,
+      "pregunta": "La reflexión respecto al plano XZ cambia el signo de la coordenada:",
+      "opciones": {
+        "A": "W",
+        "B": "Z",
+        "C": "Y",
+        "D": "X"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 43,
+      "pregunta": "¿Por qué hay que tener cuidado con las matrices de reflexión?",
+      "opciones": {
+        "A": "Porque no conservan las rectas",
+        "B": "Porque cambian el sentido de ordenación de los vértices, lo que puede causar errores de iluminación o culling",
+        "C": "Porque cambian el tamaño del objeto",
+        "D": "Porque no son invertibles"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 44,
+      "pregunta": "Un triángulo con vértices en sentido antihorario, tras aplicar una reflexión, pasará a sentido:",
+      "opciones": {
+        "A": "Antihorario",
+        "B": "Horario",
+        "C": "Indeterminado",
+        "D": "Degenerado"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 45,
+      "pregunta": "¿Cómo se puede detectar que una transformación incluye una reflexión?",
+      "opciones": {
+        "A": "Si el determinante es 1",
+        "B": "Si el determinante de la parte lineal 3x3 es negativo",
+        "C": "Si la cuarta columna es no nula",
+        "D": "Si la matriz es simétrica"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 46,
+      "pregunta": "El escalado cambia:",
+      "opciones": {
+        "A": "El tamaño de un objeto a lo largo de las direcciones de los ejes x, y, z",
+        "B": "El orden de los vértices siempre",
+        "C": "La posición del objeto",
+        "D": "La orientación de las caras"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 47,
+      "pregunta": "El escalado viene dado por:",
+      "opciones": {
+        "A": "Un vector de traslación",
+        "B": "Un eje y un ángulo",
+        "C": "Un vector de escalado S = (sx, sy, sz)",
+        "D": "Una matriz ortogonal"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 48,
+      "pregunta": "Si sx = sy = sz, el escalado se denomina:",
+      "opciones": {
+        "A": "Reflexión",
+        "B": "Uniforme o isotrópico",
+        "C": "Cizallamiento",
+        "D": "No uniforme o anisotrópico"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 49,
+      "pregunta": "Si los factores de escala no son iguales, el escalado se denomina:",
+      "opciones": {
+        "A": "Uniforme o isotrópico",
+        "B": "Propio",
+        "C": "No uniforme o anisotrópico",
+        "D": "Rígido"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 50,
+      "pregunta": "En un escalado uniforme, el objeto resultante:",
+      "opciones": {
+        "A": "Es proporcional al original, manteniendo sus dimensiones relativas",
+        "B": "Se desplaza",
+        "C": "Se refleja",
+        "D": "Cambia sus proporciones"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 51,
+      "pregunta": "El escalado básico se realiza con respecto a:",
+      "opciones": {
+        "A": "La cámara",
+        "B": "El primer vértice",
+        "C": "El origen",
+        "D": "El centro del objeto"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 52,
+      "pregunta": "Para escalar respecto a un punto fijo C distinto del origen, la matriz compuesta es:",
+      "opciones": {
+        "A": "M = T(C) · S · T(−C)",
+        "B": "M = T(−C) · S · T(C)",
+        "C": "M = T(C) · S",
+        "D": "M = S · T(C)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 53,
+      "pregunta": "La matriz inversa del escalado S(sx, sy, sz) es:",
+      "opciones": {
+        "A": "S(1/sx, 1/sy, 1/sz)",
+        "B": "S(sx, sy, sz)",
+        "C": "S(−sx, −sy, −sz)",
+        "D": "La traspuesta de S"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 54,
+      "pregunta": "Se puede escalar uniformemente un objeto por un factor s usando el elemento (4,4) de la matriz con valor:",
+      "opciones": {
+        "A": "1/s",
+        "B": "−s",
+        "C": "0",
+        "D": "s"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 55,
+      "pregunta": "¿Qué inconveniente tiene escalar uniformemente usando el elemento (4,4)?",
+      "opciones": {
+        "A": "No permite escalados mayores que 1",
+        "B": "No es invertible",
+        "C": "Cambia el orden de los vértices",
+        "D": "Obliga a homogeneizar después (dividir por w), ya que w deja de ser 1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 56,
+      "pregunta": "Con la matriz de escalado uniforme vía elemento (4,4) = 1/s, el punto (x,y,z,1) se transforma en:",
+      "opciones": {
+        "A": "(x, y, z, s)",
+        "B": "(x, y, z, 1/s), equivalente a (sx, sy, sz, 1)",
+        "C": "(sx, sy, sz, s)",
+        "D": "(x/s, y/s, z/s, 1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 57,
+      "pregunta": "La inversa de la matriz de escalado uniforme con elemento (4,4) = 1/s tiene ese elemento igual a:",
+      "opciones": {
+        "A": "s",
+        "B": "−s",
+        "C": "1/s",
+        "D": "1"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 58,
+      "pregunta": "La transformación de cizallamiento (shear):",
+      "opciones": {
+        "A": "Conserva siempre los ángulos",
+        "B": "Refleja el objeto",
+        "C": "Cambia solo la posición",
+        "D": "Crea un efecto de distorsión sobre el objeto"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 59,
+      "pregunta": "¿Cuántas matrices básicas de cizallamiento (desencajado) existen en 3D?",
+      "opciones": {
+        "A": "9",
+        "B": "6",
+        "C": "4",
+        "D": "3"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 60,
+      "pregunta": "En la matriz de cizallamiento Hxz(s), el primer subíndice (x) indica:",
+      "opciones": {
+        "A": "El eje de rotación",
+        "B": "La coordenada que no aparece",
+        "C": "La coordenada que realiza el desencajado",
+        "D": "La coordenada que va a cambiar"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 61,
+      "pregunta": "En la matriz de cizallamiento Hxz(s), el segundo subíndice (z) indica:",
+      "opciones": {
+        "A": "El plano de reflexión",
+        "B": "La coordenada que va a cambiar",
+        "C": "La coordenada que realiza el desencajado",
+        "D": "El factor de escala"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 62,
+      "pregunta": "Al aplicar Hxz(s) a un punto p, el resultado es:",
+      "opciones": {
+        "A": "(px + s·pz, py, pz)",
+        "B": "(px, py + s·pz, pz)",
+        "C": "(px + s·py, py, pz)",
+        "D": "(px, py, pz + s·px)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 63,
+      "pregunta": "En la matriz de cizallamiento Hij(s), el valor s se coloca:",
+      "opciones": {
+        "A": "En la diagonal",
+        "B": "En la cuarta columna",
+        "C": "En la fila j y la columna i",
+        "D": "En la fila i y la columna j"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 64,
+      "pregunta": "La matriz inversa de Hxz(s) es:",
+      "opciones": {
+        "A": "Hxz(1/s)",
+        "B": "La traspuesta de Hxz(s)",
+        "C": "Hzx(s)",
+        "D": "Hxz(−s)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 65,
+      "pregunta": "En el cizallamiento Hij(s), ¿qué coordenadas permanecen sin cambio?",
+      "opciones": {
+        "A": "Solo la del primer subíndice",
+        "B": "Todas",
+        "C": "Ninguna",
+        "D": "La del segundo subíndice y la que no aparece"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 66,
+      "pregunta": "En la matriz de cizallamiento H'yz(s, t), ¿qué coordenada permanece invariante?",
+      "opciones": {
+        "A": "Y",
+        "B": "Z",
+        "C": "X",
+        "D": "Ninguna"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 67,
+      "pregunta": "La relación entre los cizallamientos dobles y simples es:",
+      "opciones": {
+        "A": "H'ij(s, t) = Hij(s·t)",
+        "B": "H'ij(s, t) = Hij(s) + Hij(t)",
+        "C": "H'ij(s, t) = Hik(s) · Hjk(t)",
+        "D": "H'ij(s, t) = Hki(s) · Hkj(t)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 68,
+      "pregunta": "En H'ij(s, t), ambos subíndices indican:",
+      "opciones": {
+        "A": "Las coordenadas que permanecen invariantes",
+        "B": "Los ejes de rotación",
+        "C": "Los planos de reflexión",
+        "D": "Las coordenadas que van a ser distorsionadas por la tercera"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 69,
+      "pregunta": "¿Qué matriz de cizallamiento deja invariante la coordenada Z?",
+      "opciones": {
+        "A": "H'yz(s, t)",
+        "B": "Hzx(s)",
+        "C": "H'xz(s, t)",
+        "D": "H'xy(s, t)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 70,
+      "pregunta": "¿Qué matriz de cizallamiento deja invariante la coordenada Y?",
+      "opciones": {
+        "A": "H'xz(s, t)",
+        "B": "Hyx(s)",
+        "C": "H'yz(s, t)",
+        "D": "H'xy(s, t)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 71,
+      "pregunta": "En coordenadas homogéneas, la composición de transformaciones se realiza mediante:",
+      "opciones": {
+        "A": "La traspuesta",
+        "B": "El producto escalar",
+        "C": "El producto matricial",
+        "D": "La suma de matrices"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 72,
+      "pregunta": "Aplicar varias transformaciones T1, T2, …, Tn (en ese orden) a un punto P equivale a:",
+      "opciones": {
+        "A": "P' = (Tn · … · T2 · T1) · P",
+        "B": "P' = P · T1 · T2 · … · Tn siempre",
+        "C": "P' = (T1 + T2 + … + Tn) · P",
+        "D": "P' = (T1 · T2 · … · Tn) · P"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 73,
+      "pregunta": "La composición de transformaciones es:",
+      "opciones": {
+        "A": "Conmutativa pero no asociativa",
+        "B": "Conmutativa y asociativa",
+        "C": "Asociativa pero no conmutativa en general",
+        "D": "Ni conmutativa ni asociativa"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 74,
+      "pregunta": "Si añadimos una transformación por la izquierda de la matriz acumulada, se interpreta respecto:",
+      "opciones": {
+        "A": "Al sistema de la cámara",
+        "B": "Al sistema de pantalla",
+        "C": "Al sistema global",
+        "D": "Al sistema local del objeto"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 75,
+      "pregunta": "Si añadimos una transformación por la derecha de la matriz acumulada, se interpreta respecto:",
+      "opciones": {
+        "A": "Al sistema NDC",
+        "B": "Al sistema de recorte",
+        "C": "Al sistema global",
+        "D": "Al sistema local del objeto"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 76,
+      "pregunta": "¿Conmutan siempre dos traslaciones T1 · T2 y T2 · T1?",
+      "opciones": {
+        "A": "Sí, siempre",
+        "B": "Solo si una es nula",
+        "C": "Solo si son iguales",
+        "D": "Nunca"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 77,
+      "pregunta": "¿Conmutan dos escalados S1 · S2 y S2 · S1?",
+      "opciones": {
+        "A": "Solo si son uniformes",
+        "B": "Solo si son inversos",
+        "C": "Nunca",
+        "D": "Sí, siempre"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 78,
+      "pregunta": "¿Conmutan dos rotaciones alrededor del mismo eje?",
+      "opciones": {
+        "A": "Solo si los ángulos son iguales",
+        "B": "Nunca",
+        "C": "Solo para el eje Z",
+        "D": "Sí, R1 · R2 = R2 · R1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 79,
+      "pregunta": "En general, ¿conmutan dos rotaciones alrededor de ejes distintos?",
+      "opciones": {
+        "A": "Sí, siempre",
+        "B": "Solo si uno de los ángulos es negativo",
+        "C": "No, en general no conmutan",
+        "D": "Solo si los ángulos son de 90º"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 80,
+      "pregunta": "¿Cuándo conmutan un escalado S y una rotación R alrededor de un eje?",
+      "opciones": {
+        "A": "Nunca",
+        "B": "Solo si el ángulo es de 180º",
+        "C": "Cuando el escalado es uniforme (o los factores perpendiculares al eje son iguales)",
+        "D": "Siempre"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 81,
+      "pregunta": "Por defecto, las rotaciones se realizan respecto de:",
+      "opciones": {
+        "A": "Un eje que pasa por el origen",
+        "B": "El centro del objeto",
+        "C": "El primer vértice del objeto",
+        "D": "La posición de la cámara"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 82,
+      "pregunta": "Para rotar un objeto alrededor de un punto C, la matriz compuesta es:",
+      "opciones": {
+        "A": "M = T(C) · R(θ) · T(−C)",
+        "B": "M = T(C) · R(θ)",
+        "C": "M = R(θ) · T(C)",
+        "D": "M = T(−C) · R(θ) · T(C)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 83,
+      "pregunta": "¿Cuál es el primer paso (aplicado primero al objeto) para rotar alrededor de un punto C?",
+      "opciones": {
+        "A": "Escalar el objeto",
+        "B": "Deshacer la traslación: T(C)",
+        "C": "Rotar el ángulo θ",
+        "D": "Trasladar el punto C al origen: T(−C)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 84,
+      "pregunta": "Si C es el centro del objeto, la composición T(C) · R(θ) · T(−C) consigue:",
+      "opciones": {
+        "A": "Que el objeto rote sobre sí mismo",
+        "B": "Que el objeto se refleje",
+        "C": "Que el objeto se traslade al origen",
+        "D": "Que el objeto se escale"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 85,
+      "pregunta": "En la orientación de cámara con posición c y punto observado l, el vector de vista v se calcula como:",
+      "opciones": {
+        "A": "v = (c − l) / |c − l|",
+        "B": "v = c × l",
+        "C": "v = (l − c) / |l − c|",
+        "D": "v = c + l"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 86,
+      "pregunta": "El vector de vista v de la cámara apunta:",
+      "opciones": {
+        "A": "En la dirección de mirada",
+        "B": "En sentido contrario a la dirección de mirada",
+        "C": "Hacia arriba",
+        "D": "Hacia la derecha"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 87,
+      "pregunta": "En la orientación de cámara, el vector 'derecha' r se calcula como:",
+      "opciones": {
+        "A": "r = (u' × v) / |u' × v|",
+        "B": "r = (v × u') / |v × u'|",
+        "C": "r = u' + v",
+        "D": "r = u' · v"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 88,
+      "pregunta": "En la orientación de cámara, el vector 'arriba' final u se calcula como:",
+      "opciones": {
+        "A": "u = v × r",
+        "B": "u = v + r",
+        "C": "u = u'",
+        "D": "u = r × v"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 89,
+      "pregunta": "¿Por qué se recalcula el vector u en lugar de usar directamente u'?",
+      "opciones": {
+        "A": "Porque u' no está normalizado nunca",
+        "B": "Porque u' apunta hacia la cámara",
+        "C": "Porque no está garantizado que u' apunte de manera precisa hacia arriba (perpendicular a v)",
+        "D": "Porque u' siempre es nulo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 90,
+      "pregunta": "La matriz de transformación de cámara M se compone como:",
+      "opciones": {
+        "A": "M = T(−c) · R_cam",
+        "B": "M = R_cam · T(−c)",
+        "C": "M = T(c) · R_cam",
+        "D": "M = R_cam · T(c)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 91,
+      "pregunta": "En la matriz de cámara, el cambio de base alinea:",
+      "opciones": {
+        "A": "u con (1,0,0)",
+        "B": "r con (1,0,0), u con (0,1,0) y v con (0,0,1)",
+        "C": "v con (0,1,0)",
+        "D": "r con (0,0,1), u con (0,1,0) y v con (1,0,0)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 92,
+      "pregunta": "En la matriz de cámara M = R_cam · T(−c), el término de traslación de la primera fila es:",
+      "opciones": {
+        "A": "−c · u",
+        "B": "c · r",
+        "C": "−c · v",
+        "D": "−c · r"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 93,
+      "pregunta": "La idea de la matriz de cámara es:",
+      "opciones": {
+        "A": "Proyectar la escena en perspectiva",
+        "B": "Recortar la escena",
+        "C": "Escalar la escena para que quepa en pantalla",
+        "D": "Trasladar todo para que la cámara esté en el origen y luego hacer un cambio de base al sistema de la cámara"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 94,
+      "pregunta": "¿Se puede usar siempre la misma matriz que transforma los vértices para transformar las normales?",
+      "opciones": {
+        "A": "Solo con traslaciones",
+        "B": "No, no siempre; especialmente con escalados no uniformes",
+        "C": "Sí, siempre",
+        "D": "Nunca, ni siquiera con rotaciones"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 95,
+      "pregunta": "¿Qué vectores sí pueden transformarse con la misma matriz que los vértices?",
+      "opciones": {
+        "A": "Solo las normales",
+        "B": "Los vectores tangentes a líneas o superficies",
+        "C": "Ninguno",
+        "D": "Las normales con escalado no uniforme"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 96,
+      "pregunta": "En nuestro pipeline, la iluminación se realiza en:",
+      "opciones": {
+        "A": "El espacio de recorte",
+        "B": "El espacio del modelo",
+        "C": "El espacio de coordenadas de vista",
+        "D": "El espacio de pantalla"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 97,
+      "pregunta": "La matriz normal N para transformar normales es:",
+      "opciones": {
+        "A": "N = (A⁻¹)ᵀ",
+        "B": "N = Aᵀ",
+        "C": "N = A⁻¹",
+        "D": "N = A"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 98,
+      "pregunta": "¿Debe afectar la traslación a la normal?",
+      "opciones": {
+        "A": "Sí, siempre",
+        "B": "Solo si la normal es unitaria",
+        "C": "No",
+        "D": "Solo en el eje z"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 99,
+      "pregunta": "Para entender cómo se transforman las normales, se piensa en ellas como:",
+      "opciones": {
+        "A": "Los coeficientes de la ecuación del plano",
+        "B": "Coordenadas de textura",
+        "C": "Vectores tangentes",
+        "D": "Puntos de la superficie"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 100,
+      "pregunta": "La derivación de la matriz normal parte de la condición:",
+      "opciones": {
+        "A": "nᵀ q = 0 debe mantenerse tras la transformación",
+        "B": "n · n = 1",
+        "C": "n × q = 0",
+        "D": "q = A n"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 101,
+      "pregunta": "Si la matriz de modelo-vista solo contiene traslación, la normal transformada:",
+      "opciones": {
+        "A": "Se invierte",
+        "B": "Permanece sin cambios",
+        "C": "Se anula",
+        "D": "Se traslada igual que los vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 102,
+      "pregunta": "Si la matriz solo contiene rotaciones, la matriz normal (A⁻¹)ᵀ:",
+      "opciones": {
+        "A": "Coincide con A, por ser ortogonal",
+        "B": "Es la identidad",
+        "C": "Es la inversa de A distinta de A",
+        "D": "No existe"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 103,
+      "pregunta": "Si la matriz solo contiene rotaciones:",
+      "opciones": {
+        "A": "La normal se traslada",
+        "B": "Hay que renormalizar siempre la normal",
+        "C": "No es necesario calcular la inversa y traspuesta; se aplica directamente",
+        "D": "La normal no rota"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 104,
+      "pregunta": "Tras transformar una normal con un escalado no uniforme mediante (A⁻¹)ᵀ:",
+      "opciones": {
+        "A": "Se anula",
+        "B": "Sigue siendo siempre unitaria",
+        "C": "No cambia su dirección",
+        "D": "Es necesario renormalizarla porque en general no es unitaria"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 105,
+      "pregunta": "Con un escalado no uniforme, la dirección de la normal transformada:",
+      "opciones": {
+        "A": "Puede cambiar respecto a la original",
+        "B": "Siempre coincide con el eje mayor",
+        "C": "Se invierte siempre",
+        "D": "Nunca cambia"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 106,
+      "pregunta": "Se cumple la propiedad de la traspuesta de un producto:",
+      "opciones": {
+        "A": "(A · B)ᵀ = Aᵀ · Bᵀ",
+        "B": "(A · B)ᵀ = A · B",
+        "C": "(A · B)ᵀ = A⁻¹ · B⁻¹",
+        "D": "(A · B)ᵀ = Bᵀ · Aᵀ"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 107,
+      "pregunta": "Los vértices se transforman al espacio de vista con la matriz:",
+      "opciones": {
+        "A": "ModelView",
+        "B": "Normal",
+        "C": "Viewport",
+        "D": "Projection"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 108,
+      "pregunta": "Si se aplica un escalado (1, 1, −1), ¿qué ocurre con la orientación de los vértices?",
+      "opciones": {
+        "A": "Se anula",
+        "B": "Se duplica",
+        "C": "No cambia",
+        "D": "Se invierte (la transformación incluye una reflexión)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 109,
+      "pregunta": "¿Qué determinante tiene la parte lineal de una matriz de rotación pura?",
+      "opciones": {
+        "A": "Depende del ángulo",
+        "B": "0",
+        "C": "−1",
+        "D": "1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 110,
+      "pregunta": "¿Qué determinante tiene la parte lineal de una reflexión básica respecto a un plano coordenado?",
+      "opciones": {
+        "A": "0",
+        "B": "2",
+        "C": "1",
+        "D": "−1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 111,
+      "pregunta": "El determinante de la parte lineal de un escalado S(sx, sy, sz) es:",
+      "opciones": {
+        "A": "1",
+        "B": "0",
+        "C": "sx · sy · sz",
+        "D": "sx + sy + sz"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 112,
+      "pregunta": "El determinante de una matriz de cizallamiento básica Hij(s) es:",
+      "opciones": {
+        "A": "0",
+        "B": "1",
+        "C": "1 + s",
+        "D": "s"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 113,
+      "pregunta": "¿Qué transformación conserva el volumen del objeto?",
+      "opciones": {
+        "A": "El escalado uniforme por 3",
+        "B": "El cizallamiento básico Hij(s)",
+        "C": "Cualquier escalado",
+        "D": "El escalado no uniforme (2,1,1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 114,
+      "pregunta": "Una traslación en coordenadas homogéneas afecta a:",
+      "opciones": {
+        "A": "Los vectores pero no a los puntos",
+        "B": "Los puntos (w = 1) pero no a los vectores (w = 0)",
+        "C": "Ambos por igual",
+        "D": "Ninguno"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 115,
+      "pregunta": "Las matrices de rotación, en cuanto a longitudes y ángulos:",
+      "opciones": {
+        "A": "Conservan ángulos pero no longitudes",
+        "B": "No conservan ninguno",
+        "C": "Los conservan",
+        "D": "Conservan longitudes pero no ángulos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 116,
+      "pregunta": "¿Cuál de las siguientes matrices es la identidad en su parte lineal?",
+      "opciones": {
+        "A": "La de reflexión en X",
+        "B": "La de traslación",
+        "C": "La de escalado (2,2,2)",
+        "D": "La de rotación de 90º"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 117,
+      "pregunta": "Una rotación de 360º alrededor de cualquier eje equivale a:",
+      "opciones": {
+        "A": "Una traslación",
+        "B": "Una reflexión",
+        "C": "La identidad",
+        "D": "Un escalado por −1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 118,
+      "pregunta": "Dos rotaciones consecutivas de θ1 y θ2 alrededor del mismo eje equivalen a:",
+      "opciones": {
+        "A": "Una rotación de θ1 · θ2",
+        "B": "Una rotación de θ1 − θ2 siempre",
+        "C": "Una reflexión",
+        "D": "Una rotación de θ1 + θ2 alrededor de ese eje"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 119,
+      "pregunta": "Dos traslaciones consecutivas T(a) y T(b) equivalen a:",
+      "opciones": {
+        "A": "T(a − b)",
+        "B": "T(a × b)",
+        "C": "T(a · b)",
+        "D": "T(a + b)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 120,
+      "pregunta": "Dos escalados consecutivos S(a) y S(b) equivalen a:",
+      "opciones": {
+        "A": "S(a·b) componente a componente",
+        "B": "S(a + b)",
+        "C": "S(a / b)",
+        "D": "S(a − b)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 121,
+      "pregunta": "Aplicar dos veces la misma reflexión respecto a un plano equivale a:",
+      "opciones": {
+        "A": "Un escalado por 2",
+        "B": "Una rotación de 90º",
+        "C": "La identidad",
+        "D": "Una traslación"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 122,
+      "pregunta": "Aplica la traslación T = (-4, 4, 4) al punto P = (-5, -2, -2). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(20, -8, -8)",
+        "B": "(-4, 4, 4)",
+        "C": "(-9, 2, 2)",
+        "D": "(-1, -6, -6)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 123,
+      "pregunta": "Aplica una rotación de -90º alrededor del eje Y (regla de la mano derecha) al punto P = (-2, 2, 3). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(3, 2, 2)",
+        "B": "(2, 2, 3)",
+        "C": "(2, -2, -3)",
+        "D": "(-3, 2, -2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 124,
+      "pregunta": "Aplica el escalado S = (3, 3, 4) (respecto al origen) al punto P = (4, -4, -1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(1.333, -1.333, -0.25)",
+        "B": "(12, -4, -12)",
+        "C": "(7, -1, 3)",
+        "D": "(12, -12, -4)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 125,
+      "pregunta": "Aplica la reflexión respecto al plano XY al punto P = (4, 5, 1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(4, -5, 1)",
+        "B": "(4, 5, -1)",
+        "C": "(-4, -5, -1)",
+        "D": "(-4, 5, 1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 126,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (-9, -3, -4, 5)?",
+      "opciones": {
+        "A": "(-4, 2, 1)",
+        "B": "(-45, -15, -20)",
+        "C": "(-9, -3, -4)",
+        "D": "(-1.8, -0.6, -0.8)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 127,
+      "pregunta": "¿Cuál es la inversa de la rotación R_x(45º)?",
+      "opciones": {
+        "A": "R_x(45º), por ser simétrica",
+        "B": "La matriz con 1/cos y 1/sen en lugar de cos y sen",
+        "C": "R_x(315º) con signo negativo en todos los elementos",
+        "D": "R_x(−45º), que coincide con la traspuesta de R_x(45º)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 128,
+      "pregunta": "Se calcula M = T·S con S = escalado uniforme de factor 2 y T = traslación (-1, 3, -3). ¿En qué transforma M al punto P = (-2, -2, 1)?",
+      "opciones": {
+        "A": "(-3, 1, -2)",
+        "B": "(-4, -4, 2)",
+        "C": "(-5, -1, -1)",
+        "D": "(-6, 2, -4)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 129,
+      "pregunta": "Se escala uniformemente con factor 0.5 respecto al punto fijo C = (1, -2, 3) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (4, 6, 0)?",
+      "opciones": {
+        "A": "(2, 3, 0)",
+        "B": "(3, 1, 3)",
+        "C": "(2.5, 2, 1.5)",
+        "D": "(1.5, 4, -1.5)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 130,
+      "pregunta": "Se rota 180º alrededor de un eje paralelo a Z que pasa por C = (-3, -1, 0) (M = T(C)·Rz·T(−C)). ¿En qué se transforma P = (0, -2, -1)?",
+      "opciones": {
+        "A": "(-3, 1, -1)",
+        "B": "(-6, 0, -1)",
+        "C": "(0, 2, -1)",
+        "D": "(0, -2, -1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 131,
+      "pregunta": "Una matriz de modelo-vista es un escalado S(4, 1, 5). Usando la matriz normal (A⁻¹)ᵀ, ¿en qué se transforma (sin renormalizar) la normal n = (0.6, 0, 0.8)?",
+      "opciones": {
+        "A": "(0.6, 0, 0.8)",
+        "B": "(0.15, 0, 0.16)",
+        "C": "(2.4, 0, 4)",
+        "D": "(4.6, 1, 5.8)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 132,
+      "pregunta": "La parte lineal de una transformación es el escalado S(1, 3, -1). ¿Cambia el sentido de ordenación de los vértices?",
+      "opciones": {
+        "A": "Sí, incluye una reflexión (determinante negativo)",
+        "B": "No se puede saber sin conocer la traslación",
+        "C": "Sí, porque algún factor es mayor que 1",
+        "D": "No, el determinante es positivo"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 133,
+      "pregunta": "Se aplica la traslación T = (-3, 2, -4) al vector (dirección) V = (-4, 5, 5, 0) en coordenadas homogéneas. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "(-4, 5, 5, 0)",
+        "B": "(-7, 7, 1, 0)",
+        "C": "(-7, 7, 1, 1)",
+        "D": "(-1, 3, 9, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 134,
+      "pregunta": "Aplica la traslación T = (0, 4, 5) al punto P = (-3, 1, -5). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-3, -3, -10)",
+        "B": "(0, 4, 5)",
+        "C": "(0, 4, -25)",
+        "D": "(-3, 5, 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 135,
+      "pregunta": "Aplica una rotación de 180º alrededor del eje X (regla de la mano derecha) al punto P = (-3, 2, -4). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-3, -2, 4)",
+        "B": "(-3, 2, -4)",
+        "C": "(3, 2, 4)",
+        "D": "(3, -2, 4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 136,
+      "pregunta": "Aplica el escalado S = (-1, 0.5, -1) (respecto al origen) al punto P = (-4, 0, -3). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-4, 0, -3)",
+        "B": "(4, 0, 3)",
+        "C": "(4, 3, 0)",
+        "D": "(-5, 0.5, -4)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 137,
+      "pregunta": "Aplica la reflexión respecto al plano XZ al punto P = (-5, -4, -1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-5, 4, -1)",
+        "B": "(5, 4, 1)",
+        "C": "(-5, -4, 1)",
+        "D": "(5, -4, -1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 138,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (6, -5, 2, 4)?",
+      "opciones": {
+        "A": "(6, -5, 2)",
+        "B": "(10, -1, 6)",
+        "C": "(1.5, -1.25, 0.5)",
+        "D": "(24, -20, 8)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 139,
+      "pregunta": "¿Cuál es la inversa de la traslación T(2, 3, -3)?",
+      "opciones": {
+        "A": "T(0.5, 0.333, -0.333)",
+        "B": "T(-2, -3, 3)",
+        "C": "S(-2, -3, 3)",
+        "D": "T(2, 3, -3)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 140,
+      "pregunta": "Se calcula M = S·T con S = escalado uniforme de factor 3 y T = traslación (1, -3, -3). ¿En qué transforma M al punto P = (1, -2, 2)?",
+      "opciones": {
+        "A": "(6, -15, -3)",
+        "B": "(2, -5, -1)",
+        "C": "(3, -6, 6)",
+        "D": "(4, -9, 3)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 141,
+      "pregunta": "Se escala uniformemente con factor 3 respecto al punto fijo C = (2, -1, 1) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (-1, 4, 3)?",
+      "opciones": {
+        "A": "(-7, 14, 7)",
+        "B": "(1, 10, 11)",
+        "C": "(-3, 12, 9)",
+        "D": "(-1, 11, 10)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 142,
+      "pregunta": "Se rota -90º alrededor de un eje paralelo a Z que pasa por C = (3, -1, 0) (M = T(C)·Rz·T(−C)). ¿En qué se transforma P = (0, -1, 1)?",
+      "opciones": {
+        "A": "(0, -3, 1)",
+        "B": "(0, 3, 1)",
+        "C": "(3, 2, 1)",
+        "D": "(-1, 0, 1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 143,
+      "pregunta": "La parte lineal de una transformación es el escalado S(2, -2, -1). ¿Cambia el sentido de ordenación de los vértices?",
+      "opciones": {
+        "A": "No, el determinante es positivo",
+        "B": "Sí, porque algún factor es mayor que 1",
+        "C": "No se puede saber sin conocer la traslación",
+        "D": "Sí, incluye una reflexión (determinante negativo)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 144,
+      "pregunta": "Se aplica la traslación T = (0, 3, 3) al vector (dirección) V = (2, 3, -3, 0) en coordenadas homogéneas. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "(2, 0, -6, 0)",
+        "B": "(2, 6, 0, 0)",
+        "C": "(2, 6, 0, 1)",
+        "D": "(2, 3, -3, 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 145,
+      "pregunta": "Aplica la traslación T = (-4, -1, 5) al punto P = (2, 3, 5). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-4, -1, 5)",
+        "B": "(-2, 2, 10)",
+        "C": "(6, 4, 0)",
+        "D": "(-8, -3, 25)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 146,
+      "pregunta": "Aplica una rotación de 180º alrededor del eje X (regla de la mano derecha) al punto P = (1, 0, 1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(1, 0, 1)",
+        "B": "(0, 1, -1)",
+        "C": "(1, 0, -1)",
+        "D": "(-1, 0, -1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 147,
+      "pregunta": "Aplica el escalado S = (2, 0.5, -2) (respecto al origen) al punto P = (5, -2, 0). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(7, -1.5, -2)",
+        "B": "(10, 0, -1)",
+        "C": "(2.5, -4, 0)",
+        "D": "(10, -1, 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 148,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (2, 7, -10, 5)?",
+      "opciones": {
+        "A": "(10, 35, -50)",
+        "B": "(0.4, 1.4, -2)",
+        "C": "(7, 12, -5)",
+        "D": "(2, 7, -10)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 149,
+      "pregunta": "¿Cuál es la inversa del escalado S(2, -2, -2)?",
+      "opciones": {
+        "A": "S(4, 4, 4)",
+        "B": "S(-2, 2, 2)",
+        "C": "S(0.5, -0.5, -0.5)",
+        "D": "S(2, -2, -2)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 150,
+      "pregunta": "Se calcula M = S·T con S = escalado uniforme de factor 2 y T = traslación (-1, 2, -1). ¿En qué transforma M al punto P = (3, -3, 3)?",
+      "opciones": {
+        "A": "(4, -2, 4)",
+        "B": "(6, -6, 6)",
+        "C": "(2, -1, 2)",
+        "D": "(5, -4, 5)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 151,
+      "pregunta": "Se escala uniformemente con factor 0.5 respecto al punto fijo C = (-2, -1, 3) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (-1, -4, 0)?",
+      "opciones": {
+        "A": "(-0.5, -2, 0)",
+        "B": "(-1.5, -2.5, 1.5)",
+        "C": "(-2.5, -3, 3)",
+        "D": "(0.5, -1.5, -1.5)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 152,
+      "pregunta": "Se rota 180º alrededor de un eje paralelo a Z que pasa por C = (-2, 0, 0) (M = T(C)·Rz·T(−C)). ¿En qué se transforma P = (-3, -3, -1)?",
+      "opciones": {
+        "A": "(-1, 3, -1)",
+        "B": "(1, 3, -1)",
+        "C": "(3, 3, -1)",
+        "D": "(-3, -3, -1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 153,
+      "pregunta": "Una matriz de modelo-vista es un escalado S(5, 4, 0.5). Usando la matriz normal (A⁻¹)ᵀ, ¿en qué se transforma (sin renormalizar) la normal n = (0.8, 0.6, 0)?",
+      "opciones": {
+        "A": "(0.16, 0.15, 0)",
+        "B": "(5.8, 4.6, 0.5)",
+        "C": "(4, 2.4, 0)",
+        "D": "(0.8, 0.6, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 154,
+      "pregunta": "La parte lineal de una transformación es el escalado S(0.5, -1, 0.5). ¿Cambia el sentido de ordenación de los vértices?",
+      "opciones": {
+        "A": "Sí, porque algún factor es mayor que 1",
+        "B": "No se puede saber sin conocer la traslación",
+        "C": "Sí, incluye una reflexión (determinante negativo)",
+        "D": "No, el determinante es positivo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 155,
+      "pregunta": "Se aplica la traslación T = (-3, 4, 1) al vector (dirección) V = (1, 0, 3, 0) en coordenadas homogéneas. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "(-2, 4, 4, 0)",
+        "B": "(4, -4, 2, 0)",
+        "C": "(1, 0, 3, 0)",
+        "D": "(-2, 4, 4, 1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 156,
+      "pregunta": "Aplica la traslación T = (-2, 2, 0) al punto P = (-4, -5, -5). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-2, -7, -5)",
+        "B": "(-6, -3, -5)",
+        "C": "(-2, 2, 0)",
+        "D": "(8, -10, 0)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 157,
+      "pregunta": "Aplica una rotación de -90º alrededor del eje Z (regla de la mano derecha) al punto P = (4, 4, -1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-4, 4, -1)",
+        "B": "(-4, -4, 1)",
+        "C": "(4, -1, -4)",
+        "D": "(4, -4, -1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 158,
+      "pregunta": "Aplica el escalado S = (0.5, 0.5, -1) (respecto al origen) al punto P = (2, -4, 2). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(4, -8, -2)",
+        "B": "(2.5, -3.5, 1)",
+        "C": "(1, -2, -2)",
+        "D": "(-1, 2, 2)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 159,
+      "pregunta": "Aplica el cizallamiento Hyz(2) al punto P = (4, -2, -2). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(4, -2, -6)",
+        "B": "(4, 8, -2)",
+        "C": "(4, 2, -2)",
+        "D": "(4, -6, -2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 160,
+      "pregunta": "Aplica la reflexión respecto al plano XZ al punto P = (3, -2, -5). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(3, -2, 5)",
+        "B": "(3, 2, -5)",
+        "C": "(-3, 2, 5)",
+        "D": "(-3, -2, -5)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 161,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (-7, 5, -5, 10)?",
+      "opciones": {
+        "A": "(3, 15, 5)",
+        "B": "(-70, 50, -50)",
+        "C": "(-7, 5, -5)",
+        "D": "(-0.7, 0.5, -0.5)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 162,
+      "pregunta": "¿Cuál es la inversa de la traslación T(-4, 2, 0)?",
+      "opciones": {
+        "A": "T(4, -2, 0)",
+        "B": "T(-4, 2, 0)",
+        "C": "T(-0.25, 0.5, 0)",
+        "D": "S(4, -2, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 163,
+      "pregunta": "Se calcula M = S·T con S = escalado uniforme de factor 2 y T = traslación (-1, -3, -3). ¿En qué transforma M al punto P = (1, 2, 0)?",
+      "opciones": {
+        "A": "(0, -2, -6)",
+        "B": "(1, 1, -3)",
+        "C": "(0, -1, -3)",
+        "D": "(2, 4, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 164,
+      "pregunta": "Se escala uniformemente con factor 3 respecto al punto fijo C = (3, 0, 2) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (-2, -3, 2)?",
+      "opciones": {
+        "A": "(-6, -9, 6)",
+        "B": "(0, -9, 10)",
+        "C": "(-3, -9, 8)",
+        "D": "(-12, -9, 2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 165,
+      "pregunta": "Se rota -90º alrededor de un eje paralelo a Z que pasa por C = (-3, 1, 0) (M = T(C)·Rz·T(−C)). ¿En qué se transforma P = (-1, 0, -1)?",
+      "opciones": {
+        "A": "(1, 2, -1)",
+        "B": "(-4, -1, -1)",
+        "C": "(0, 1, -1)",
+        "D": "(-1, -2, -1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 166,
+      "pregunta": "La parte lineal de una transformación es el escalado S(0.5, -2, -2). ¿Cambia el sentido de ordenación de los vértices?",
+      "opciones": {
+        "A": "No se puede saber sin conocer la traslación",
+        "B": "Sí, porque algún factor es mayor que 1",
+        "C": "Sí, incluye una reflexión (determinante negativo)",
+        "D": "No, el determinante es positivo"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 167,
+      "pregunta": "Se aplica la traslación T = (-4, 4, -3) al vector (dirección) V = (-4, 0, -3, 0) en coordenadas homogéneas. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "(-8, 4, -6, 0)",
+        "B": "(-8, 4, -6, 1)",
+        "C": "(0, -4, 0, 0)",
+        "D": "(-4, 0, -3, 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 168,
+      "pregunta": "Aplica la traslación T = (-2, -2, -4) al punto P = (5, 4, 5). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(3, 2, 1)",
+        "B": "(-2, -2, -4)",
+        "C": "(-10, -8, -20)",
+        "D": "(7, 6, 9)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 169,
+      "pregunta": "Aplica una rotación de 270º alrededor del eje X (regla de la mano derecha) al punto P = (0, 0, 2). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(0, 2, 0)",
+        "B": "(0, 0, -2)",
+        "C": "(0, -2, 0)",
+        "D": "(-2, 0, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 170,
+      "pregunta": "Aplica el escalado S = (-1, 0.5, 2) (respecto al origen) al punto P = (4, 1, -3). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(3, 1.5, -1)",
+        "B": "(-4, 0.5, -6)",
+        "C": "(-4, -6, 0.5)",
+        "D": "(-4, 2, -1.5)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 171,
+      "pregunta": "Aplica el cizallamiento Hyx(2) al punto P = (2, 1, 1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(2, 5, 1)",
+        "B": "(4, 1, 1)",
+        "C": "(2, -3, 1)",
+        "D": "(2, 4, 1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 172,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (-5, -4, 6, -2)?",
+      "opciones": {
+        "A": "(-5, -4, 6)",
+        "B": "(-7, -6, 4)",
+        "C": "(2.5, 2, -3)",
+        "D": "(10, 8, -12)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 173,
+      "pregunta": "¿Cuál es la inversa del cizallamiento Hyz(0.5)?",
+      "opciones": {
+        "A": "Hzy(0.5)",
+        "B": "Hyz(2)",
+        "C": "Hyz(-0.5)",
+        "D": "Hzy(-0.5)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 174,
+      "pregunta": "Se calcula M = T·S con S = escalado uniforme de factor 3 y T = traslación (-1, -1, 1). ¿En qué transforma M al punto P = (1, -1, -3)?",
+      "opciones": {
+        "A": "(0, -2, -2)",
+        "B": "(2, -4, -8)",
+        "C": "(3, -3, -9)",
+        "D": "(0, -6, -6)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 175,
+      "pregunta": "Se escala uniformemente con factor 2 respecto al punto fijo C = (-3, 0, 3) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (5, 6, 2)?",
+      "opciones": {
+        "A": "(10, 12, 4)",
+        "B": "(7, 8, 4)",
+        "C": "(7, 12, 7)",
+        "D": "(13, 12, 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 176,
+      "pregunta": "Se rota 90º alrededor de un eje paralelo a Z que pasa por C = (3, 1, 0) (M = T(C)·Rz·T(−C)). ¿En qué se transforma P = (5, 3, -1)?",
+      "opciones": {
+        "A": "(-2, 2, -1)",
+        "B": "(2, -2, -1)",
+        "C": "(1, 3, -1)",
+        "D": "(-3, 5, -1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 177,
+      "pregunta": "Una matriz de modelo-vista es un escalado S(4, 5, 1). Usando la matriz normal (A⁻¹)ᵀ, ¿en qué se transforma (sin renormalizar) la normal n = (0.6, 0.8, 0)?",
+      "opciones": {
+        "A": "(4.6, 5.8, 1)",
+        "B": "(2.4, 4, 0)",
+        "C": "(0.15, 0.16, 0)",
+        "D": "(0.6, 0.8, 0)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 178,
+      "pregunta": "La parte lineal de una transformación es el escalado S(2, -1, 0.5). ¿Cambia el sentido de ordenación de los vértices?",
+      "opciones": {
+        "A": "No, el determinante es positivo",
+        "B": "No se puede saber sin conocer la traslación",
+        "C": "Sí, porque algún factor es mayor que 1",
+        "D": "Sí, incluye una reflexión (determinante negativo)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 179,
+      "pregunta": "Se aplica la traslación T = (-3, 4, 5) al vector (dirección) V = (-1, -4, -4, 0) en coordenadas homogéneas. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "(-1, -4, -4, 0)",
+        "B": "(-4, 0, 1, 0)",
+        "C": "(2, -8, -9, 0)",
+        "D": "(-4, 0, 1, 1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 180,
+      "pregunta": "Aplica la traslación T = (0, -2, -1) al punto P = (3, -5, -2). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(3, -3, -1)",
+        "B": "(0, 10, 2)",
+        "C": "(3, -7, -3)",
+        "D": "(0, -2, -1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 181,
+      "pregunta": "Aplica una rotación de 90º alrededor del eje Y (regla de la mano derecha) al punto P = (-2, 3, 4). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-3, -2, 4)",
+        "B": "(-4, 3, -2)",
+        "C": "(2, -3, -4)",
+        "D": "(4, 3, 2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 182,
+      "pregunta": "Aplica el escalado S = (4, -1, 3) (respecto al origen) al punto P = (4, -4, -1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(1, 4, -0.333)",
+        "B": "(16, -3, 4)",
+        "C": "(8, -5, 2)",
+        "D": "(16, 4, -3)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 183,
+      "pregunta": "Aplica el cizallamiento Hyz(-1) al punto P = (-4, 1, 2). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-4, 1, 1)",
+        "B": "(-4, -2, 2)",
+        "C": "(-4, 3, 2)",
+        "D": "(-4, -1, 2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 184,
+      "pregunta": "Aplica la reflexión respecto al plano XY al punto P = (2, 5, -1). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-2, -5, 1)",
+        "B": "(2, -5, -1)",
+        "C": "(-2, 5, -1)",
+        "D": "(2, 5, 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 185,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (-6, -2, -5, 5)?",
+      "opciones": {
+        "A": "(-1, 3, 0)",
+        "B": "(-1.2, -0.4, -1)",
+        "C": "(-30, -10, -25)",
+        "D": "(-6, -2, -5)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 186,
+      "pregunta": "¿Cuál es la inversa de la traslación T(3, -5, 3)?",
+      "opciones": {
+        "A": "T(-3, 5, -3)",
+        "B": "T(0.333, -0.2, 0.333)",
+        "C": "S(-3, 5, -3)",
+        "D": "T(3, -5, 3)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 187,
+      "pregunta": "Se calcula M = T·S con S = escalado uniforme de factor 2 y T = traslación (-1, 0, 0). ¿En qué transforma M al punto P = (0, 2, -3)?",
+      "opciones": {
+        "A": "(-2, 4, -6)",
+        "B": "(-1, 4, -6)",
+        "C": "(0, 4, -6)",
+        "D": "(-1, 2, -3)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 188,
+      "pregunta": "Se escala uniformemente con factor 3 respecto al punto fijo C = (-3, 2, 3) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (5, -3, -3)?",
+      "opciones": {
+        "A": "(9, -5, -3)",
+        "B": "(15, -9, -9)",
+        "C": "(12, -7, -6)",
+        "D": "(21, -13, -15)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 189,
+      "pregunta": "Se rota 90º alrededor de un eje paralelo a Z que pasa por C = (-1, -1, 0) (M = T(C)·Rz·T(−C)). ¿En qué se transforma P = (-4, -4, -2)?",
+      "opciones": {
+        "A": "(4, -4, -2)",
+        "B": "(-3, 3, -2)",
+        "C": "(3, -3, -2)",
+        "D": "(2, -4, -2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 190,
+      "pregunta": "Una matriz de modelo-vista es un escalado S(5, 0.5, 5). Usando la matriz normal (A⁻¹)ᵀ, ¿en qué se transforma (sin renormalizar) la normal n = (0.6, 0, 0.8)?",
+      "opciones": {
+        "A": "(0.6, 0, 0.8)",
+        "B": "(5.6, 0.5, 5.8)",
+        "C": "(3, 0, 4)",
+        "D": "(0.12, 0, 0.16)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 191,
+      "pregunta": "La parte lineal de una transformación es el escalado S(2, 3, 3). ¿Cambia el sentido de ordenación de los vértices?",
+      "opciones": {
+        "A": "Sí, porque algún factor es mayor que 1",
+        "B": "No se puede saber sin conocer la traslación",
+        "C": "Sí, incluye una reflexión (determinante negativo)",
+        "D": "No, el determinante es positivo"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 192,
+      "pregunta": "Se aplica la traslación T = (-1, -2, 0) al vector (dirección) V = (4, 4, -2, 0) en coordenadas homogéneas. ¿Cuál es el resultado?",
+      "opciones": {
+        "A": "(4, 4, -2, 0)",
+        "B": "(5, 6, -2, 0)",
+        "C": "(3, 2, -2, 0)",
+        "D": "(3, 2, -2, 1)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 193,
+      "pregunta": "Aplica la traslación T = (5, 1, 3) al punto P = (-2, 0, 4). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(3, 1, 7)",
+        "B": "(-10, 0, 12)",
+        "C": "(-7, -1, 1)",
+        "D": "(5, 1, 3)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 194,
+      "pregunta": "Aplica una rotación de 180º alrededor del eje Z (regla de la mano derecha) al punto P = (1, 1, -4). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(1, -1, 4)",
+        "B": "(-1, -1, -4)",
+        "C": "(-1, -1, 4)",
+        "D": "(1, 1, -4)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 195,
+      "pregunta": "Aplica el escalado S = (4, -2, 0.5) (respecto al origen) al punto P = (1, 2, -3). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(4, -4, -1.5)",
+        "B": "(5, 0, -2.5)",
+        "C": "(4, -1.5, -4)",
+        "D": "(0.25, -1, -6)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 196,
+      "pregunta": "Aplica la reflexión respecto al plano YZ al punto P = (2, -5, -4). ¿Cuál es P'?",
+      "opciones": {
+        "A": "(-2, 5, 4)",
+        "B": "(2, 5, -4)",
+        "C": "(-2, -5, -4)",
+        "D": "(2, -5, 4)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 197,
+      "pregunta": "¿Qué punto cartesiano representa el punto en coordenadas homogéneas (7, 8, -8, 10)?",
+      "opciones": {
+        "A": "(70, 80, -80)",
+        "B": "(17, 18, 2)",
+        "C": "(7, 8, -8)",
+        "D": "(0.7, 0.8, -0.8)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 198,
+      "pregunta": "¿Cuál es la inversa de la rotación R_z(60º)?",
+      "opciones": {
+        "A": "La matriz con 1/cos y 1/sen en lugar de cos y sen",
+        "B": "R_z(300º) con signo negativo en todos los elementos",
+        "C": "R_z(−60º), que coincide con la traspuesta de R_z(60º)",
+        "D": "R_z(60º), por ser simétrica"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 199,
+      "pregunta": "Se calcula M = S·T con S = escalado uniforme de factor 3 y T = traslación (3, 3, 2). ¿En qué transforma M al punto P = (2, -2, 1)?",
+      "opciones": {
+        "A": "(9, -3, 5)",
+        "B": "(6, -6, 3)",
+        "C": "(15, 3, 9)",
+        "D": "(5, 1, 3)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 200,
+      "pregunta": "Se escala uniformemente con factor 2 respecto al punto fijo C = (2, 1, 0) (M = T(C)·S·T(−C)). ¿En qué se transforma P = (6, 4, 6)?",
+      "opciones": {
+        "A": "(12, 8, 12)",
+        "B": "(10, 7, 12)",
+        "C": "(8, 6, 8)",
+        "D": "(14, 9, 12)"
+      },
+      "respuesta_correcta": "B"
+    }
+  ]
+}

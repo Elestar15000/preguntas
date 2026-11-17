@@ -1,0 +1,2208 @@
+{
+  "asignatura": "Gráficos por Computador",
+  "tema": 1,
+  "titulo": "Introducción y Pipeline de renderización de gráficos",
+  "total_preguntas": 200,
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Qué es un gráfico por computador en 3D?",
+      "opciones": {
+        "A": "Una reproducción física volumétrica de un objeto real",
+        "B": "Una imagen 2D sin ningún tipo de información de profundidad",
+        "C": "Un modelo matemático que no puede visualizarse en pantalla",
+        "D": "La representación sobre un plano (2D) de la realidad (3D) con ilusión de profundidad"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 2,
+      "pregunta": "La representación de un mundo 3D sobre un plano 2D hace necesarias:",
+      "opciones": {
+        "A": "Las máscaras del stencil buffer",
+        "B": "Las proyecciones",
+        "C": "Las texturas",
+        "D": "Las detecciones de colisiones"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 3,
+      "pregunta": "Además de las proyecciones, ¿qué otra problemática se plantea en los gráficos 3D?",
+      "opciones": {
+        "A": "La necesidad de trabajar exclusivamente en la CPU",
+        "B": "La imposibilidad de usar matrices",
+        "C": "La necesidad de métodos para añadir realismo",
+        "D": "La imposibilidad de representar profundidad"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 4,
+      "pregunta": "Un vector se puede definir como:",
+      "opciones": {
+        "A": "La suma de las posiciones de dos puntos",
+        "B": "El producto de las coordenadas de dos puntos",
+        "C": "El punto medio entre dos puntos",
+        "D": "La diferencia entre las posiciones de dos puntos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 5,
+      "pregunta": "La magnitud (módulo) de un vector V = (vx, vy, vz) es:",
+      "opciones": {
+        "A": "vx² + vy² + vz²",
+        "B": "vx + vy + vz",
+        "C": "√(vx² + vy² + vz²)",
+        "D": "max(|vx|, |vy|, |vz|)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 6,
+      "pregunta": "El coseno director cos α de un vector V respecto al eje X se calcula como:",
+      "opciones": {
+        "A": "|V| / vx",
+        "B": "vy / |V|",
+        "C": "vx / |V|",
+        "D": "vx · |V|"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 7,
+      "pregunta": "El vector unitario U asociado a un vector V se calcula como:",
+      "opciones": {
+        "A": "U = V / |V|",
+        "B": "U = V · |V|",
+        "C": "U = V − |V|",
+        "D": "U = |V| / V"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 8,
+      "pregunta": "Normalizar un vector consiste en:",
+      "opciones": {
+        "A": "Anular su componente z",
+        "B": "Obtener un vector de igual dirección y longitud 1",
+        "C": "Obtener un vector perpendicular de igual longitud",
+        "D": "Invertir el sentido del vector"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 9,
+      "pregunta": "La suma de dos vectores V + W se calcula como:",
+      "opciones": {
+        "A": "vx·wx + vy·wy + vz·wz",
+        "B": "(vx + wx, vy + wy, vz + wz)",
+        "C": "(vx · wx, vy · wy, vz · wz)",
+        "D": "|V| + |W|"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 10,
+      "pregunta": "El producto de un escalar a por un vector V es:",
+      "opciones": {
+        "A": "(a·vx, a·vy, a·vz)",
+        "B": "a·|V| (un escalar)",
+        "C": "(a + vx, a + vy, a + vz)",
+        "D": "a + vx + vy + vz"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 11,
+      "pregunta": "El producto escalar de V y W puede expresarse como:",
+      "opciones": {
+        "A": "Un vector perpendicular a ambos",
+        "B": "|V| |W| sen θ",
+        "C": "|V| |W| cos θ",
+        "D": "|V| + |W|"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 12,
+      "pregunta": "Si el producto escalar V·W es mayor que 0, el ángulo θ entre ambos vectores es:",
+      "opciones": {
+        "A": "Exactamente 90º",
+        "B": "Mayor de 90º",
+        "C": "Siempre 180º",
+        "D": "Menor de 90º"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 13,
+      "pregunta": "Si V·W = 0 (con V y W no nulos), los vectores son:",
+      "opciones": {
+        "A": "Iguales",
+        "B": "Paralelos y del mismo sentido",
+        "C": "Paralelos y de sentido opuesto",
+        "D": "Perpendiculares"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 14,
+      "pregunta": "Si V·W < 0, el ángulo θ entre los vectores es:",
+      "opciones": {
+        "A": "Mayor de 90º",
+        "B": "Exactamente 0º",
+        "C": "Menor de 90º",
+        "D": "Exactamente 90º"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 15,
+      "pregunta": "¿Cuál de las siguientes propiedades cumple el producto escalar?",
+      "opciones": {
+        "A": "Su resultado es siempre un vector",
+        "B": "Es anticonmutativo: V·W = −(W·V)",
+        "C": "Es conmutativo: V·W = W·V",
+        "D": "No es distributivo respecto a la suma"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 16,
+      "pregunta": "La propiedad distributiva del producto escalar establece que:",
+      "opciones": {
+        "A": "V·(W + U) = (V·W)·(V·U)",
+        "B": "V·(W + U) = V×W + V×U",
+        "C": "V·(W + U) = V·W + V·U",
+        "D": "V·(W + U) = −(W·V + U·V)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 17,
+      "pregunta": "El resultado del producto vectorial V × W es:",
+      "opciones": {
+        "A": "Un escalar",
+        "B": "Un vector perpendicular a V y a W",
+        "C": "Un vector paralelo a V",
+        "D": "Una matriz 3x3"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 18,
+      "pregunta": "El sentido del producto vectorial viene determinado por:",
+      "opciones": {
+        "A": "El signo del producto escalar",
+        "B": "La regla de la mano izquierda",
+        "C": "La regla de la mano derecha",
+        "D": "La regla del paralelogramo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 19,
+      "pregunta": "¿Qué propiedad cumple el producto vectorial?",
+      "opciones": {
+        "A": "Es conmutativo: V×W = W×V",
+        "B": "Su resultado es siempre un escalar",
+        "C": "No es distributivo respecto a la suma",
+        "D": "Es anticonmutativo: V×W = −(W×V)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 20,
+      "pregunta": "El módulo del producto vectorial V × W es:",
+      "opciones": {
+        "A": "|V| |W| sen θ",
+        "B": "|V| + |W|",
+        "C": "|V| |W| cos θ",
+        "D": "|V| |W|"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 21,
+      "pregunta": "En la expresión V × W = u |V| |W| sen θ, el término u representa:",
+      "opciones": {
+        "A": "El ángulo entre V y W",
+        "B": "Un vector unitario paralelo a V",
+        "C": "Un vector unitario perpendicular a V y W",
+        "D": "Un escalar de valor 1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 22,
+      "pregunta": "El producto vectorial puede calcularse como el determinante de una matriz 3x3 cuya primera fila contiene:",
+      "opciones": {
+        "A": "Los vectores unitarios i, j, k",
+        "B": "Ceros",
+        "C": "Las componentes de W",
+        "D": "Las componentes de V"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 23,
+      "pregunta": "Los vectores unitarios i, j y k utilizados en el producto vectorial son:",
+      "opciones": {
+        "A": "(1,1,0), (0,1,1) y (1,0,1)",
+        "B": "(0,0,1), (0,1,0) y (1,0,0)",
+        "C": "(1,0,0), (0,1,0) y (0,0,1)",
+        "D": "(1,1,1), (1,0,0) y (0,0,0)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 24,
+      "pregunta": "La propiedad distributiva del producto vectorial establece que:",
+      "opciones": {
+        "A": "V×(W + U) = (V×W)·(V×U)",
+        "B": "V×(W + U) = V×W + V×U",
+        "C": "V×(W + U) = V·W + V·U",
+        "D": "V×(W + U) = W×V + U×V"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 25,
+      "pregunta": "Las coordenadas homogéneas consisten en:",
+      "opciones": {
+        "A": "Duplicar la dimensión de las coordenadas",
+        "B": "Reducir en 1 la dimensión de las coordenadas",
+        "C": "Expresar los puntos en coordenadas polares",
+        "D": "Ampliar en 1 la dimensión de las coordenadas"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 26,
+      "pregunta": "¿Cuál es la principal ventaja del uso de coordenadas homogéneas?",
+      "opciones": {
+        "A": "Reducen a la mitad la memoria necesaria",
+        "B": "Permiten usar matrices cuadradas y el producto de matrices para componer todo tipo de transformaciones y calcular inversas",
+        "C": "Evitan tener que realizar la proyección",
+        "D": "Eliminan la necesidad de usar matrices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 27,
+      "pregunta": "En gráficos por computador, la composición de transformaciones se realiza mediante:",
+      "opciones": {
+        "A": "La suma de matrices",
+        "B": "El producto de matrices",
+        "C": "El producto vectorial",
+        "D": "El producto escalar"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 28,
+      "pregunta": "En la matriz 4x4 de traslación en coordenadas homogéneas, los valores tx, ty, tz aparecen:",
+      "opciones": {
+        "A": "En la cuarta fila, columnas 1 a 3",
+        "B": "En la diagonal principal",
+        "C": "En la primera columna",
+        "D": "En la cuarta columna, filas 1 a 3"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 29,
+      "pregunta": "La ecuación general de un plano es:",
+      "opciones": {
+        "A": "y = mx + b",
+        "B": "P(t) = P0 + t·D",
+        "C": "x² + y² + z² = r²",
+        "D": "Ax + By + Cz + D = 0"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 30,
+      "pregunta": "¿Por qué se usa con frecuencia la ecuación del plano en gráficos por computador?",
+      "opciones": {
+        "A": "Porque todos los objetos son esferas",
+        "B": "Porque sustituye a la proyección",
+        "C": "Porque mucha geometría se basa en polígonos planos",
+        "D": "Porque solo se usa en la fase de aplicación"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 31,
+      "pregunta": "¿Cuántos puntos (no alineados) son necesarios para definir un plano?",
+      "opciones": {
+        "A": "3",
+        "B": "4",
+        "C": "2",
+        "D": "1"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 32,
+      "pregunta": "Los coeficientes A, B y C de la ecuación del plano corresponden a:",
+      "opciones": {
+        "A": "Un vector de traslación",
+        "B": "El centroide del polígono",
+        "C": "Las componentes del vector normal al plano",
+        "D": "Las coordenadas de un punto del plano"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 33,
+      "pregunta": "En la ecuación del plano, el coeficiente D se calcula:",
+      "opciones": {
+        "A": "Sustituyendo uno de los puntos del plano en la ecuación",
+        "B": "Siempre vale 0",
+        "C": "Como el módulo del vector normal",
+        "D": "Como el producto vectorial de dos aristas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 34,
+      "pregunta": "El vector normal a una superficie en un punto es:",
+      "opciones": {
+        "A": "Un vector tangente a la superficie",
+        "B": "El vector que apunta hacia la cámara",
+        "C": "El vector perpendicular a la superficie en ese punto",
+        "D": "El vector que apunta hacia la fuente de luz"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 35,
+      "pregunta": "El vector normal a un plano se obtiene como:",
+      "opciones": {
+        "A": "La diferencia entre dos vértices del plano",
+        "B": "El producto escalar de dos vectores situados sobre el plano",
+        "C": "El producto vectorial de dos vectores situados sobre el plano",
+        "D": "La suma de dos vectores situados sobre el plano"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 36,
+      "pregunta": "La normal de un triángulo de vértices v1, v2, v3 se calcula como:",
+      "opciones": {
+        "A": "N = (v1 × v2) · v3",
+        "B": "N = (v2 − v1) × (v3 − v1)",
+        "C": "N = v1 + v2 + v3",
+        "D": "N = (v2 − v1) · (v3 − v1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 37,
+      "pregunta": "El objetivo del pipeline de renderización es:",
+      "opciones": {
+        "A": "Comprimir imágenes para su almacenamiento",
+        "B": "Detectar colisiones entre los objetos de la escena",
+        "C": "Generar un modelo 3D a partir de fotografías",
+        "D": "Generar una imagen bidimensional a partir de una cámara virtual, objetos 3D, fuentes de luz y demás elementos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 38,
+      "pregunta": "¿Cuál de los siguientes NO es un factor del que dependen la localización y forma de los objetos en la imagen?",
+      "opciones": {
+        "A": "Las características del entorno",
+        "B": "El número de bits del stencil buffer",
+        "C": "La localización de la cámara dentro del entorno",
+        "D": "La geometría de los objetos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 39,
+      "pregunta": "¿Cuál de los siguientes elementos afecta a la apariencia de los objetos según el tema?",
+      "opciones": {
+        "A": "Propiedades del material, fuentes de luz, texturas y ecuaciones de sombreado",
+        "B": "Solo la resolución de la pantalla",
+        "C": "Solo la posición de la cámara",
+        "D": "Solo la geometría del objeto"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 40,
+      "pregunta": "¿Cuál es el primer sistema de coordenadas por el que pasan los modelos en el pipeline?",
+      "opciones": {
+        "A": "Coordenadas de pantalla",
+        "B": "Coordenadas del modelo",
+        "C": "Coordenadas de vista",
+        "D": "Coordenadas del mundo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 41,
+      "pregunta": "¿Cuál es el último sistema de coordenadas del pipeline geométrico?",
+      "opciones": {
+        "A": "Coordenadas del mundo",
+        "B": "Coordenadas normalizadas de dispositivo",
+        "C": "Coordenadas de pantalla",
+        "D": "Coordenadas de recorte"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 42,
+      "pregunta": "La transformación del modelo convierte:",
+      "opciones": {
+        "A": "Coordenadas del modelo en coordenadas del mundo",
+        "B": "Coordenadas del mundo en coordenadas de vista",
+        "C": "Coordenadas NDC en coordenadas de pantalla",
+        "D": "Coordenadas de vista en coordenadas de recorte"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 43,
+      "pregunta": "La transformación de vista convierte:",
+      "opciones": {
+        "A": "Coordenadas de vista en coordenadas de pantalla",
+        "B": "Coordenadas del modelo en coordenadas del mundo",
+        "C": "Coordenadas del mundo en coordenadas de vista (observador)",
+        "D": "Coordenadas de recorte en NDC"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 44,
+      "pregunta": "La transformación de proyección convierte:",
+      "opciones": {
+        "A": "Coordenadas de vista en coordenadas de recorte",
+        "B": "Coordenadas del modelo en coordenadas del mundo",
+        "C": "Coordenadas del mundo en coordenadas de vista",
+        "D": "Coordenadas NDC en coordenadas de pantalla"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 45,
+      "pregunta": "El recortado y la división de perspectiva llevan de:",
+      "opciones": {
+        "A": "Coordenadas de pantalla a coordenadas de ventana",
+        "B": "Coordenadas de recorte a coordenadas normalizadas de dispositivo",
+        "C": "Coordenadas del mundo a coordenadas de vista",
+        "D": "Coordenadas de vista a coordenadas de recorte"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 46,
+      "pregunta": "El screen mapping convierte:",
+      "opciones": {
+        "A": "Coordenadas del modelo en coordenadas del mundo",
+        "B": "Coordenadas de vista en coordenadas de recorte",
+        "C": "Coordenadas de recorte en NDC",
+        "D": "Coordenadas normalizadas de dispositivo en coordenadas de pantalla"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 47,
+      "pregunta": "¿Cuál es el orden correcto de los sistemas de coordenadas en el pipeline?",
+      "opciones": {
+        "A": "Mundo → Modelo → Vista → NDC → Recorte → Pantalla",
+        "B": "Modelo → Vista → Mundo → Recorte → NDC → Pantalla",
+        "C": "Modelo → Mundo → Vista → Recorte → NDC → Pantalla",
+        "D": "Modelo → Mundo → Recorte → Vista → Pantalla → NDC"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 48,
+      "pregunta": "La transformación del modelo está formada por:",
+      "opciones": {
+        "A": "Traslaciones, rotaciones y escalados",
+        "B": "El recorte y la división de perspectiva",
+        "C": "El escalado y el mapeado de profundidad exclusivamente",
+        "D": "Únicamente la proyección"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 49,
+      "pregunta": "El paso a coordenadas de pantalla (screen mapping) incluye:",
+      "opciones": {
+        "A": "Recorte contra los seis planos",
+        "B": "Proyección perspectiva",
+        "C": "Escalado, traslación y mapeado de profundidad",
+        "D": "Rotación y cizallamiento"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 50,
+      "pregunta": "¿Cuáles son las fases del pipeline de gráficos en tiempo real según el modelo funcional simplificado?",
+      "opciones": {
+        "A": "Vértices, fragmentos, recorte y pantalla",
+        "B": "Aplicación, rasterización, procesamiento de geometrías y mezclado",
+        "C": "Modelado, texturizado, animación y renderizado",
+        "D": "Aplicación, procesamiento de geometrías, rasterización y procesamiento de píxeles"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 51,
+      "pregunta": "En la arquitectura del pipeline, cada fase:",
+      "opciones": {
+        "A": "Solo empieza cuando todas las primitivas han terminado la fase anterior",
+        "B": "Se ejecuta siempre en la CPU",
+        "C": "Es totalmente independiente de las demás",
+        "D": "Depende del resultado de la fase anterior"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 52,
+      "pregunta": "Respecto al procesamiento de primitivas en el pipeline:",
+      "opciones": {
+        "A": "Diferentes primitivas pueden ser procesadas simultáneamente en distintas fases",
+        "B": "Las primitivas se procesan siempre en orden inverso",
+        "C": "Solo puede haber una primitiva en el pipeline en cada momento",
+        "D": "Cada primitiva debe recorrer todo el pipeline antes de que entre la siguiente"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 53,
+      "pregunta": "Según el tema, cada una de las fases del pipeline:",
+      "opciones": {
+        "A": "Corresponde a un único shader",
+        "B": "Es una única instrucción indivisible",
+        "C": "Se ejecuta solo una vez por escena",
+        "D": "Puede analizarse como un pipeline en sí mismo"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 54,
+      "pregunta": "El modelo de cuatro fases del pipeline presentado es:",
+      "opciones": {
+        "A": "Exactamente la arquitectura interna de OpenGL",
+        "B": "Un modelo que solo se aplica a gráficos 2D",
+        "C": "Un modelo exclusivo de los sistemas de trazado de rayos",
+        "D": "Un modelo funcional simplificado; OpenGL subdivide estas fases en etapas programables y de función fija"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 55,
+      "pregunta": "¿Dónde suele ejecutarse la fase de aplicación?",
+      "opciones": {
+        "A": "En la CPU",
+        "B": "En el monitor",
+        "C": "En el z-buffer",
+        "D": "En la GPU"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 56,
+      "pregunta": "En la fase de aplicación, el desarrollador:",
+      "opciones": {
+        "A": "No tiene ningún control",
+        "B": "Solo puede programar el fragment shader",
+        "C": "Solo controla las operaciones raster",
+        "D": "Tiene control total sobre lo que se ejecuta"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 57,
+      "pregunta": "¿Qué proceso se implementa comúnmente en la fase de aplicación?",
+      "opciones": {
+        "A": "La prueba del z-buffer",
+        "B": "La detección de colisiones",
+        "C": "La rasterización",
+        "D": "La división de perspectiva"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 58,
+      "pregunta": "Cuando se detecta una colisión entre dos objetos en la fase de aplicación:",
+      "opciones": {
+        "A": "Se descartan ambos objetos del pipeline",
+        "B": "Se genera una respuesta y se envía a los objetos colisionados",
+        "C": "Se recortan ambos objetos contra el volumen de visión",
+        "D": "Se escribe su profundidad en el z-buffer"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 59,
+      "pregunta": "¿En qué fase se procesa la entrada del teclado y del ratón?",
+      "opciones": {
+        "A": "Rasterización",
+        "B": "Aplicación",
+        "C": "Procesamiento de píxeles",
+        "D": "Procesamiento de geometrías"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 60,
+      "pregunta": "¿En qué fase se incluyen algoritmos de aceleración y optimización que agilizan el resto de fases?",
+      "opciones": {
+        "A": "Mapeado de pantalla",
+        "B": "Mezclado",
+        "C": "Rasterización",
+        "D": "Aplicación"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 61,
+      "pregunta": "Al final de la fase de aplicación:",
+      "opciones": {
+        "A": "Las primitivas de renderización se envían a la fase de procesamiento de geometría",
+        "B": "Se intercambian los buffers delantero y trasero",
+        "C": "Se generan los fragmentos",
+        "D": "Se escribe el color final en el buffer de color"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 62,
+      "pregunta": "Respecto a la división en subfases de la fase de aplicación:",
+      "opciones": {
+        "A": "Se divide en sombreado de píxeles y mezclado",
+        "B": "Se divide siempre en cuatro subfases fijas",
+        "C": "Al estar basada en software no suele dividirse en subfases, aunque se ejecuta en paralelo en varios núcleos",
+        "D": "Se divide en sombreado de vértices y proyección"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 63,
+      "pregunta": "La fase de procesamiento de la geometría se realiza en:",
+      "opciones": {
+        "A": "El disco",
+        "B": "La GPU",
+        "C": "La CPU",
+        "D": "El stencil buffer"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 64,
+      "pregunta": "La fase de procesamiento de la geometría es responsable de:",
+      "opciones": {
+        "A": "La detección de colisiones",
+        "B": "La mayoría de las operaciones por triángulo y por vértice",
+        "C": "Las operaciones por píxel",
+        "D": "La entrada del usuario"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 65,
+      "pregunta": "¿Cuáles son las cuatro fases funcionales del procesamiento de la geometría?",
+      "opciones": {
+        "A": "Sombreado de píxeles, mezclado, recorte y texturizado",
+        "B": "Modelado, vista, proyección y rasterización",
+        "C": "Aplicación, rasterización, sombreado y mezclado",
+        "D": "Sombreado de vértices, proyección, recortado y mapeado de pantalla"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 66,
+      "pregunta": "¿Cuál de las siguientes NO es una subfase del procesamiento de la geometría?",
+      "opciones": {
+        "A": "Sombreado de vértices",
+        "B": "Mapeado de pantalla",
+        "C": "Mezclado (merging)",
+        "D": "Recortado"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 67,
+      "pregunta": "Las tareas principales del sombreado de vértices son:",
+      "opciones": {
+        "A": "Combinar el color del fragmento con el buffer de color",
+        "B": "Detectar colisiones y procesar la entrada",
+        "C": "Generar fragmentos y resolver la visibilidad",
+        "D": "Calcular la posición del vértice y evaluar otros elementos de salida como la normal o las coordenadas de textura"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 68,
+      "pregunta": "Tradicionalmente, el sombreado de un objeto se calculaba:",
+      "opciones": {
+        "A": "Exclusivamente en el fragment shader",
+        "B": "En la CPU, durante la fase de aplicación",
+        "C": "En el vertex shader, aplicando luces a la posición y normal de cada vértice y guardando el color resultante",
+        "D": "En el stencil buffer"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 69,
+      "pregunta": "En el sombreado tradicional por vértices, los colores calculados en los vértices:",
+      "opciones": {
+        "A": "Se almacenaban en el z-buffer",
+        "B": "Se aplicaban solo al primer vértice",
+        "C": "Se interpolaban a lo largo del triángulo",
+        "D": "Se descartaban tras el recorte"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 70,
+      "pregunta": "Con la aparición de GPU más modernas, los cálculos de sombreado empezaron a realizarse:",
+      "opciones": {
+        "A": "A nivel de píxel, en el fragment shader",
+        "B": "Durante la fase de aplicación",
+        "C": "En el stencil buffer",
+        "D": "A nivel de objeto, en la CPU"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 71,
+      "pregunta": "Actualmente, el vertex shader se considera:",
+      "opciones": {
+        "A": "Una unidad dedicada exclusivamente a la iluminación",
+        "B": "Una unidad más general dedicada a preparar los datos asociados a cada vértice",
+        "C": "La unidad que realiza la rasterización",
+        "D": "La unidad encargada del z-buffer"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 72,
+      "pregunta": "Un modelo en su propio espacio del modelo significa que:",
+      "opciones": {
+        "A": "Ya está proyectado sobre la pantalla",
+        "B": "No se le ha aplicado ninguna transformación",
+        "C": "Ya se ha recortado",
+        "D": "Ya está posicionado en el mundo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 73,
+      "pregunta": "La transformación de modelo se aplica a las normales mediante:",
+      "opciones": {
+        "A": "Una matriz normal",
+        "B": "No se aplica a las normales",
+        "C": "La matriz de viewport",
+        "D": "La matriz de proyección"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 74,
+      "pregunta": "Cuando a cada modelo se le aplica su transformación de modelo:",
+      "opciones": {
+        "A": "Todos los modelos coexisten en el mismo espacio (espacio del mundo)",
+        "B": "Todos los modelos quedan en el espacio de pantalla",
+        "C": "Los modelos quedan recortados",
+        "D": "Cada modelo queda en un espacio distinto"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 75,
+      "pregunta": "¿Qué modelos deben renderizarse?",
+      "opciones": {
+        "A": "Solamente los modelos observables desde la cámara",
+        "B": "Todos los modelos de la escena, sean visibles o no",
+        "C": "Solo los modelos con textura",
+        "D": "Solo los modelos más cercanos al origen del mundo"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 76,
+      "pregunta": "Para facilitar las etapas de proyección y recortado, la escena se transforma:",
+      "opciones": {
+        "A": "Del sistema de pantalla al sistema del mundo",
+        "B": "Del sistema de coordenadas del mundo al sistema de coordenadas de la cámara",
+        "C": "Del sistema NDC al sistema del modelo",
+        "D": "Del sistema de la cámara al sistema del modelo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 77,
+      "pregunta": "Según la convención de eje z negativo, la transformación de vista coloca la cámara:",
+      "opciones": {
+        "A": "En el origen, mirando hacia +y, con el eje z hacia arriba",
+        "B": "En (1,1,1), mirando hacia el origen",
+        "C": "En el origen, mirando hacia −z, con el eje y hacia arriba y el eje x hacia la derecha",
+        "D": "En el origen, mirando hacia +x, con el eje y hacia abajo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 78,
+      "pregunta": "Respecto a los sistemas que usan la convención de eje +z hacia delante:",
+      "opciones": {
+        "A": "Solo se usan en proyecciones ortográficas",
+        "B": "Son equivalentes a la convención de eje z negativo",
+        "C": "Son incompatibles con la proyección perspectiva",
+        "D": "No permiten el recortado"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 79,
+      "pregunta": "El espacio resultante de la transformación de vista se conoce como:",
+      "opciones": {
+        "A": "Espacio de recorte",
+        "B": "Espacio de la cámara o espacio de la vista",
+        "C": "Espacio de pantalla",
+        "D": "Espacio del modelo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 80,
+      "pregunta": "La cámara virtual tiene dentro del mundo:",
+      "opciones": {
+        "A": "Un z-buffer propio",
+        "B": "Solo una localización",
+        "C": "Solo un campo de visión",
+        "D": "Una localización y una orientación"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 81,
+      "pregunta": "Determinar el efecto de una luz sobre un material se conoce como:",
+      "opciones": {
+        "A": "Mezclado (merging)",
+        "B": "Recortado (clipping)",
+        "C": "Rasterización",
+        "D": "Sombreado (shading)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 82,
+      "pregunta": "Para producir una escena realista, además de la posición y forma de los objetos, se debe modelar:",
+      "opciones": {
+        "A": "Únicamente su bounding box",
+        "B": "Su apariencia: el material y el efecto de las fuentes de luz",
+        "C": "El tamaño del stencil buffer",
+        "D": "Únicamente su número de vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 83,
+      "pregunta": "El sombreado supone:",
+      "opciones": {
+        "A": "Intercambiar el buffer delantero y trasero",
+        "B": "Calcular la división de perspectiva",
+        "C": "Calcular una ecuación de sombreado en varios puntos del objeto",
+        "D": "Recortar las primitivas contra el volumen de visión"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 84,
+      "pregunta": "¿Cuál de las siguientes informaciones puede almacenarse en cada vértice para el sombreado?",
+      "opciones": {
+        "A": "El contenido del buffer de color",
+        "B": "Únicamente el identificador del objeto",
+        "C": "Únicamente el valor de profundidad",
+        "D": "Localización, normal, color o coordenadas de textura e información adicional"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 85,
+      "pregunta": "¿Dónde se realizan los cálculos de la ecuación de sombreado?",
+      "opciones": {
+        "A": "Exclusivamente en el mezclado",
+        "B": "Exclusivamente en la rasterización",
+        "C": "Exclusivamente en la fase de aplicación",
+        "D": "Algunos sobre los vértices en el procesamiento de geometría y otros durante el procesamiento de píxeles"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 86,
+      "pregunta": "La proyección se realiza en GPU mediante:",
+      "opciones": {
+        "A": "La fase de aplicación",
+        "B": "El stencil buffer",
+        "C": "El fragment shader",
+        "D": "El vertex shader"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 87,
+      "pregunta": "La transformación de proyección:",
+      "opciones": {
+        "A": "Se expresa como una matriz y se suele concatenar con el resto de transformaciones geométricas",
+        "B": "Se realiza siempre en la CPU sin usar matrices",
+        "C": "Se aplica después del mapeado de pantalla",
+        "D": "Solo se aplica a las normales"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 88,
+      "pregunta": "Tras la transformación de proyección, los modelos pasan a estar en:",
+      "opciones": {
+        "A": "Coordenadas de pantalla",
+        "B": "Coordenadas del mundo",
+        "C": "Coordenadas de recorte (clip coordinates)",
+        "D": "Coordenadas del modelo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 89,
+      "pregunta": "Las coordenadas de recorte tienen la forma:",
+      "opciones": {
+        "A": "(xc, yc, zc, wc)",
+        "B": "(u, v)",
+        "C": "(xc, yc)",
+        "D": "(xc, yc, zc)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 90,
+      "pregunta": "Los dos métodos de proyección más utilizados son:",
+      "opciones": {
+        "A": "Isométrica y estereográfica",
+        "B": "Esférica y planar",
+        "C": "Cónica y cilíndrica",
+        "D": "Ortográfica (paralela) y perspectiva"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 91,
+      "pregunta": "En la proyección perspectiva, las líneas paralelas:",
+      "opciones": {
+        "A": "Se convierten en curvas",
+        "B": "Desaparecen de la imagen",
+        "C": "Parecen converger hacia un punto de fuga",
+        "D": "Permanecen siempre paralelas"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 92,
+      "pregunta": "¿Qué primitivas necesitan enviarse a la etapa de rasterizado?",
+      "opciones": {
+        "A": "Solo las que están completamente fuera del volumen",
+        "B": "Todas las de la escena",
+        "C": "Las que se encuentran completa o parcialmente dentro del volumen de visionado",
+        "D": "Solo las que están completamente dentro del volumen"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 93,
+      "pregunta": "Las primitivas que caen completamente dentro del volumen de visionado:",
+      "opciones": {
+        "A": "Se recortan igualmente",
+        "B": "Se vuelven a proyectar",
+        "C": "Se descartan",
+        "D": "Se envían tal cual"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 94,
+      "pregunta": "Las primitivas que están parcialmente dentro del volumen de visionado:",
+      "opciones": {
+        "A": "Se escalan hasta que quepan",
+        "B": "Se envían tal cual",
+        "C": "Deben recortarse",
+        "D": "Se descartan por completo"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 95,
+      "pregunta": "El recortado se realiza contra:",
+      "opciones": {
+        "A": "Los cuatro bordes de la pantalla",
+        "B": "El plano cercano únicamente",
+        "C": "Los seis planos que delimitan el volumen de visión",
+        "D": "Los ocho vértices del volumen de visión"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 96,
+      "pregunta": "Tras el recorte se utiliza la división de perspectiva para obtener:",
+      "opciones": {
+        "A": "Las coordenadas del modelo",
+        "B": "Las coordenadas normalizadas del dispositivo (NDC)",
+        "C": "Las coordenadas del mundo",
+        "D": "Las coordenadas de vista"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 97,
+      "pregunta": "La división de perspectiva consiste en:",
+      "opciones": {
+        "A": "Dividir wc entre zc",
+        "B": "Multiplicar xc, yc y zc por wc",
+        "C": "Restar wc a cada coordenada",
+        "D": "Dividir xc, yc y zc entre wc"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 98,
+      "pregunta": "La etapa de mapeado de pantalla recibe las primitivas:",
+      "opciones": {
+        "A": "Sin recortar, en coordenadas del modelo",
+        "B": "En coordenadas de pantalla 2D",
+        "C": "Ya rasterizadas en fragmentos",
+        "D": "Recortadas, en coordenadas 3D"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 99,
+      "pregunta": "En el mapeado de pantalla se transforman a coordenadas de pantalla:",
+      "opciones": {
+        "A": "Únicamente la coordenada z",
+        "B": "Las coordenadas x e y de cada primitiva",
+        "C": "Las normales de los vértices",
+        "D": "Únicamente la coordenada w"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 100,
+      "pregunta": "Si la pantalla se define por su esquina mínima (x1,y1) y máxima (x2,y2), la transformación de mapeado de pantalla es:",
+      "opciones": {
+        "A": "Una rotación seguida de un cizallamiento",
+        "B": "Una proyección perspectiva",
+        "C": "Una traslación seguida de un escalado",
+        "D": "Una reflexión respecto al eje x"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 101,
+      "pregunta": "Las coordenadas de pantalla junto con la coordenada z se conocen como:",
+      "opciones": {
+        "A": "Coordenadas de recorte",
+        "B": "Coordenadas de ventana (window coordinates)",
+        "C": "Coordenadas del mundo",
+        "D": "Coordenadas homogéneas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 102,
+      "pregunta": "En el mapeado de pantalla, la coordenada z se mapea habitualmente al rango:",
+      "opciones": {
+        "A": "[−∞, +∞]",
+        "B": "[0, 255]",
+        "C": "[0, 1]",
+        "D": "[−1, 1]"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 103,
+      "pregunta": "El valor de profundidad obtenido en el mapeado de pantalla permite:",
+      "opciones": {
+        "A": "Detectar colisiones entre objetos",
+        "B": "Calcular el color de la textura",
+        "C": "Saber qué primitivas están más cerca o más lejos de la cámara",
+        "D": "Calcular la normal de cada vértice"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 104,
+      "pregunta": "La pantalla está formada por:",
+      "opciones": {
+        "A": "Un conjunto de vóxeles",
+        "B": "Una rejilla discreta de píxeles",
+        "C": "Un árbol de octantes",
+        "D": "Un espacio continuo de coordenadas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 105,
+      "pregunta": "Tras el mapeado a coordenadas de ventana, las primitivas tienen:",
+      "opciones": {
+        "A": "Coordenadas continuas en el espacio de pantalla",
+        "B": "Coordenadas enteras exactas de píxel",
+        "C": "Coordenadas del modelo",
+        "D": "Coordenadas de recorte"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 106,
+      "pregunta": "La posición de muestreo de un píxel (i, j) suele situarse en:",
+      "opciones": {
+        "A": "Su esquina inferior izquierda: (i, j)",
+        "B": "Su esquina superior derecha: (i + 1, j + 1)",
+        "C": "Una posición aleatoria dentro del píxel",
+        "D": "Su centro: (i + 0.5, j + 0.5)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 107,
+      "pregunta": "La rasterización (scan conversion) consiste en:",
+      "opciones": {
+        "A": "Transformar los vértices al espacio del mundo",
+        "B": "Recortar las primitivas contra el volumen de visión",
+        "C": "Encontrar todas las muestras cubiertas por la primitiva a renderizar",
+        "D": "Combinar el color del fragmento con el buffer de color"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 108,
+      "pregunta": "La rasterización es el punto de sincronización entre:",
+      "opciones": {
+        "A": "El procesamiento de la geometría y el procesamiento del píxel",
+        "B": "La CPU y el disco",
+        "C": "El sombreado de píxeles y el mezclado",
+        "D": "La aplicación y el procesamiento de la geometría"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 109,
+      "pregunta": "A partir de las muestras cubiertas, la rasterización genera:",
+      "opciones": {
+        "A": "Vértices transformados",
+        "B": "Fragmentos, candidatos a contribuir al píxel correspondiente",
+        "C": "Primitivas recortadas",
+        "D": "Matrices de proyección"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 110,
+      "pregunta": "¿En qué fase del pipeline se generan los fragmentos?",
+      "opciones": {
+        "A": "Sombreado de vértices",
+        "B": "Proyección",
+        "C": "Rasterización",
+        "D": "Aplicación"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 111,
+      "pregunta": "La fase de procesamiento de píxeles se divide en:",
+      "opciones": {
+        "A": "Aplicación y detección de colisiones",
+        "B": "Sombreado de vértices y rasterización",
+        "C": "Sombreado de píxeles y mezclado (merging)",
+        "D": "Proyección y recortado"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 112,
+      "pregunta": "El sombreado de píxeles se realiza en:",
+      "opciones": {
+        "A": "La CPU, en la fase de aplicación",
+        "B": "El stencil buffer",
+        "C": "La GPU, en el vertex shader",
+        "D": "La GPU, en el fragment shader"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 113,
+      "pregunta": "En el sombreado de píxeles se usan como entrada:",
+      "opciones": {
+        "A": "Únicamente el contenido del stencil buffer",
+        "B": "Los datos de sombreado interpolados de etapas anteriores",
+        "C": "La entrada de teclado y ratón",
+        "D": "Únicamente las coordenadas del modelo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 114,
+      "pregunta": "Una de las técnicas más importantes del sombreado de píxeles es:",
+      "opciones": {
+        "A": "La transformación de vista",
+        "B": "La detección de colisiones",
+        "C": "El texturizado",
+        "D": "La división de perspectiva"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 115,
+      "pregunta": "El texturizado consiste en:",
+      "opciones": {
+        "A": "Recortar el objeto contra la ventana",
+        "B": "Calcular la normal de cada cara",
+        "C": "Proyectar el objeto en perspectiva",
+        "D": "\"Pegar\" una o más imágenes sobre un objeto"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 116,
+      "pregunta": "El texturizado más habitual mapea:",
+      "opciones": {
+        "A": "Un identificador de objeto en el stencil",
+        "B": "Un color RGB sobre cada fragmento del objeto",
+        "C": "Una normal sobre cada arista",
+        "D": "Un valor de profundidad sobre cada vértice"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 117,
+      "pregunta": "La información RGB de cada píxel que se mostrará en pantalla se almacena en:",
+      "opciones": {
+        "A": "El buffer de color",
+        "B": "El z-buffer",
+        "C": "El stencil buffer",
+        "D": "El vertex buffer"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 118,
+      "pregunta": "La responsabilidad de la fase de mezclado es:",
+      "opciones": {
+        "A": "Procesar la entrada del usuario",
+        "B": "Generar los fragmentos a partir de las primitivas",
+        "C": "Transformar los vértices a coordenadas de recorte",
+        "D": "Combinar el color de cada fragmento con el color almacenado en el buffer"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 119,
+      "pregunta": "Para combinar el color de los fragmentos, la fase de mezclado debe resolver:",
+      "opciones": {
+        "A": "La proyección de los vértices",
+        "B": "Las colisiones entre objetos",
+        "C": "La orientación de la cámara",
+        "D": "La visibilidad de cada fragmento"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 120,
+      "pregunta": "El z-buffer también se denomina:",
+      "opciones": {
+        "A": "Buffer de color",
+        "B": "Buffer trasero",
+        "C": "Buffer de profundidad",
+        "D": "Buffer de plantilla"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 121,
+      "pregunta": "¿Qué tamaño tiene el z-buffer?",
+      "opciones": {
+        "A": "Un único valor para toda la pantalla",
+        "B": "La mitad que el buffer de color",
+        "C": "El mismo que el buffer de color",
+        "D": "Un valor por vértice de la escena"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 122,
+      "pregunta": "¿Qué almacena el z-buffer?",
+      "opciones": {
+        "A": "El color final de cada píxel",
+        "B": "Un identificador entero de objeto",
+        "C": "La opacidad de cada píxel",
+        "D": "El valor de profundidad de la primitiva más cercana en cada píxel"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 123,
+      "pregunta": "Con el z-buffer, al renderizar una primitiva en un píxel, el valor se actualiza:",
+      "opciones": {
+        "A": "Siempre",
+        "B": "Solo si el píxel está vacío en el stencil",
+        "C": "Solo si su profundidad es mayor que la almacenada",
+        "D": "Solo si su profundidad es menor que la almacenada"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 124,
+      "pregunta": "¿En qué subfase del pipeline se utiliza el z-buffer?",
+      "opciones": {
+        "A": "En la fase de aplicación",
+        "B": "En el sombreado de vértices",
+        "C": "En la proyección",
+        "D": "En el mezclado (merging)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 125,
+      "pregunta": "El canal alfa:",
+      "opciones": {
+        "A": "Almacena la profundidad de cada píxel",
+        "B": "Almacena un valor de opacidad por píxel para simular transparencia o mezclado de colores",
+        "C": "Almacena la normal de cada píxel",
+        "D": "Almacena un identificador de objeto"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 126,
+      "pregunta": "El canal alfa está asociado con:",
+      "opciones": {
+        "A": "El z-buffer",
+        "B": "El vertex shader",
+        "C": "El stencil buffer",
+        "D": "El buffer de color"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 127,
+      "pregunta": "El stencil buffer es:",
+      "opciones": {
+        "A": "Una copia del buffer trasero",
+        "B": "El buffer de profundidad",
+        "C": "El buffer donde se almacena el color",
+        "D": "Un buffer auxiliar que almacena un valor entero por píxel (máscara)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 128,
+      "pregunta": "¿Cuántos bits por píxel almacena habitualmente el stencil buffer?",
+      "opciones": {
+        "A": "32",
+        "B": "1",
+        "C": "8",
+        "D": "24"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 129,
+      "pregunta": "¿Para qué puede utilizarse el stencil buffer?",
+      "opciones": {
+        "A": "Calcular la división de perspectiva",
+        "B": "Almacenar las normales de los vértices",
+        "C": "Codificar identificadores de objetos, renderización selectiva o selección de objetos con clics de ratón",
+        "D": "Almacenar la matriz de proyección"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 130,
+      "pregunta": "Las funciones al final del pipeline (alfa, stencil, profundidad...) se conocen como:",
+      "opciones": {
+        "A": "Operaciones de vértice",
+        "B": "Operaciones raster (ROP) u operaciones de blend",
+        "C": "Operaciones de aplicación",
+        "D": "Operaciones de proyección"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 131,
+      "pregunta": "La pantalla muestra el contenido de:",
+      "opciones": {
+        "A": "El z-buffer",
+        "B": "El buffer de color",
+        "C": "El buffer de vértices",
+        "D": "El stencil buffer"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 132,
+      "pregunta": "Para evitar que el usuario vea cómo se van dibujando las primitivas se utiliza:",
+      "opciones": {
+        "A": "Un doble buffer",
+        "B": "Un canal alfa",
+        "C": "Un stencil buffer",
+        "D": "Un z-buffer"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 133,
+      "pregunta": "En la técnica de doble buffer, la escena se renderiza en:",
+      "opciones": {
+        "A": "El buffer trasero",
+        "B": "El buffer delantero",
+        "C": "El stencil buffer",
+        "D": "El z-buffer"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 134,
+      "pregunta": "Si la sincronización vertical (VSync) está habilitada:",
+      "opciones": {
+        "A": "Se desactiva el z-buffer",
+        "B": "Se omite el recortado",
+        "C": "Se duplica la resolución",
+        "D": "El intercambio de buffers se sincroniza con el refresco de la pantalla"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 135,
+      "pregunta": "¿Qué subfase del procesamiento de geometría transforma las coordenadas x e y a coordenadas de pantalla?",
+      "opciones": {
+        "A": "Recortado",
+        "B": "Proyección",
+        "C": "Mapeado de pantalla",
+        "D": "Sombreado de vértices"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 136,
+      "pregunta": "¿Qué subfase se encarga de eliminar las partes de las primitivas fuera del volumen de visión?",
+      "opciones": {
+        "A": "Recortado (clipping)",
+        "B": "Sombreado de píxeles",
+        "C": "Mezclado",
+        "D": "Aplicación"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 137,
+      "pregunta": "La matriz de proyección se suele concatenar con el resto de transformaciones porque:",
+      "opciones": {
+        "A": "Así se eliminan las coordenadas homogéneas",
+        "B": "Así se evita el recortado",
+        "C": "Así se aplica una sola matriz compuesta a cada vértice",
+        "D": "Así se sustituye al z-buffer"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 138,
+      "pregunta": "En coordenadas homogéneas, la traslación puede expresarse como:",
+      "opciones": {
+        "A": "Un producto de matriz 4x4 por vector",
+        "B": "Un producto vectorial",
+        "C": "Una suma de matrices 3x3",
+        "D": "Un producto escalar"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 139,
+      "pregunta": "¿Cuál es el módulo del vector V = (3, -3, 2)?",
+      "opciones": {
+        "A": "1.414",
+        "B": "4.69",
+        "C": "22",
+        "D": "8"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 140,
+      "pregunta": "Calcula el producto escalar V·W con V = (0, 2, -5) y W = (5, 3, -2).",
+      "opciones": {
+        "A": "3",
+        "B": "16",
+        "C": "-16",
+        "D": "18"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 141,
+      "pregunta": "Dados V = (2, 1, 0) y W = (-1, 2, -3), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ < 90º (ángulo agudo)",
+        "B": "No se puede determinar sin calcular los módulos",
+        "C": "θ = 90º (perpendiculares)",
+        "D": "θ > 90º (ángulo obtuso)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 142,
+      "pregunta": "Calcula el producto vectorial V × W con V = (3, 4, 1) y W = (-1, 3, 1).",
+      "opciones": {
+        "A": "(-1, 4, -13)",
+        "B": "(-4, 1, 13)",
+        "C": "(1, -4, 13)",
+        "D": "(-3, 12, 1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 143,
+      "pregunta": "Calcula la normal N = (v2 − v1) × (v3 − v1) del triángulo v1 = (-2, 2, 3), v2 = (0, 0, -2), v3 = (-3, 0, 0).",
+      "opciones": {
+        "A": "(-4, 11, -6)",
+        "B": "(4, -11, 6)",
+        "C": "(-2, 4, 15)",
+        "D": "(-6, 11, -4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 144,
+      "pregunta": "Dados los puntos P = (-2, -3, -5) y Q = (4, 3, 4), ¿cuál es el vector V = Q − P?",
+      "opciones": {
+        "A": "(6, 6, 9)",
+        "B": "(6, 6, -9)",
+        "C": "(2, 0, -1)",
+        "D": "(-6, -6, -9)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 145,
+      "pregunta": "Un vértice tiene coordenadas de recorte (xc, yc, zc, wc) = (5, -1, 1, 5). ¿Cuáles son sus coordenadas NDC tras la división de perspectiva?",
+      "opciones": {
+        "A": "(25, -5, 5)",
+        "B": "(1, -5, 5)",
+        "C": "(1, -0.2, 0.2)",
+        "D": "(5, -1, 1)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 146,
+      "pregunta": "En un píxel el z-buffer almacena 0.73. Llega un fragmento con profundidad 0.28. Con la prueba habitual (actualizar si es menor), ¿qué ocurre?",
+      "opciones": {
+        "A": "Se escribe el color pero no la profundidad",
+        "B": "Se descarta el fragmento y el píxel mantiene su color",
+        "C": "Se suman ambas profundidades",
+        "D": "Se actualiza: se almacena la nueva profundidad y su color en el buffer de color"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 147,
+      "pregunta": "Una pantalla de 640 píxeles de ancho mapea xNDC ∈ [−1, 1] a [0, 640] mediante traslación y escalado. ¿A qué coordenada x de pantalla corresponde xNDC = 1?",
+      "opciones": {
+        "A": "320",
+        "B": "640",
+        "C": "0",
+        "D": "1280"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 148,
+      "pregunta": "¿Cuál es el vector unitario (normalizado) del vector V = (0, 6, -8)?",
+      "opciones": {
+        "A": "(0, -0.6, 0.8)",
+        "B": "(0, 60, -80)",
+        "C": "(0, 0.6, -0.8)",
+        "D": "(0, 0.06, -0.08)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 149,
+      "pregunta": "¿Cuál es el módulo del vector V = (2, -5, -1)?",
+      "opciones": {
+        "A": "2",
+        "B": "30",
+        "C": "8",
+        "D": "5.477"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 150,
+      "pregunta": "Calcula el producto escalar V·W con V = (-5, 0, 0) y W = (-5, -1, 4).",
+      "opciones": {
+        "A": "25",
+        "B": "-7",
+        "C": "50",
+        "D": "-25"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 151,
+      "pregunta": "Dados V = (-2, -4, 2) y W = (-2, 0, -3), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ < 90º (ángulo agudo)",
+        "B": "θ > 90º (ángulo obtuso)",
+        "C": "No se puede determinar sin calcular los módulos",
+        "D": "θ = 90º (perpendiculares)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 152,
+      "pregunta": "Calcula el producto vectorial V × W con V = (2, 1, 3) y W = (-2, 3, 4).",
+      "opciones": {
+        "A": "(-4, 3, 12)",
+        "B": "(-14, -5, 8)",
+        "C": "(5, 14, -8)",
+        "D": "(-5, -14, 8)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 153,
+      "pregunta": "Calcula la normal N = (v2 − v1) × (v3 − v1) del triángulo v1 = (-1, 3, 3), v2 = (-2, 2, 1), v3 = (2, 3, -3).",
+      "opciones": {
+        "A": "(-3, 0, 12)",
+        "B": "(-6, 12, -3)",
+        "C": "(3, -12, 6)",
+        "D": "(6, -12, 3)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 154,
+      "pregunta": "Dados los puntos P = (-5, -5, -6) y Q = (3, -1, 2), ¿cuál es el vector V = Q − P?",
+      "opciones": {
+        "A": "(-8, -4, -8)",
+        "B": "(-2, -6, -4)",
+        "C": "(8, 4, -8)",
+        "D": "(8, 4, 8)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 155,
+      "pregunta": "Un vértice tiene coordenadas de recorte (xc, yc, zc, wc) = (-5, 6, -4, 8). ¿Cuáles son sus coordenadas NDC tras la división de perspectiva?",
+      "opciones": {
+        "A": "(-0.625, 0.75, -0.5)",
+        "B": "(-1.6, 1.333, -2)",
+        "C": "(-40, 48, -32)",
+        "D": "(-5, 6, -4)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 156,
+      "pregunta": "En un píxel el z-buffer almacena 0.65. Llega un fragmento con profundidad 0.84. Con la prueba habitual (actualizar si es menor), ¿qué ocurre?",
+      "opciones": {
+        "A": "Se actualiza: se almacena la nueva profundidad y su color en el buffer de color",
+        "B": "Se suman ambas profundidades",
+        "C": "Se descarta el fragmento y el píxel mantiene su color",
+        "D": "Se escribe el color pero no la profundidad"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 157,
+      "pregunta": "Una pantalla de 800 píxeles de ancho mapea xNDC ∈ [−1, 1] a [0, 800] mediante traslación y escalado. ¿A qué coordenada x de pantalla corresponde xNDC = -0.25?",
+      "opciones": {
+        "A": "300",
+        "B": "600",
+        "C": "-200",
+        "D": "-100"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 158,
+      "pregunta": "¿Cuál es el vector unitario (normalizado) del vector V = (-2, -6, -3)?",
+      "opciones": {
+        "A": "(-0.041, -0.122, -0.061)",
+        "B": "(0.286, 0.857, 0.429)",
+        "C": "(-0.286, -0.857, -0.429)",
+        "D": "(-14, -42, -21)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 159,
+      "pregunta": "¿Cuál es el módulo del vector V = (-2, -1, 0)?",
+      "opciones": {
+        "A": "2.236",
+        "B": "5",
+        "C": "3",
+        "D": "1.732"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 160,
+      "pregunta": "Calcula el producto escalar V·W con V = (-4, -5, 3) y W = (3, 0, 2).",
+      "opciones": {
+        "A": "-6",
+        "B": "-18",
+        "C": "-1",
+        "D": "6"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 161,
+      "pregunta": "Dados V = (-4, -1, 0) y W = (1, -3, 0), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ = 90º (perpendiculares)",
+        "B": "θ < 90º (ángulo agudo)",
+        "C": "No se puede determinar sin calcular los módulos",
+        "D": "θ > 90º (ángulo obtuso)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 162,
+      "pregunta": "Calcula el producto vectorial V × W con V = (0, 3, -1) y W = (2, -3, 4).",
+      "opciones": {
+        "A": "(9, -2, -6)",
+        "B": "(-9, 2, 6)",
+        "C": "(0, -9, -4)",
+        "D": "(-2, 9, -6)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 163,
+      "pregunta": "Calcula la normal N = (v2 − v1) × (v3 − v1) del triángulo v1 = (3, -1, -2), v2 = (-3, -1, 2), v3 = (-2, -3, -3).",
+      "opciones": {
+        "A": "(30, 0, -4)",
+        "B": "(-8, 26, -12)",
+        "C": "(12, -26, 8)",
+        "D": "(8, -26, 12)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 164,
+      "pregunta": "Dados los puntos P = (4, 0, 3) y Q = (1, 4, 3), ¿cuál es el vector V = Q − P?",
+      "opciones": {
+        "A": "(-3, 4, 0)",
+        "B": "(5, 4, 6)",
+        "C": "(3, -4, 0)",
+        "D": "(4, -3, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 165,
+      "pregunta": "Un vértice tiene coordenadas de recorte (xc, yc, zc, wc) = (0, -1, 0, 2). ¿Cuáles son sus coordenadas NDC tras la división de perspectiva?",
+      "opciones": {
+        "A": "(0, -0.5, 0)",
+        "B": "(0, -2, 0)",
+        "C": "(0, 0.5, 0)",
+        "D": "(0, -1, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 166,
+      "pregunta": "En un píxel el z-buffer almacena 0.48. Llega un fragmento con profundidad 0.26. Con la prueba habitual (actualizar si es menor), ¿qué ocurre?",
+      "opciones": {
+        "A": "Se suman ambas profundidades",
+        "B": "Se actualiza: se almacena la nueva profundidad y su color en el buffer de color",
+        "C": "Se escribe el color pero no la profundidad",
+        "D": "Se descarta el fragmento y el píxel mantiene su color"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 167,
+      "pregunta": "Una pantalla de 1920 píxeles de ancho mapea xNDC ∈ [−1, 1] a [0, 1920] mediante traslación y escalado. ¿A qué coordenada x de pantalla corresponde xNDC = -0.25?",
+      "opciones": {
+        "A": "1440",
+        "B": "-240",
+        "C": "-480",
+        "D": "720"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 168,
+      "pregunta": "¿Cuál es el vector unitario (normalizado) del vector V = (4, 0, -3)?",
+      "opciones": {
+        "A": "(0.8, 0, -0.6)",
+        "B": "(20, 0, -15)",
+        "C": "(0.16, 0, -0.12)",
+        "D": "(-0.8, 0, 0.6)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 169,
+      "pregunta": "¿Cuál es el módulo del vector V = (-2, -1, 4)?",
+      "opciones": {
+        "A": "1",
+        "B": "4.583",
+        "C": "21",
+        "D": "7"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 170,
+      "pregunta": "Calcula el producto escalar V·W con V = (0, 1, 1) y W = (5, -5, -2).",
+      "opciones": {
+        "A": "0",
+        "B": "-5",
+        "C": "7",
+        "D": "-7"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 171,
+      "pregunta": "Dados V = (-1, 1, 0) y W = (-1, -1, 0), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ = 90º (perpendiculares)",
+        "B": "θ > 90º (ángulo obtuso)",
+        "C": "No se puede determinar sin calcular los módulos",
+        "D": "θ < 90º (ángulo agudo)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 172,
+      "pregunta": "Calcula el producto vectorial V × W con V = (-1, 1, 4) y W = (4, -1, -2).",
+      "opciones": {
+        "A": "(2, 14, -3)",
+        "B": "(-4, -1, -8)",
+        "C": "(14, 2, -3)",
+        "D": "(-2, -14, 3)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 173,
+      "pregunta": "Calcula la normal N = (v2 − v1) × (v3 − v1) del triángulo v1 = (0, 1, 1), v2 = (-1, -1, 2), v3 = (-1, 2, -1).",
+      "opciones": {
+        "A": "(3, -3, -3)",
+        "B": "(-3, -3, 3)",
+        "C": "(-3, 3, 3)",
+        "D": "(1, -2, -2)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 174,
+      "pregunta": "Dados los puntos P = (-3, 0, -3) y Q = (1, -2, 6), ¿cuál es el vector V = Q − P?",
+      "opciones": {
+        "A": "(4, -2, 9)",
+        "B": "(-4, 2, -9)",
+        "C": "(4, -2, -9)",
+        "D": "(-2, -2, 3)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 175,
+      "pregunta": "Un vértice tiene coordenadas de recorte (xc, yc, zc, wc) = (-1, -2, 2, 2). ¿Cuáles son sus coordenadas NDC tras la división de perspectiva?",
+      "opciones": {
+        "A": "(-2, -1, 1)",
+        "B": "(-2, -4, 4)",
+        "C": "(-1, -2, 2)",
+        "D": "(-0.5, -1, 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 176,
+      "pregunta": "En un píxel el z-buffer almacena 0.89. Llega un fragmento con profundidad 0.69. Con la prueba habitual (actualizar si es menor), ¿qué ocurre?",
+      "opciones": {
+        "A": "Se descarta el fragmento y el píxel mantiene su color",
+        "B": "Se actualiza: se almacena la nueva profundidad y su color en el buffer de color",
+        "C": "Se suman ambas profundidades",
+        "D": "Se escribe el color pero no la profundidad"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 177,
+      "pregunta": "Una pantalla de 1280 píxeles de ancho mapea xNDC ∈ [−1, 1] a [0, 1280] mediante traslación y escalado. ¿A qué coordenada x de pantalla corresponde xNDC = -0.75?",
+      "opciones": {
+        "A": "160",
+        "B": "320",
+        "C": "-960",
+        "D": "-480"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 178,
+      "pregunta": "¿Cuál es el vector unitario (normalizado) del vector V = (3, -4, 0)?",
+      "opciones": {
+        "A": "(0.6, -0.8, 0)",
+        "B": "(-0.6, 0.8, 0)",
+        "C": "(0.12, -0.16, 0)",
+        "D": "(15, -20, 0)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 179,
+      "pregunta": "¿Cuál es el módulo del vector V = (6, 1, 3)?",
+      "opciones": {
+        "A": "6.782",
+        "B": "10",
+        "C": "46",
+        "D": "3.162"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 180,
+      "pregunta": "Calcula el producto escalar V·W con V = (-5, -5, 1) y W = (2, 5, -1).",
+      "opciones": {
+        "A": "36",
+        "B": "-46",
+        "C": "-36",
+        "D": "-3"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 181,
+      "pregunta": "Dados V = (-2, 3, -4) y W = (-4, 0, -3), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ = 90º (perpendiculares)",
+        "B": "θ > 90º (ángulo obtuso)",
+        "C": "No se puede determinar sin calcular los módulos",
+        "D": "θ < 90º (ángulo agudo)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 182,
+      "pregunta": "Calcula el producto vectorial V × W con V = (3, 1, 4) y W = (-3, -2, 3).",
+      "opciones": {
+        "A": "(-9, -2, 12)",
+        "B": "(11, -21, -3)",
+        "C": "(-21, 11, -3)",
+        "D": "(-11, 21, 3)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 183,
+      "pregunta": "Calcula la normal N = (v2 − v1) × (v3 − v1) del triángulo v1 = (2, 0, -3), v2 = (-1, -3, -2), v3 = (-1, -2, 2).",
+      "opciones": {
+        "A": "(13, -12, 3)",
+        "B": "(-3, 12, -13)",
+        "C": "(-13, 12, -3)",
+        "D": "(9, 6, 5)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 184,
+      "pregunta": "Dados los puntos P = (6, 2, -5) y Q = (-3, 5, -3), ¿cuál es el vector V = Q − P?",
+      "opciones": {
+        "A": "(9, -3, -2)",
+        "B": "(-9, 3, -2)",
+        "C": "(3, 7, -8)",
+        "D": "(-9, 3, 2)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 185,
+      "pregunta": "Un vértice tiene coordenadas de recorte (xc, yc, zc, wc) = (-2, -1, 3, 4). ¿Cuáles son sus coordenadas NDC tras la división de perspectiva?",
+      "opciones": {
+        "A": "(-2, -1, 3)",
+        "B": "(-8, -4, 12)",
+        "C": "(-2, -4, 1.333)",
+        "D": "(-0.5, -0.25, 0.75)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 186,
+      "pregunta": "En un píxel el z-buffer almacena 0.21. Llega un fragmento con profundidad 0.89. Con la prueba habitual (actualizar si es menor), ¿qué ocurre?",
+      "opciones": {
+        "A": "Se descarta el fragmento y el píxel mantiene su color",
+        "B": "Se suman ambas profundidades",
+        "C": "Se actualiza: se almacena la nueva profundidad y su color en el buffer de color",
+        "D": "Se escribe el color pero no la profundidad"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 187,
+      "pregunta": "¿Cuál es el vector unitario (normalizado) del vector V = (-2, -3, 6)?",
+      "opciones": {
+        "A": "(-0.041, -0.061, 0.122)",
+        "B": "(-14, -21, 42)",
+        "C": "(-0.286, -0.429, 0.857)",
+        "D": "(0.286, 0.429, -0.857)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 188,
+      "pregunta": "¿Cuál es el módulo del vector V = (2, -4, 3)?",
+      "opciones": {
+        "A": "29",
+        "B": "9",
+        "C": "1",
+        "D": "5.385"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 189,
+      "pregunta": "Calcula el producto escalar V·W con V = (5, 2, -3) y W = (-4, -4, -5).",
+      "opciones": {
+        "A": "13",
+        "B": "-33",
+        "C": "-13",
+        "D": "-9"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 190,
+      "pregunta": "Dados V = (1, 1, 0) y W = (-1, 1, -1), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ = 90º (perpendiculares)",
+        "B": "θ > 90º (ángulo obtuso)",
+        "C": "θ < 90º (ángulo agudo)",
+        "D": "No se puede determinar sin calcular los módulos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 191,
+      "pregunta": "Calcula el producto vectorial V × W con V = (0, -1, -2) y W = (2, 4, 2).",
+      "opciones": {
+        "A": "(-4, 6, 2)",
+        "B": "(6, -4, 2)",
+        "C": "(0, -4, -4)",
+        "D": "(-6, 4, -2)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 192,
+      "pregunta": "Calcula la normal N = (v2 − v1) × (v3 − v1) del triángulo v1 = (-2, 3, 3), v2 = (2, 3, 2), v3 = (2, -1, 2).",
+      "opciones": {
+        "A": "(-16, 0, -4)",
+        "B": "(-4, 0, -16)",
+        "C": "(16, 0, 1)",
+        "D": "(4, 0, 16)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 193,
+      "pregunta": "Dados los puntos P = (-6, -3, -2) y Q = (0, -3, 1), ¿cuál es el vector V = Q − P?",
+      "opciones": {
+        "A": "(-6, 0, -3)",
+        "B": "(6, 0, -3)",
+        "C": "(-6, -6, -1)",
+        "D": "(6, 0, 3)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 194,
+      "pregunta": "Un vértice tiene coordenadas de recorte (xc, yc, zc, wc) = (-1, 2, -2, 4). ¿Cuáles son sus coordenadas NDC tras la división de perspectiva?",
+      "opciones": {
+        "A": "(-4, 8, -8)",
+        "B": "(-0.25, 0.5, -0.5)",
+        "C": "(-4, 2, -2)",
+        "D": "(-1, 2, -2)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 195,
+      "pregunta": "En un píxel el z-buffer almacena 0.58. Llega un fragmento con profundidad 0.5. Con la prueba habitual (actualizar si es menor), ¿qué ocurre?",
+      "opciones": {
+        "A": "Se escribe el color pero no la profundidad",
+        "B": "Se actualiza: se almacena la nueva profundidad y su color en el buffer de color",
+        "C": "Se descarta el fragmento y el píxel mantiene su color",
+        "D": "Se suman ambas profundidades"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 196,
+      "pregunta": "Una pantalla de 1280 píxeles de ancho mapea xNDC ∈ [−1, 1] a [0, 1280] mediante traslación y escalado. ¿A qué coordenada x de pantalla corresponde xNDC = 0.25?",
+      "opciones": {
+        "A": "1600",
+        "B": "160",
+        "C": "800",
+        "D": "320"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 197,
+      "pregunta": "¿Cuál es el vector unitario (normalizado) del vector V = (-1, -2, 2)?",
+      "opciones": {
+        "A": "(-0.333, -0.667, 0.667)",
+        "B": "(0.333, 0.667, -0.667)",
+        "C": "(-0.111, -0.222, 0.222)",
+        "D": "(-3, -6, 6)"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 198,
+      "pregunta": "¿Cuál es el módulo del vector V = (6, -6, -3)?",
+      "opciones": {
+        "A": "9",
+        "B": "15",
+        "C": "1.732",
+        "D": "81"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 199,
+      "pregunta": "Calcula el producto escalar V·W con V = (-1, 3, -1) y W = (-5, 1, -3).",
+      "opciones": {
+        "A": "11",
+        "B": "-6",
+        "C": "-11",
+        "D": "16"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 200,
+      "pregunta": "Dados V = (0, 1, 3) y W = (0, -4, 3), ¿qué se puede afirmar del ángulo θ que forman?",
+      "opciones": {
+        "A": "θ < 90º (ángulo agudo)",
+        "B": "No se puede determinar sin calcular los módulos",
+        "C": "θ > 90º (ángulo obtuso)",
+        "D": "θ = 90º (perpendiculares)"
+      },
+      "respuesta_correcta": "A"
+    }
+  ]
+}

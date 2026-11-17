@@ -1,0 +1,2208 @@
+{
+  "asignatura": "Gráficos por Computador",
+  "tema": 2,
+  "titulo": "Modelos Geométricos",
+  "total_preguntas": 200,
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Cuál de las siguientes es una definición válida de modelo geométrico?",
+      "opciones": {
+        "A": "Una imagen rasterizada de un objeto",
+        "B": "Un conjunto de píxeles almacenados en el buffer de color",
+        "C": "Un algoritmo de recorte de primitivas",
+        "D": "Un conjunto de métodos matemáticos para describir la forma y determinadas propiedades de un objeto"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 2,
+      "pregunta": "Un modelo geométrico también puede entenderse como:",
+      "opciones": {
+        "A": "Una técnica de doble buffer",
+        "B": "Un shader de fragmentos",
+        "C": "Una matriz de proyección",
+        "D": "Un conjunto de estructuras de datos y operaciones que permiten almacenar y manipular información geométrica"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 3,
+      "pregunta": "¿Cuáles son los tres grandes tipos de modelos geométricos estudiados?",
+      "opciones": {
+        "A": "Raster, vectorial y mixto",
+        "B": "Ortográfico, perspectivo y oblicuo",
+        "C": "Rígido, no rígido y afín",
+        "D": "Alámbrico, superficial y sólido"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 4,
+      "pregunta": "¿Cuál de las siguientes es una característica deseable de todo modelo geométrico?",
+      "opciones": {
+        "A": "Que admita múltiples interpretaciones",
+        "B": "Que sea impreciso para ser más rápido",
+        "C": "Que sea no ambiguo",
+        "D": "Que ocupe el mayor espacio posible"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 5,
+      "pregunta": "Que un modelo geométrico sea 'preciso' significa:",
+      "opciones": {
+        "A": "Que no dé lugar a múltiples interpretaciones",
+        "B": "Que se adecue a la labor necesaria",
+        "C": "Que tenga la exactitud necesaria para el problema a tratar",
+        "D": "Que ocupe el menor espacio"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 6,
+      "pregunta": "Que un modelo geométrico sea 'no ambiguo' significa:",
+      "opciones": {
+        "A": "Que sea eficiente al procesar sus datos",
+        "B": "Que ocupe el menor espacio",
+        "C": "Que no dé lugar a múltiples interpretaciones",
+        "D": "Que tenga infinita precisión"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 7,
+      "pregunta": "Que un modelo geométrico sea 'compacto' significa:",
+      "opciones": {
+        "A": "Que tenga la exactitud necesaria",
+        "B": "Que no dé lugar a múltiples interpretaciones",
+        "C": "Que ocupe el menor espacio",
+        "D": "Que se adecue a la labor necesaria"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 8,
+      "pregunta": "Que un modelo geométrico sea 'eficiente' significa:",
+      "opciones": {
+        "A": "Que permita acceder y procesar sus datos de forma eficiente",
+        "B": "Que sea útil para cualquier problema",
+        "C": "Que ocupe el menor espacio",
+        "D": "Que sea exacto"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 9,
+      "pregunta": "Que un modelo geométrico sea 'útil' significa:",
+      "opciones": {
+        "A": "Que sea siempre exacto",
+        "B": "Que se adecue a la labor necesaria",
+        "C": "Que sea el más rápido de visualizar",
+        "D": "Que ocupe el menor espacio posible"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 10,
+      "pregunta": "En el modelo alámbrico los objetos se representan describiendo:",
+      "opciones": {
+        "A": "Vértices y aristas",
+        "B": "Vóxeles",
+        "C": "Primitivas y operaciones booleanas",
+        "D": "Vértices, aristas y caras"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 11,
+      "pregunta": "¿Qué estructuras de almacenamiento puede utilizar el modelo alámbrico?",
+      "opciones": {
+        "A": "Lista de aristas, o lista de aristas y de vértices",
+        "B": "Malla de control",
+        "C": "Árbol CSG",
+        "D": "Rejilla de vóxeles"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 12,
+      "pregunta": "En el modelo alámbrico con lista de aristas y de vértices, cada arista almacena:",
+      "opciones": {
+        "A": "Las normales de sus vértices",
+        "B": "La ecuación de su plano",
+        "C": "Referencias a sus vértices de inicio y fin",
+        "D": "Las coordenadas de sus caras adyacentes"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 13,
+      "pregunta": "¿Cuál es una ventaja del modelo alámbrico?",
+      "opciones": {
+        "A": "Visualización no ambigua",
+        "B": "Permite visualización realista",
+        "C": "Visualización muy rápida",
+        "D": "Guarda información de puntos interiores/exteriores"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 14,
+      "pregunta": "¿Cuál es un inconveniente del modelo alámbrico?",
+      "opciones": {
+        "A": "Visualización muy lenta",
+        "B": "Requiere operaciones booleanas",
+        "C": "Visualización ambigua",
+        "D": "Estructura muy compleja"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 15,
+      "pregunta": "¿Qué NO permite el modelo alámbrico?",
+      "opciones": {
+        "A": "Visualizar superficies ni realizar una visualización realista",
+        "B": "Representar vértices",
+        "C": "Representar aristas",
+        "D": "Una visualización rápida"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 16,
+      "pregunta": "En el modelo alámbrico pueden perderse:",
+      "opciones": {
+        "A": "Aristas explícitas",
+        "B": "Las coordenadas de los vértices",
+        "C": "Vértices",
+        "D": "Líneas de silueta"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 17,
+      "pregunta": "El modelo alámbrico se utiliza principalmente cuando interesa:",
+      "opciones": {
+        "A": "Una representación geométrica sencilla y de visualización rápida",
+        "B": "Una representación exacta del volumen",
+        "C": "Realizar operaciones booleanas",
+        "D": "Calcular volúmenes con precisión"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 18,
+      "pregunta": "¿Guarda el modelo alámbrico información sobre puntos interiores/exteriores?",
+      "opciones": {
+        "A": "Sí, mediante etiquetas 0/1",
+        "B": "No, no guarda esa información",
+        "C": "Solo si se usan listas de vértices",
+        "D": "Sí, mediante un árbol binario"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 19,
+      "pregunta": "Una de las formas más habituales de representar modelos superficiales es:",
+      "opciones": {
+        "A": "B-Rep (Boundary Representation)",
+        "B": "Instanciación de primitivas",
+        "C": "Rejilla de vóxeles",
+        "D": "CSG"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 20,
+      "pregunta": "En B-Rep, la frontera del objeto se representa con:",
+      "opciones": {
+        "A": "Vóxeles",
+        "B": "Vértices, aristas y caras",
+        "C": "Primitivas y operadores booleanos",
+        "D": "Solo vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 21,
+      "pregunta": "En B-Rep, las caras pueden ser:",
+      "opciones": {
+        "A": "Solo curvas",
+        "B": "Solo planas",
+        "C": "Solo triangulares",
+        "D": "Planas (modelo poligonal) o curvas (modelo de superficies curvas)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 22,
+      "pregunta": "¿Cuál de las siguientes es una estructura de conectividad para B-Rep?",
+      "opciones": {
+        "A": "Árbol CSG",
+        "B": "Winged-edge o half-edge",
+        "C": "Octree",
+        "D": "Árbol BSP"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 23,
+      "pregunta": "En los modelos superficiales, las listas de geometría almacenan:",
+      "opciones": {
+        "A": "Operaciones booleanas",
+        "B": "Etiquetas de ocupación",
+        "C": "Color, transparencia y material",
+        "D": "Datos geométricos: vértices, aristas, caras"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 24,
+      "pregunta": "En los modelos superficiales, las listas de atributos almacenan:",
+      "opciones": {
+        "A": "El árbol de construcción",
+        "B": "Otros datos como color, transparencia o material",
+        "C": "Únicamente las aristas",
+        "D": "Únicamente las coordenadas de los vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 25,
+      "pregunta": "Almacenar el modelo superficial con solo una lista de caras implica:",
+      "opciones": {
+        "A": "Mínima redundancia",
+        "B": "Referencias cruzadas consistentes",
+        "C": "Imposibilidad de representar caras",
+        "D": "Información redundante"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 26,
+      "pregunta": "Las listas indexadas de caras, aristas y vértices proporcionan:",
+      "opciones": {
+        "A": "Pérdida de las relaciones de adyacencia",
+        "B": "Mínima redundancia y consistencia de los datos",
+        "C": "Máxima redundancia",
+        "D": "Representación del volumen interior"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 27,
+      "pregunta": "¿Qué tipo de información puede guardarse en las listas de atributos de un modelo superficial?",
+      "opciones": {
+        "A": "Las operaciones booleanas del árbol CSG",
+        "B": "La trayectoria de barrido",
+        "C": "Propiedades del material, ecuaciones de los planos y de las superficies curvas",
+        "D": "La resolución de la rejilla de vóxeles"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 28,
+      "pregunta": "La estructura de aristas aladas (winged-edge):",
+      "opciones": {
+        "A": "Almacena explícitamente las relaciones de adyacencia de una malla",
+        "B": "Almacena el volumen del objeto",
+        "C": "Es una representación de sólidos por barrido",
+        "D": "Almacena solo las coordenadas de los vértices"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 29,
+      "pregunta": "En winged-edge, por cada arista se almacenan referencias a:",
+      "opciones": {
+        "A": "Únicamente las caras adyacentes",
+        "B": "Solo sus dos vértices extremos",
+        "C": "Todas las aristas de la malla",
+        "D": "Sus dos vértices extremos, las dos caras incidentes y las dos aristas vecinas en cada cara"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 30,
+      "pregunta": "En winged-edge, ¿cuántas caras incidentes se almacenan por arista?",
+      "opciones": {
+        "A": "3",
+        "B": "2",
+        "C": "1",
+        "D": "4"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 31,
+      "pregunta": "En la estructura winged-edge, ¿cuántas 'alas' (aristas vecinas) se almacenan por arista en total?",
+      "opciones": {
+        "A": "4 (dos por cada cara incidente)",
+        "B": "6",
+        "C": "1",
+        "D": "2"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 32,
+      "pregunta": "En el convenio de winged-edge del tema, la cara izquierda:",
+      "opciones": {
+        "A": "Es siempre la cara exterior",
+        "B": "No se almacena",
+        "C": "Recorre la arista en sentido inicio → fin",
+        "D": "Recorre la arista en sentido fin → inicio"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 33,
+      "pregunta": "En el modelo poligonal, las caras son:",
+      "opciones": {
+        "A": "Vóxeles",
+        "B": "Polígonos planos",
+        "C": "Superficies curvas",
+        "D": "Superficies cuádricas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 34,
+      "pregunta": "En las listas de atributos de un modelo poligonal se suele almacenar:",
+      "opciones": {
+        "A": "La trayectoria de barrido",
+        "B": "Las operaciones booleanas",
+        "C": "Los pesos de los puntos de control",
+        "D": "La normal y la ecuación del plano de cada polígono"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 35,
+      "pregunta": "Almacenar la normal y la ecuación del plano de cada polígono facilita:",
+      "opciones": {
+        "A": "La detección de colisiones en la CPU",
+        "B": "La compresión de texturas",
+        "C": "La división de perspectiva",
+        "D": "La prueba de interioridad/exterioridad, el cálculo de intersecciones y el sombreado"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 36,
+      "pregunta": "El vector normal de una cara poligonal se utiliza para:",
+      "opciones": {
+        "A": "Ordenar las texturas",
+        "B": "Calcular el número de vértices",
+        "C": "Determinar la resolución de la pantalla",
+        "D": "Calcular la iluminación de la cara"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 37,
+      "pregunta": "Si los vértices de una cara se recorren en sentido antihorario vistos desde el exterior, el producto vectorial genera una normal:",
+      "opciones": {
+        "A": "Orientada hacia el exterior",
+        "B": "Nula",
+        "C": "Orientada hacia el interior",
+        "D": "Paralela a la cara"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 38,
+      "pregunta": "Dado un plano orientado, si Ax + By + Cz + D < 0 el punto (x,y,z) está:",
+      "opciones": {
+        "A": "En el infinito",
+        "B": "Detrás del plano",
+        "C": "Delante del plano",
+        "D": "Sobre el plano"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 39,
+      "pregunta": "Dado un plano orientado, si Ax + By + Cz + D = 0 el punto (x,y,z) está:",
+      "opciones": {
+        "A": "Fuera del objeto",
+        "B": "Detrás del plano",
+        "C": "Sobre el plano",
+        "D": "Delante del plano"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 40,
+      "pregunta": "Dado un plano orientado, si Ax + By + Cz + D > 0 el punto (x,y,z) está:",
+      "opciones": {
+        "A": "Delante del plano",
+        "B": "Sobre el plano",
+        "C": "Detrás del plano",
+        "D": "Dentro del objeto siempre"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 41,
+      "pregunta": "Como las caras poligonales deben ser coplanares, se suele recurrir a:",
+      "opciones": {
+        "A": "La enumeración espacial",
+        "B": "La regularización",
+        "C": "La extrusión",
+        "D": "La triangulación"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 42,
+      "pregunta": "¿Cuál es una ventaja del modelo poligonal?",
+      "opciones": {
+        "A": "Representación exacta para poliedros",
+        "B": "Representación exacta de esferas",
+        "C": "Cálculo de volúmenes muy sencillo",
+        "D": "Bajo requerimiento de espacio para objetos curvos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 43,
+      "pregunta": "¿Cuál es un inconveniente del modelo poligonal?",
+      "opciones": {
+        "A": "Prueba de interioridad muy compleja",
+        "B": "Visualización lenta",
+        "C": "Visualización ambigua",
+        "D": "Representación aproximada para objetos no poliédricos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 44,
+      "pregunta": "En el modelo poligonal, obtener mejores aproximaciones de objetos curvos implica:",
+      "opciones": {
+        "A": "Un gran aumento del número de polígonos",
+        "B": "Usar menos memoria",
+        "C": "Eliminar las normales",
+        "D": "Reducir el número de polígonos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 45,
+      "pregunta": "Para convertir otros modelos al modelo poligonal son necesarios:",
+      "opciones": {
+        "A": "Operaciones booleanas regularizadas",
+        "B": "Árboles BSP obligatoriamente",
+        "C": "Métodos de poligonalización o mallado, que pueden ser complejos",
+        "D": "Pesos NURBS"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 46,
+      "pregunta": "¿Qué cálculo resulta complejo en el modelo poligonal?",
+      "opciones": {
+        "A": "El cálculo de volúmenes",
+        "B": "El cálculo de intersecciones",
+        "C": "La visualización",
+        "D": "La prueba de interioridad"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 47,
+      "pregunta": "El modelo poligonal es muy útil como:",
+      "opciones": {
+        "A": "Modelo primario de CSG",
+        "B": "Modelo de barrido",
+        "C": "Modelo secundario para visualización",
+        "D": "Modelo de enumeración espacial"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 48,
+      "pregunta": "La visualización del modelo poligonal es rápida gracias a:",
+      "opciones": {
+        "A": "El uso de pesos",
+        "B": "La ausencia de normales",
+        "C": "Los dispositivos aceleradores (GPU)",
+        "D": "El uso de árboles CSG"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 49,
+      "pregunta": "En el modelo poligonal, la visualización es no ambigua cuando se utiliza:",
+      "opciones": {
+        "A": "Solo aristas",
+        "B": "Sombreado",
+        "C": "Una lista de aristas",
+        "D": "Un modelo alámbrico"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 50,
+      "pregunta": "Las superficies cuádricas se describen mediante:",
+      "opciones": {
+        "A": "Polinomios de grado 5",
+        "B": "Ecuaciones cuadráticas, en forma implícita o paramétrica",
+        "C": "Árboles binarios",
+        "D": "Ecuaciones lineales"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 51,
+      "pregunta": "¿Cuál de las siguientes es una superficie cuádrica?",
+      "opciones": {
+        "A": "Superficie B-spline",
+        "B": "Elipsoide",
+        "C": "Superficie NURBS",
+        "D": "Superelipsoide"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 52,
+      "pregunta": "¿Cuál de las siguientes NO es una superficie cuádrica?",
+      "opciones": {
+        "A": "Hiperboloide",
+        "B": "Esfera",
+        "C": "Paraboloide",
+        "D": "Superelipsoide"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 53,
+      "pregunta": "Las superficies supercuádricas son:",
+      "opciones": {
+        "A": "Superficies formadas por triángulos",
+        "B": "Una generalización de las cuádricas mediante exponentes que permiten controlar su forma",
+        "C": "Superficies de grado 4 sin parámetros",
+        "D": "Superficies definidas por vóxeles"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 54,
+      "pregunta": "La ecuación implícita de una esfera de radio r centrada en el origen es:",
+      "opciones": {
+        "A": "x + y + z = r",
+        "B": "x² + y² = z²",
+        "C": "x² + y² + z² = r²",
+        "D": "(x/rx)² + (y/ry)² + (z/rz)² = 1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 55,
+      "pregunta": "La ecuación implícita de un elipsoide es:",
+      "opciones": {
+        "A": "x² + y² + z² = r²",
+        "B": "x² − y² + z² = 1",
+        "C": "x + y + z = 1",
+        "D": "(x/rx)² + (y/ry)² + (z/rz)² = 1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 56,
+      "pregunta": "En la ecuación paramétrica de la esfera, x = r·cos φ·cos θ, y = r·cos φ·sen θ, la coordenada z es:",
+      "opciones": {
+        "A": "z = r·sen φ",
+        "B": "z = r·cos φ",
+        "C": "z = r·cos θ·sen φ",
+        "D": "z = r·sen θ"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 57,
+      "pregunta": "En las ecuaciones paramétricas de la esfera y del elipsoide, el rango del parámetro φ es:",
+      "opciones": {
+        "A": "−π ≤ φ ≤ π",
+        "B": "0 ≤ φ ≤ π/4",
+        "C": "−π/2 ≤ φ ≤ π/2",
+        "D": "0 ≤ φ ≤ 2π"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 58,
+      "pregunta": "En las ecuaciones paramétricas de la esfera, el rango del parámetro θ es:",
+      "opciones": {
+        "A": "0 ≤ θ ≤ π/2",
+        "B": "−π/2 ≤ θ ≤ π/2",
+        "C": "−π ≤ θ ≤ π",
+        "D": "0 ≤ θ ≤ 1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 59,
+      "pregunta": "En la ecuación paramétrica de un elipsoide, la coordenada x es:",
+      "opciones": {
+        "A": "x = rx·sen φ",
+        "B": "x = rx·cos φ·cos θ",
+        "C": "x = rx·cos φ·sen θ",
+        "D": "x = r·cos θ"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 60,
+      "pregunta": "En el superelipsoide, los parámetros S1 y S2:",
+      "opciones": {
+        "A": "Son exponentes que controlan su forma",
+        "B": "Son los grados de las funciones base",
+        "C": "Son los radios en x e y",
+        "D": "Son los pesos de los puntos de control"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 61,
+      "pregunta": "En la ecuación paramétrica del superelipsoide, z es:",
+      "opciones": {
+        "A": "z = rz·sen φ",
+        "B": "z = rz·sen^S2 θ",
+        "C": "z = rz·sen^S1 φ",
+        "D": "z = rz·cos^S2 θ"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 62,
+      "pregunta": "Las superficies libres son:",
+      "opciones": {
+        "A": "Un caso particular de las cuádricas",
+        "B": "Una extensión de las curvas libres",
+        "C": "Superficies definidas por árboles CSG",
+        "D": "Superficies formadas por vóxeles"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 63,
+      "pregunta": "Las superficies libres se definen mediante:",
+      "opciones": {
+        "A": "Un conjunto de puntos de control o datos que pueden interpolarse o aproximarse",
+        "B": "Un conjunto de vóxeles",
+        "C": "Una única ecuación cuadrática",
+        "D": "Un árbol binario de operaciones"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 64,
+      "pregunta": "En las superficies libres, los puntos de control se organizan habitualmente formando:",
+      "opciones": {
+        "A": "Un árbol octal",
+        "B": "Una malla de control (control net)",
+        "C": "Una lista de aristas",
+        "D": "Un árbol BSP"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 65,
+      "pregunta": "¿Cuántos parámetros tienen las ecuaciones paramétricas de una superficie libre?",
+      "opciones": {
+        "A": "1 (t)",
+        "B": "4 (x, y, z, w)",
+        "C": "2 (u, v)",
+        "D": "3 (u, v, w)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 66,
+      "pregunta": "¿Cuál de las siguientes propiedades es deseable en una superficie libre?",
+      "opciones": {
+        "A": "Ambigüedad y discontinuidad",
+        "B": "Continuidad, recubrimiento convexo e invarianza afín",
+        "C": "Dependencia de la resolución",
+        "D": "No invarianza a transformaciones"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 67,
+      "pregunta": "En las superficies libres de interpolación:",
+      "opciones": {
+        "A": "La superficie es siempre plana",
+        "B": "La superficie pasa por los datos especificados",
+        "C": "Los puntos actúan solo como puntos de control",
+        "D": "La superficie no pasa por ningún punto"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 68,
+      "pregunta": "¿Cuál es un ejemplo de superficie libre de interpolación?",
+      "opciones": {
+        "A": "NURBS",
+        "B": "Hermite",
+        "C": "Bézier",
+        "D": "B-spline"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 69,
+      "pregunta": "En las superficies libres de aproximación:",
+      "opciones": {
+        "A": "La superficie pasa siempre por todos los puntos",
+        "B": "Se definen mediante vóxeles",
+        "C": "No existen puntos de control",
+        "D": "Los puntos actúan como puntos de control y generalmente la superficie no pasa por todos ellos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 70,
+      "pregunta": "¿Cuál de las siguientes NO es una superficie libre de aproximación?",
+      "opciones": {
+        "A": "NURBS",
+        "B": "Hermite",
+        "C": "Bézier",
+        "D": "B-spline"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 71,
+      "pregunta": "¿Por qué es deseable la continuidad en las superficies libres?",
+      "opciones": {
+        "A": "Porque son superficies definidas por tramos (patches) cuyos extremos deben unirse suavemente",
+        "B": "Porque así se reduce el número de puntos de control a cero",
+        "C": "Porque permite operaciones booleanas",
+        "D": "Porque elimina la necesidad de teselar"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 72,
+      "pregunta": "Continuidad paramétrica C0 significa:",
+      "opciones": {
+        "A": "Los tramos se unen",
+        "B": "Coinciden la 1ª y 2ª derivadas",
+        "C": "Las tangentes son proporcionales",
+        "D": "Coincide la 1ª derivada"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 73,
+      "pregunta": "Continuidad paramétrica C1 significa:",
+      "opciones": {
+        "A": "Coincide la 1ª derivada en la unión",
+        "B": "La 1ª derivada es proporcional",
+        "C": "Los tramos solo se tocan",
+        "D": "Coinciden la 1ª y 2ª derivadas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 74,
+      "pregunta": "Continuidad paramétrica C2 significa:",
+      "opciones": {
+        "A": "Solo coincide la 1ª derivada",
+        "B": "Coinciden la 1ª y la 2ª derivadas",
+        "C": "La 2ª derivada es proporcional",
+        "D": "Los tramos se unen sin más"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 75,
+      "pregunta": "Continuidad geométrica G1 significa:",
+      "opciones": {
+        "A": "Coincide exactamente la 1ª derivada",
+        "B": "Coinciden la 1ª y 2ª derivadas exactamente",
+        "C": "Los tramos no se unen",
+        "D": "Coinciden las direcciones tangentes (1ª derivada proporcional)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 76,
+      "pregunta": "Continuidad geométrica G2 significa:",
+      "opciones": {
+        "A": "1ª y 2ª derivadas iguales",
+        "B": "Solo 1ª derivada proporcional",
+        "C": "1ª y 2ª derivadas proporcionales",
+        "D": "Solo la unión de los tramos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 77,
+      "pregunta": "Comparando continuidad paramétrica (C) y geométrica (G):",
+      "opciones": {
+        "A": "La paramétrica es más fácil de conseguir",
+        "B": "La paramétrica es más deseable y la geométrica es más fácil de conseguir",
+        "C": "Son exactamente equivalentes",
+        "D": "La geométrica es más exigente que la paramétrica"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 78,
+      "pregunta": "Continuidad Cn significa:",
+      "opciones": {
+        "A": "Coinciden la 1ª, 2ª, …, n-ésima derivadas",
+        "B": "Hay n tramos",
+        "C": "La superficie es de grado n",
+        "D": "Son proporcionales las n primeras derivadas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 79,
+      "pregunta": "C0 y G0 significan ambas:",
+      "opciones": {
+        "A": "Que las tangentes coinciden",
+        "B": "Que las curvaturas coinciden",
+        "C": "Que los tramos se unen",
+        "D": "Que no hay continuidad"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 80,
+      "pregunta": "La propiedad de la envolvente convexa establece que:",
+      "opciones": {
+        "A": "La superficie es siempre convexa",
+        "B": "La superficie pasa por todos los puntos de control",
+        "C": "Los puntos de control están dentro de la superficie",
+        "D": "La superficie se encuentra dentro de la envolvente convexa formada por los puntos de control"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 81,
+      "pregunta": "La propiedad de la envolvente convexa se cumple cuando:",
+      "opciones": {
+        "A": "La suma de las funciones base es 0",
+        "B": "Las funciones base son negativas",
+        "C": "Hay más de 16 puntos de control",
+        "D": "Las funciones base son no negativas y su suma es 1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 82,
+      "pregunta": "Una superficie es invariante a transformaciones afines si:",
+      "opciones": {
+        "A": "Transformar los puntos de la superficie equivale a transformar los puntos de control y luego calcular la superficie",
+        "B": "Solo admite rotaciones",
+        "C": "No se puede trasladar",
+        "D": "Sus puntos de control son fijos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 83,
+      "pregunta": "Según el tema, ¿son invariantes a transformaciones afines las superficies libres estudiadas?",
+      "opciones": {
+        "A": "Solo las de interpolación",
+        "B": "Sí, todas las que se ven son invariantes a transformaciones afines",
+        "C": "Solo las NURBS con pesos iguales a 0",
+        "D": "No, ninguna lo es"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 84,
+      "pregunta": "Una superficie paramétrica puede expresarse como:",
+      "opciones": {
+        "A": "Una suma de vóxeles",
+        "B": "Combinación de puntos de control y funciones base",
+        "C": "Una lista de aristas",
+        "D": "Un árbol de operaciones booleanas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 85,
+      "pregunta": "Las funciones base de una superficie libre determinan:",
+      "opciones": {
+        "A": "La textura de la superficie",
+        "B": "El número de vértices de la malla",
+        "C": "La posición de la cámara",
+        "D": "Cómo influye cada punto de control sobre la superficie"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 86,
+      "pregunta": "El grado de una superficie libre es:",
+      "opciones": {
+        "A": "El número de puntos de control",
+        "B": "El grado de la función base que la define",
+        "C": "El número de parches",
+        "D": "El número de nudos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 87,
+      "pregunta": "En una superficie tensor-product existen:",
+      "opciones": {
+        "A": "Un único grado",
+        "B": "Ningún grado definido",
+        "C": "Dos grados: p (dirección u) y q (dirección v)",
+        "D": "Tres grados"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 88,
+      "pregunta": "Si p = q = 3, la superficie se denomina:",
+      "opciones": {
+        "A": "Bicúbica",
+        "B": "Bilineal",
+        "C": "Tricúbica",
+        "D": "Bicuadrática"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 89,
+      "pregunta": "En B-splines y NURBS, el grado:",
+      "opciones": {
+        "A": "Es igual al número de puntos de control menos 1",
+        "B": "Depende del número de parches",
+        "C": "Es siempre 3",
+        "D": "Es independiente del número de puntos de control"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 90,
+      "pregunta": "En un B-spline, el orden es:",
+      "opciones": {
+        "A": "El número de puntos de control",
+        "B": "El número de nudos",
+        "C": "El grado menos 1",
+        "D": "La cantidad de funciones base no nulas que intervienen en un intervalo"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 91,
+      "pregunta": "La relación entre orden k y grado p de un B-spline es:",
+      "opciones": {
+        "A": "k = p + 1",
+        "B": "k = 2p",
+        "C": "k = p",
+        "D": "k = p − 1"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 92,
+      "pregunta": "Las superficies bicúbicas B-spline son:",
+      "opciones": {
+        "A": "Una extensión de las curvas B-spline",
+        "B": "Un caso particular de las cuádricas",
+        "C": "Superficies racionales",
+        "D": "Superficies de interpolación"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 93,
+      "pregunta": "En una superficie B-spline, las curvas isoparamétricas obtenidas fijando u o v son:",
+      "opciones": {
+        "A": "Curvas B-spline",
+        "B": "Rectas",
+        "C": "Curvas de Hermite",
+        "D": "Circunferencias"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 94,
+      "pregunta": "¿Cuántos puntos de control requiere como mínimo una superficie B-spline bicúbica?",
+      "opciones": {
+        "A": "9 (3x3)",
+        "B": "25 (5x5)",
+        "C": "16 (4x4)",
+        "D": "4 (2x2)"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 95,
+      "pregunta": "En una superficie B-spline, las esquinas:",
+      "opciones": {
+        "A": "Se eliminan",
+        "B": "Pueden o no interpolarse",
+        "C": "Siempre se interpolan",
+        "D": "Nunca se interpolan"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 96,
+      "pregunta": "Los nudos (knots) de un B-spline:",
+      "opciones": {
+        "A": "Son las aristas de la malla",
+        "B": "Subdividen el dominio paramétrico en intervalos de nudos",
+        "C": "Son los puntos de control",
+        "D": "Son los pesos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 97,
+      "pregunta": "Si el grado de las funciones base B-spline es 0, estas son:",
+      "opciones": {
+        "A": "Funciones cúbicas",
+        "B": "Funciones lineales",
+        "C": "Funciones de salto (escalón)",
+        "D": "Funciones racionales"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 98,
+      "pregunta": "Con nudos u0=0, u1=1, u2=2, u3=3, la función base N1,0(u) vale:",
+      "opciones": {
+        "A": "1 en [2,3) y 0 en el resto",
+        "B": "1 en [1,2) y 0 en el resto",
+        "C": "1 en [0,1) y 0 en el resto",
+        "D": "u en [0,1)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 99,
+      "pregunta": "Para calcular Ni,p(u) con p > 0 se utiliza:",
+      "opciones": {
+        "A": "La regularización",
+        "B": "Un árbol octal",
+        "C": "El esquema triangular de cálculo",
+        "D": "El algoritmo de Cohen-Sutherland"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 100,
+      "pregunta": "Con nudos u0=0, u1=1, u2=2, en el intervalo [0,1) la función N0,1(u) vale:",
+      "opciones": {
+        "A": "0",
+        "B": "2 − u",
+        "C": "u",
+        "D": "1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 101,
+      "pregunta": "Con nudos u0=0, u1=1, u2=2, en el intervalo [1,2) la función N0,1(u) vale:",
+      "opciones": {
+        "A": "u",
+        "B": "u − 1",
+        "C": "1",
+        "D": "2 − u"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 102,
+      "pregunta": "La función base Ni,p(u) es no nula en el intervalo:",
+      "opciones": {
+        "A": "[u0, um)",
+        "B": "[ui, ui+p+1)",
+        "C": "[ui, ui+1)",
+        "D": "[ui−p, ui)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 103,
+      "pregunta": "¿En cuántas regiones de nudos es no nula la función Ni,p(u)?",
+      "opciones": {
+        "A": "p",
+        "B": "2p",
+        "C": "p + 1",
+        "D": "p − 1"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 104,
+      "pregunta": "En cada región de nudos [ui, ui+1), ¿cuántas funciones base de grado p como máximo son no nulas?",
+      "opciones": {
+        "A": "2p + 1",
+        "B": "p + 1",
+        "C": "1",
+        "D": "p"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 105,
+      "pregunta": "¿Cuál es una ventaja de las superficies B-spline?",
+      "opciones": {
+        "A": "Su formulación es la más sencilla",
+        "B": "No requieren puntos de control",
+        "C": "Representan exactamente secciones cónicas",
+        "D": "Modificación local: modificar un punto de control afecta a una porción pequeña de la superficie"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 106,
+      "pregunta": "Las superficies B-spline cúbicas con nudos simples (multiplicidad 1) tienen continuidad intrínseca:",
+      "opciones": {
+        "A": "C1",
+        "B": "C0",
+        "C": "G0",
+        "D": "C2"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 107,
+      "pregunta": "En las B-splines, ¿es necesario especificar explícitamente vectores tangentes y derivadas cruzadas?",
+      "opciones": {
+        "A": "No, la superficie se controla mediante puntos de control y vectores de nudos",
+        "B": "Sí, siempre",
+        "C": "Solo en las esquinas",
+        "D": "Solo si el grado es 0"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 108,
+      "pregunta": "¿Cuál es un inconveniente de las B-splines polinómicas?",
+      "opciones": {
+        "A": "No tienen control local",
+        "B": "No pueden representar exactamente secciones cónicas",
+        "C": "No tienen continuidad",
+        "D": "Requieren pesos en los puntos de control"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 109,
+      "pregunta": "Las secciones cónicas como círculos y elipses necesitan, para ser representadas exactamente:",
+      "opciones": {
+        "A": "Vóxeles",
+        "B": "Curvas de Hermite",
+        "C": "Curvas polinómicas de grado 1",
+        "D": "Curvas racionales (cociente de dos polinomios)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 110,
+      "pregunta": "NURBS significa:",
+      "opciones": {
+        "A": "Non-Uniform Regular Bézier Surface",
+        "B": "Normal Uniform Regular B-spline",
+        "C": "Numerical Uniform Rational Basis Spline",
+        "D": "Non-Uniform Rational B-spline"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 111,
+      "pregunta": "Las superficies NURBS son:",
+      "opciones": {
+        "A": "Superficies de interpolación",
+        "B": "Una generalización racional de las superficies B-spline",
+        "C": "Superficies cuádricas",
+        "D": "Un caso particular de las superficies de Hermite"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 112,
+      "pregunta": "Las NURBS incorporan respecto a las B-splines:",
+      "opciones": {
+        "A": "Un árbol de operaciones booleanas",
+        "B": "Vectores tangentes explícitos",
+        "C": "Un vector de traslación",
+        "D": "Un conjunto de pesos que controlan cómo la superficie se aproxima a los puntos de control"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 113,
+      "pregunta": "Si todos los pesos de una NURBS son iguales, la representación:",
+      "opciones": {
+        "A": "Pasa por todos los puntos de control",
+        "B": "Se convierte en una superficie de Hermite",
+        "C": "Se vuelve inestable",
+        "D": "Se reduce a una B-spline"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 114,
+      "pregunta": "Aumentar el peso wij de un punto de control en una NURBS:",
+      "opciones": {
+        "A": "Disminuye su influencia",
+        "B": "No afecta a la superficie",
+        "C": "Incrementa su influencia, acercando la superficie hacia él",
+        "D": "Elimina el punto de control"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 115,
+      "pregunta": "Reducir el peso wij de un punto de control en una NURBS:",
+      "opciones": {
+        "A": "Convierte la superficie en una B-spline",
+        "B": "Disminuye su influencia, alejando la superficie de dicho punto",
+        "C": "Aumenta su influencia",
+        "D": "Hace que la superficie pase por el punto"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 116,
+      "pregunta": "Con W = 1 en todos los puntos, una NURBS presenta:",
+      "opciones": {
+        "A": "Comportamiento de Hermite",
+        "B": "Comportamiento B-spline",
+        "C": "Mayor influencia de los puntos",
+        "D": "Menor influencia de los puntos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 117,
+      "pregunta": "Habitualmente, los pesos de una NURBS son:",
+      "opciones": {
+        "A": "Negativos",
+        "B": "Positivos",
+        "C": "Complejos",
+        "D": "Nulos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 118,
+      "pregunta": "Las funciones base racionales de las NURBS se construyen a partir de:",
+      "opciones": {
+        "A": "Funciones trigonométricas",
+        "B": "Las funciones base B-spline ponderadas por los pesos",
+        "C": "Las funciones de Bernstein exclusivamente",
+        "D": "Los polinomios de Hermite"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 119,
+      "pregunta": "¿Qué ventaja tienen las NURBS frente a las B-splines?",
+      "opciones": {
+        "A": "Permiten representar exactamente secciones cónicas y determinadas superficies cuádricas",
+        "B": "No necesitan vector de nudos",
+        "C": "No necesitan puntos de control",
+        "D": "Su formulación es más sencilla"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 120,
+      "pregunta": "¿Cuál es un inconveniente de las NURBS?",
+      "opciones": {
+        "A": "No tienen control local",
+        "B": "No representan circunferencias",
+        "C": "Su formulación es la más compleja y el usuario debe manejar pesos",
+        "D": "No son invariantes a transformaciones afines"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 121,
+      "pregunta": "¿Cuál es una ventaja general de las superficies libres?",
+      "opciones": {
+        "A": "Prueba de interioridad muy sencilla",
+        "B": "Representación suave y compacta de geometrías curvas",
+        "C": "Formulación muy simple",
+        "D": "Cálculo de intersecciones sencillo"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 122,
+      "pregunta": "Para su visualización mediante el pipeline gráfico convencional, las superficies libres suelen:",
+      "opciones": {
+        "A": "Convertirse en un árbol CSG",
+        "B": "Visualizarse directamente sin conversión",
+        "C": "Convertirse en vóxeles",
+        "D": "Convertirse o teselarse en una malla poligonal"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 123,
+      "pregunta": "¿Cuál es un inconveniente de las superficies libres?",
+      "opciones": {
+        "A": "Ocupan mucho espacio",
+        "B": "Representación muy poco suave",
+        "C": "Prueba de interioridad/exterioridad y cálculo de intersecciones complicados",
+        "D": "No permiten representar curvas"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 124,
+      "pregunta": "Los modelos sólidos representan:",
+      "opciones": {
+        "A": "Solo las aristas del objeto",
+        "B": "El volumen ocupado por un objeto, distinguiendo interior, frontera y exterior",
+        "C": "Únicamente los vértices del objeto",
+        "D": "Solo la superficie exterior del objeto"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 125,
+      "pregunta": "En los modelos sólidos se pueden asociar al volumen propiedades como:",
+      "opciones": {
+        "A": "Solo la normal de las caras",
+        "B": "La matriz de proyección",
+        "C": "Solo el color de las aristas",
+        "D": "Material, densidad u otras características internas"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 126,
+      "pregunta": "¿Cuál de las siguientes NO es una técnica para generar modelos sólidos?",
+      "opciones": {
+        "A": "Barrido",
+        "B": "Instanciación de primitivas",
+        "C": "Geometría sólida constructiva",
+        "D": "Winged-edge"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 127,
+      "pregunta": "En la instanciación de primitivas se parte de:",
+      "opciones": {
+        "A": "Un conjunto finito de formas primitivas con dimensiones parametrizadas",
+        "B": "Una rejilla de vóxeles",
+        "C": "Una trayectoria y una sección",
+        "D": "Una nube de puntos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 128,
+      "pregunta": "En la instanciación de primitivas, las primitivas se instancian:",
+      "opciones": {
+        "A": "Dando valores a los parámetros respetando las restricciones",
+        "B": "Dividiendo el espacio en octantes",
+        "C": "Mediante operaciones booleanas",
+        "D": "Desplazando una sección sobre una trayectoria"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 129,
+      "pregunta": "Internamente, las primitivas en la instanciación de primitivas pueden almacenarse:",
+      "opciones": {
+        "A": "Solo como vóxeles",
+        "B": "Utilizando cualquier modelo",
+        "C": "Solo como árboles CSG",
+        "D": "Solo como modelo alámbrico"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 130,
+      "pregunta": "¿Cuál es una ventaja de la instanciación de primitivas?",
+      "opciones": {
+        "A": "No depende de las primitivas disponibles",
+        "B": "Permite cualquier forma arbitraria",
+        "C": "Modelado muy sencillo y modelo compacto",
+        "D": "Representación exacta de cualquier objeto"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 131,
+      "pregunta": "¿Cuál es un inconveniente de la instanciación de primitivas?",
+      "opciones": {
+        "A": "Modelado muy complejo",
+        "B": "Modelo muy poco compacto",
+        "C": "Necesita pesos en los puntos",
+        "D": "Los objetos están limitados por las primitivas disponibles"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 132,
+      "pregunta": "Los sólidos generados por barrido (sweep) se obtienen a partir de:",
+      "opciones": {
+        "A": "Una trayectoria (directriz) y una sección (generador)",
+        "B": "Una rejilla de vóxeles",
+        "C": "Un conjunto de pesos",
+        "D": "Un conjunto de primitivas y operadores booleanos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 133,
+      "pregunta": "En los sólidos por barrido, para generar un sólido la sección debe ser:",
+      "opciones": {
+        "A": "Cerrada",
+        "B": "Una recta",
+        "C": "Abierta",
+        "D": "Un punto"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 134,
+      "pregunta": "¿Cuáles son los tipos de objetos generados por barrido?",
+      "opciones": {
+        "A": "Hermite, Bézier y NURBS",
+        "B": "Unión, intersección y diferencia",
+        "C": "Extrusión, rotación (revolución) y barrido generalizado",
+        "D": "Vóxeles, octrees y BSP"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 135,
+      "pregunta": "En la extrusión:",
+      "opciones": {
+        "A": "La sección cambia de tamaño y forma",
+        "B": "La trayectoria es siempre circular",
+        "C": "La sección gira alrededor de un eje",
+        "D": "La sección constante se traslada a lo largo de una trayectoria rectilínea manteniendo forma y orientación"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 136,
+      "pregunta": "Si en una extrusión la dirección de desplazamiento es normal al plano de la sección se obtiene:",
+      "opciones": {
+        "A": "Una revolución",
+        "B": "Una extrusión ortogonal",
+        "C": "Un barrido generalizado",
+        "D": "Una extrusión oblicua"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 137,
+      "pregunta": "En la revolución (rotación):",
+      "opciones": {
+        "A": "Se combinan primitivas con operadores booleanos",
+        "B": "La sección cambia de forma",
+        "C": "La sección se traslada en línea recta",
+        "D": "La sección gira alrededor de un eje y cada punto describe una trayectoria circular"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 138,
+      "pregunta": "En el barrido generalizado:",
+      "opciones": {
+        "A": "La sección gira alrededor de un eje fijo",
+        "B": "La trayectoria es siempre rectilínea",
+        "C": "La sección puede cambiar de tamaño, orientación o forma y la trayectoria es cualquiera",
+        "D": "La sección es siempre constante"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 139,
+      "pregunta": "En el barrido generalizado, una orientación inadecuada de la sección puede producir:",
+      "opciones": {
+        "A": "Giros bruscos o autointersecciones",
+        "B": "Objetos de menor tamaño",
+        "C": "Pérdida de la trayectoria",
+        "D": "Mayor precisión"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 140,
+      "pregunta": "¿Cuál es una ventaja de los sólidos por barrido?",
+      "opciones": {
+        "A": "Modelado sencillo y obtención de objetos complejos a partir de componentes sencillas",
+        "B": "Representan cualquier volumen con vóxeles",
+        "C": "No necesitan modelo secundario de visualización",
+        "D": "Imposibilidad de crear objetos inconsistentes"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 141,
+      "pregunta": "¿Cuál es un inconveniente de los sólidos por barrido?",
+      "opciones": {
+        "A": "Modelo matemáticamente muy extenso",
+        "B": "Imposible de entender",
+        "C": "No sirve de base a otros modelos",
+        "D": "Posibilidad de crear objetos inconsistentes"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 142,
+      "pregunta": "En el modelado sólido por subdivisión espacial (enumeración espacial):",
+      "opciones": {
+        "A": "Se combinan primitivas con operadores booleanos",
+        "B": "Se usan pesos sobre los puntos de control",
+        "C": "Se describe la ocupación espacial dividiendo el espacio en regiones interiores o exteriores",
+        "D": "Se desplaza una sección por una trayectoria"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 143,
+      "pregunta": "¿Cuáles son representaciones habituales de subdivisión espacial?",
+      "opciones": {
+        "A": "Hermite, Bézier y B-spline",
+        "B": "Rejilla de vóxeles, octrees y árboles BSP",
+        "C": "Winged-edge, half-edge y listas",
+        "D": "Extrusión, revolución y barrido"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 144,
+      "pregunta": "En una rejilla de vóxeles, los vóxeles interiores al objeto se etiquetan con:",
+      "opciones": {
+        "A": "1",
+        "B": "−1",
+        "C": "0",
+        "D": "2"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 145,
+      "pregunta": "En una rejilla de vóxeles, la precisión depende de:",
+      "opciones": {
+        "A": "La trayectoria de barrido",
+        "B": "La resolución de la rejilla",
+        "C": "Los pesos de los vóxeles",
+        "D": "El número de operaciones booleanas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 146,
+      "pregunta": "¿Cuál es el principal inconveniente de la rejilla de vóxeles?",
+      "opciones": {
+        "A": "Grandes requerimientos de espacio",
+        "B": "Requiere superficies NURBS",
+        "C": "Prueba de interioridad muy compleja",
+        "D": "No permite representar sólidos"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 147,
+      "pregunta": "En un octree, si un cubo es completamente exterior al objeto:",
+      "opciones": {
+        "A": "Se divide en 2",
+        "B": "Se etiqueta con 1",
+        "C": "Se divide en 8",
+        "D": "Se etiqueta con 0"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 148,
+      "pregunta": "En un octree, si un cubo no es ni completamente interior ni exterior:",
+      "opciones": {
+        "A": "Se etiqueta con 1",
+        "B": "Se divide en 8 cubos y se repite el proceso",
+        "C": "Se divide en 2 subespacios",
+        "D": "Se descarta"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 149,
+      "pregunta": "El proceso de construcción de un octree termina cuando:",
+      "opciones": {
+        "A": "Todos los cubos tienen etiqueta 1",
+        "B": "Se alcanza la resolución deseada",
+        "C": "Se han hecho 8 divisiones",
+        "D": "Se alcanza el número de vértices"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 150,
+      "pregunta": "¿Qué ventaja tiene un octree respecto a una rejilla uniforme de vóxeles?",
+      "opciones": {
+        "A": "Representa fronteras poligonales exactamente",
+        "B": "Siempre usa menos precisión",
+        "C": "No requiere dividir el espacio",
+        "D": "Usa mayor resolución únicamente cerca de la frontera o en zonas complejas"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 151,
+      "pregunta": "Un árbol BSP divide recursivamente el espacio mediante:",
+      "opciones": {
+        "A": "Esferas",
+        "B": "Vóxeles",
+        "C": "Planos",
+        "D": "Cubos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 152,
+      "pregunta": "En un árbol BSP, cada división genera:",
+      "opciones": {
+        "A": "Cuatro subespacios",
+        "B": "Ocho subespacios",
+        "C": "Dos subespacios",
+        "D": "Un único subespacio"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 153,
+      "pregunta": "En un árbol BSP, como planos de partición pueden usarse:",
+      "opciones": {
+        "A": "Planos aleatorios exclusivamente",
+        "B": "Solo planos alineados con los ejes",
+        "C": "Solo el plano XY",
+        "D": "Los propios planos de los polígonos"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 154,
+      "pregunta": "Según la comparativa, ¿qué tipo de división utiliza un octree?",
+      "opciones": {
+        "A": "Planos arbitrarios",
+        "B": "Binaria por vóxeles",
+        "C": "Regular",
+        "D": "Jerárquica 8-aria"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 155,
+      "pregunta": "Según la comparativa, ¿qué representación puede representar fronteras poligonales exactamente?",
+      "opciones": {
+        "A": "BSP",
+        "B": "Octree",
+        "C": "Ninguna",
+        "D": "Vóxeles"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 156,
+      "pregunta": "Según la comparativa, la memoria de un octree es:",
+      "opciones": {
+        "A": "Adaptativa",
+        "B": "Siempre muy alta",
+        "C": "Siempre igual a la de una rejilla",
+        "D": "Nula"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 157,
+      "pregunta": "Según la comparativa, la memoria de una rejilla de vóxeles es:",
+      "opciones": {
+        "A": "Depende del árbol",
+        "B": "Alta",
+        "C": "Muy baja",
+        "D": "Adaptativa"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 158,
+      "pregunta": "La Geometría Sólida Constructiva (CSG) es:",
+      "opciones": {
+        "A": "Una representación por vóxeles",
+        "B": "Un modelo alámbrico",
+        "C": "Una representación procedural que construye objetos complejos combinando primitivas",
+        "D": "Una superficie racional"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 159,
+      "pregunta": "¿De qué consta la CSG?",
+      "opciones": {
+        "A": "Una sección y una trayectoria",
+        "B": "Vértices y aristas",
+        "C": "Primitivas sólidas, transformaciones geométricas y operadores booleanos",
+        "D": "Puntos de control y pesos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 160,
+      "pregunta": "¿Cuáles son los operadores booleanos de la CSG?",
+      "opciones": {
+        "A": "Suma, resta y producto escalar",
+        "B": "Extrusión, revolución y barrido",
+        "C": "Unión, intersección y diferencia",
+        "D": "AND, OR y NOT bit a bit"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 161,
+      "pregunta": "Los objetos en CSG se representan mediante:",
+      "opciones": {
+        "A": "Árboles binarios",
+        "B": "Mallas de control",
+        "C": "Rejillas de vóxeles",
+        "D": "Listas de aristas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 162,
+      "pregunta": "En un árbol CSG, las hojas son:",
+      "opciones": {
+        "A": "Las transformaciones exclusivamente",
+        "B": "El objeto final",
+        "C": "Las operaciones",
+        "D": "Las primitivas"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 163,
+      "pregunta": "En un árbol CSG, los nodos interiores son:",
+      "opciones": {
+        "A": "Los vóxeles",
+        "B": "Las operaciones",
+        "C": "Los puntos de control",
+        "D": "Las primitivas"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 164,
+      "pregunta": "En un árbol CSG, la raíz es:",
+      "opciones": {
+        "A": "Un vóxel",
+        "B": "Una transformación",
+        "C": "La primera primitiva",
+        "D": "El objeto final"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 165,
+      "pregunta": "Además de las operaciones booleanas, en un árbol CSG pueden aparecer:",
+      "opciones": {
+        "A": "Nodos de vóxeles",
+        "B": "Nodos de aristas aladas",
+        "C": "Nodos de transformación para trasladar, rotar o escalar las primitivas",
+        "D": "Nodos de pesos"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 166,
+      "pregunta": "¿Por qué son necesarias las operaciones booleanas regularizadas?",
+      "opciones": {
+        "A": "Porque las operaciones convencionales pueden crear objetos de menor dimensión",
+        "B": "Porque las primitivas no tienen frontera",
+        "C": "Porque las convencionales no admiten la unión",
+        "D": "Porque las convencionales son demasiado lentas"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 167,
+      "pregunta": "El interior de un sólido es:",
+      "opciones": {
+        "A": "El conjunto de todos los puntos que están dentro del sólido",
+        "B": "Los puntos de la frontera",
+        "C": "Los puntos que no pertenecen a la clausura",
+        "D": "La unión del interior y la frontera"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 168,
+      "pregunta": "La clausura de un sólido es:",
+      "opciones": {
+        "A": "Solo los puntos de la frontera",
+        "B": "Los puntos exteriores",
+        "C": "Solo los puntos interiores",
+        "D": "La unión de todos los puntos interiores y de la frontera"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 169,
+      "pregunta": "El exterior de un sólido es:",
+      "opciones": {
+        "A": "La unión del interior y la frontera",
+        "B": "Todos los puntos de la frontera",
+        "C": "Los puntos interiores",
+        "D": "Todos los puntos que no pertenecen a la clausura"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 170,
+      "pregunta": "Para la bola unidad x² + y² + z² = 1, su clausura son los puntos que cumplen:",
+      "opciones": {
+        "A": "x² + y² + z² > 1",
+        "B": "x² + y² + z² = 1",
+        "C": "x² + y² + z² < 1",
+        "D": "x² + y² + z² ≤ 1"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 171,
+      "pregunta": "Una bola abierta es:",
+      "opciones": {
+        "A": "Una semiesfera",
+        "B": "Una esfera sin interior",
+        "C": "Una bola con frontera incluida",
+        "D": "Una bola a la que se le ha eliminado la esfera que la envuelve"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 172,
+      "pregunta": "Un punto P es interior a un sólido S si:",
+      "opciones": {
+        "A": "Toda bola abierta centrada en P interseca S",
+        "B": "Existe r > 0 tal que la bola abierta de centro P y radio r está contenida en S",
+        "C": "Ninguna bola abierta centrada en P interseca S",
+        "D": "P está sobre la superficie de S"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 173,
+      "pregunta": "Un punto P es exterior a un sólido S si:",
+      "opciones": {
+        "A": "P pertenece a la clausura",
+        "B": "P pertenece a la frontera",
+        "C": "Existe r > 0 tal que la bola está contenida en S",
+        "D": "Existe r > 0 tal que la bola abierta de centro P y radio r no interseca S"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 174,
+      "pregunta": "Un punto de frontera de un sólido es aquel que:",
+      "opciones": {
+        "A": "No es ni interior ni exterior: cualquier bola abierta contiene puntos interiores y exteriores",
+        "B": "Está en el infinito",
+        "C": "Es siempre exterior",
+        "D": "Es siempre interior"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 175,
+      "pregunta": "La operación booleana regularizada se formaliza como:",
+      "opciones": {
+        "A": "A op* B = exterior(A op B)",
+        "B": "A op* B = clausura(interior(A op B))",
+        "C": "A op* B = interior(clausura(A op B))",
+        "D": "A op* B = clausura(A) op clausura(B)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 176,
+      "pregunta": "En la operación regularizada, al calcular el interior del resultado:",
+      "opciones": {
+        "A": "Se eliminan todos los componentes de menor dimensión",
+        "B": "Se añade la frontera",
+        "C": "Se calcula el exterior",
+        "D": "Se duplican las caras"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 177,
+      "pregunta": "En la operación regularizada, el último paso (clausura):",
+      "opciones": {
+        "A": "Añade de nuevo la frontera",
+        "B": "Calcula el exterior",
+        "C": "Elimina el interior",
+        "D": "Elimina la frontera"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 178,
+      "pregunta": "Los objetos resultantes de operaciones regularizadas son válidos si:",
+      "opciones": {
+        "A": "Se usa un modelo alámbrico",
+        "B": "Lo son las primitivas",
+        "C": "Se usan pesos positivos",
+        "D": "Se usan vóxeles"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 179,
+      "pregunta": "En CSG se utilizan dos representaciones:",
+      "opciones": {
+        "A": "Rejilla de vóxeles y octree",
+        "B": "Modelo alámbrico y NURBS",
+        "C": "Lista de aristas y winged-edge",
+        "D": "Modelo procedural primario (árbol binario) y modelo superficial secundario (B-Rep)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 180,
+      "pregunta": "El evaluador de frontera en CSG:",
+      "opciones": {
+        "A": "Convierte un B-Rep en vóxeles",
+        "B": "Divide el espacio en octantes",
+        "C": "Calcula los pesos de las NURBS",
+        "D": "Convierte el árbol CSG en una representación B-Rep"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 181,
+      "pregunta": "El evaluador de frontera:",
+      "opciones": {
+        "A": "Solo elimina primitivas",
+        "B": "Crea y borra vértices, aristas y caras asegurando la consistencia topológica",
+        "C": "Solo calcula normales",
+        "D": "Convierte la escena a coordenadas de pantalla"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 182,
+      "pregunta": "¿Cuál es una ventaja de la CSG?",
+      "opciones": {
+        "A": "Ninguna limitación por las primitivas",
+        "B": "Visualización directa muy sencilla",
+        "C": "Prueba de interioridad/exterioridad muy sencilla recorriendo el árbol y modelo exacto",
+        "D": "Implementación sencilla de las operaciones booleanas"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 183,
+      "pregunta": "¿Cuál es un inconveniente de la CSG?",
+      "opciones": {
+        "A": "Modelo inexacto",
+        "B": "No permite combinar primitivas",
+        "C": "Prueba de interioridad muy difícil",
+        "D": "Difícil implementación de las operaciones booleanas y visualización complicada"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 184,
+      "pregunta": "¿Qué primitivas pueden usarse en CSG según el tema?",
+      "opciones": {
+        "A": "Únicamente modelos alámbricos",
+        "B": "Instanciación de primitivas básicas u objetos simples generados por barrido",
+        "C": "Únicamente superficies NURBS",
+        "D": "Únicamente vóxeles"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 185,
+      "pregunta": "Dado el plano orientado 3x + 0y + 2z + 1 = 0, ¿dónde se encuentra el punto (0, 3, -2)?",
+      "opciones": {
+        "A": "Sobre el plano (resultado = 0)",
+        "B": "Detrás del plano (resultado < 0)",
+        "C": "No se puede determinar sin la normal unitaria",
+        "D": "Delante del plano (resultado > 0)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 186,
+      "pregunta": "¿Cuántos vóxeles tiene una rejilla de 16x16x16?",
+      "opciones": {
+        "A": "256",
+        "B": "48",
+        "C": "4096",
+        "D": "128"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 187,
+      "pregunta": "Una superficie B-spline tiene índices de puntos de control i = 0..8 en la dirección u y grado p = 4. Según U = {u0, …, u(m+p+1)}, ¿cuántos nudos hay en u?",
+      "opciones": {
+        "A": "13",
+        "B": "9",
+        "C": "14",
+        "D": "12"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 188,
+      "pregunta": "¿Cuál es el orden de una B-spline de grado 1?",
+      "opciones": {
+        "A": "0",
+        "B": "2",
+        "C": "3",
+        "D": "1"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 189,
+      "pregunta": "¿En qué intervalo es no nula la función base N3,4(u) de un B-spline?",
+      "opciones": {
+        "A": "[u3, u4)",
+        "B": "[u3, u8)",
+        "C": "[u0, u4)",
+        "D": "[u3, u7)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 190,
+      "pregunta": "Para la bola unidad delimitada por x² + y² + z² = 1, ¿a qué conjunto pertenece el punto (1, -2, 2)?",
+      "opciones": {
+        "A": "A la frontera / superficie (x² + y² + z² = 1)",
+        "B": "Al interior (x² + y² + z² < 1)",
+        "C": "A ninguno de los tres conjuntos",
+        "D": "Al exterior (x² + y² + z² > 1)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 191,
+      "pregunta": "Una superficie B-spline tiene grados p = 2 y q = 4. ¿Cuál es el mínimo número de puntos de control necesario (p+1 en u por q+1 en v)?",
+      "opciones": {
+        "A": "24",
+        "B": "8",
+        "C": "6",
+        "D": "15"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 192,
+      "pregunta": "En una NURBS donde todos los pesos valen 1, se cambia el peso de un punto de control a w = 10. ¿Qué efecto tiene?",
+      "opciones": {
+        "A": "Comportamiento B-spline (influencia estándar)",
+        "B": "La superficie se acerca a ese punto (mayor influencia)",
+        "C": "La superficie se aleja de ese punto (menor influencia)",
+        "D": "La superficie pasa a ser de interpolación de Hermite"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 193,
+      "pregunta": "Con nudos u0 = 0, u1 = 1, u2 = 2, la función base de grado 1 es N0,1(u) = u en [0,1) y 2 − u en [1,2). ¿Cuánto vale N0,1(1.4)?",
+      "opciones": {
+        "A": "0.6",
+        "B": "0.4",
+        "C": "1",
+        "D": "1.4"
+      },
+      "respuesta_correcta": "A"
+    },
+    {
+      "id": 194,
+      "pregunta": "Dado el plano orientado 3x + 3y + 2z + 2 = 0, ¿dónde se encuentra el punto (-2, 3, 0)?",
+      "opciones": {
+        "A": "No se puede determinar sin la normal unitaria",
+        "B": "Sobre el plano (resultado = 0)",
+        "C": "Detrás del plano (resultado < 0)",
+        "D": "Delante del plano (resultado > 0)"
+      },
+      "respuesta_correcta": "D"
+    },
+    {
+      "id": 195,
+      "pregunta": "¿Cuántos vóxeles tiene una rejilla de 32x32x32?",
+      "opciones": {
+        "A": "1024",
+        "B": "256",
+        "C": "32768",
+        "D": "96"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 196,
+      "pregunta": "Una superficie B-spline tiene índices de puntos de control i = 0..6 en la dirección u y grado p = 2. Según U = {u0, …, u(m+p+1)}, ¿cuántos nudos hay en u?",
+      "opciones": {
+        "A": "8",
+        "B": "7",
+        "C": "10",
+        "D": "9"
+      },
+      "respuesta_correcta": "C"
+    },
+    {
+      "id": 197,
+      "pregunta": "¿Cuál es el orden de una B-spline de grado 4?",
+      "opciones": {
+        "A": "4",
+        "B": "5",
+        "C": "3",
+        "D": "8"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 198,
+      "pregunta": "¿En qué intervalo es no nula la función base N3,1(u) de un B-spline?",
+      "opciones": {
+        "A": "[u3, u4)",
+        "B": "[u3, u5)",
+        "C": "[u3, u6)",
+        "D": "[u2, u4)"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 199,
+      "pregunta": "Para la bola unidad delimitada por x² + y² + z² = 1, ¿a qué conjunto pertenece el punto (2, -1, 0)?",
+      "opciones": {
+        "A": "A la frontera / superficie (x² + y² + z² = 1)",
+        "B": "Al exterior (x² + y² + z² > 1)",
+        "C": "Al interior (x² + y² + z² < 1)",
+        "D": "A ninguno de los tres conjuntos"
+      },
+      "respuesta_correcta": "B"
+    },
+    {
+      "id": 200,
+      "pregunta": "Una superficie B-spline tiene grados p = 4 y q = 3. ¿Cuál es el mínimo número de puntos de control necesario (p+1 en u por q+1 en v)?",
+      "opciones": {
+        "A": "12",
+        "B": "20",
+        "C": "7",
+        "D": "30"
+      },
+      "respuesta_correcta": "B"
+    }
+  ]
+}
